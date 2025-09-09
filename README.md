@@ -22,7 +22,7 @@ Fundamentos de Arquitectura de Software <br>
 | **Member**               | **Code**   |
 | ------------------------ | ---------- |
 | Rodrigo Liberato Saldana | U202215623 |
-|                          |            |
+| Renzo Miguel Llerena Delgado     | U202312399  |
 |                          |            |
 |                          |            |
 |                          |            |
