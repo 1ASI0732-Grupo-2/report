@@ -225,6 +225,38 @@ Para validar la propuesta, se enfocará primero en:
 ### 2.2. Entrevistas
 
 #### 2.2.1. Diseño de entrevistas
+### 2.2.1. Diseño de entrevistas
+
+**PROPIETARIOS DE INMUEBLES**
+
+- 1. Nombre completo
+- 2. Edad
+- 3. Distrito de residencia
+- 4. Profesión
+- 5. Actualmente, ¿tiene propiedades adicionales disponibles o sin uso en su vivienda actual?
+- 6. ¿Qué hace con esa(s) propiedad(es)? ¿Tiene algo planeado para hacer?
+- 7. ¿Qué piensa de los alquileres de oficina como espacios de coworking?
+- 8. ¿Qué opinaría de una aplicación que conecta a dueños de espacios en alquiler con empresas que buscan alquilar estos espacios? Estaría dispuesto(a) a usarla?
+- 9.  Que beneficios le gustaría tener a usted dentro de el trato entre usted y la compañía que trabaje en la propiedad?
+- 10. Que comportamientos o hábitos no estarían dispuesto(a) a aceptar de la compañía/startup que trabaje en su propiedad?
+- 11. Que funcionalidades le gustaría que tenga esta aplicación web?
+- 12. ¿De que manera buscaría hacer este espacio uno seguro para ambos?
+
+**FREELANCERS/STARTUPS**
+
+- 1. Nombre completo
+- 2. Edad
+- 3. Distrito de residencia
+- 4. Profesión
+- 5. Actualmente, ¿desde donde trabaja?
+- 6.  Cree que el lugar donde trabajan afecta la productividad de su trabajo?
+- 7. Que es lo que busca en un lugar de trabajo?
+- 8. ¿Ha escuchado hablar de los espacios de coworking?
+- 9. ¿Qué opinaría de alquilar un espacio destinado para trabajar?
+- 10. ¿Qué opinaría de una aplicación que le ofrezca la posibilidad de conectarlo con varios de estos espacios disponibles?
+- 11. Que funcionalidades cree que debería tener una aplicación como esta?
+- 12. ¿De que manera buscaría hacer este espacio uno seguro para ambas partes?
+
 
 #### 2.2.2. Registro de entrevistas
 
