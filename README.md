@@ -22,7 +22,7 @@ Fundamentos de Arquitectura de Software <br>
 | **Member**               | **Code**   |
 | ------------------------ | ---------- |
 | Rodrigo Liberato Saldana | U202215623 |
-|                          |            |
+| Henry Kevin Diaz Gutierrez | U201819674 |
 |                          |            |
 |                          |            |
 |                          |            |
