@@ -326,13 +326,13 @@ Este grupo está compuesto por trabajadores independientes, equipos pequeños de
 
 | **Campo**                | **Detalle** |
 |--------------------------|-------------|
-| **Nombre**               |  |
+| **Nombre**               | Renato Guillermo Calvo Yalan |
 | **Entrevistador**        | Renzo Miguel Llerena Delgado |
 | **Edad**                 | 21 años |
-| **Resumen**              | |
+| **Resumen**              | El entrevistado compartio su necesidad de tener espacion coworking para trabajar con su equipo, ya que en su casa carece del espacio indicado para poder trabajar y también compartió su punto de vista sobre cómo debería ser nuestra propuesta bajo su propio criterio teniendo, por encima de todo, ubicaciones accesibles para el en San Isidro|
 | **Tiempo que empieza**   | 0:00 minutos |
-| **Duración de la entrevista** |  minutos |
-| **URL de la entrevista** | [Ver entrevista]() |
+| **Duración de la entrevista** | 4:29 minutos |
+| **URL de la entrevista** | [Ver entrevista](https://drive.google.com/file/d/18nyxMf-ZdvX-bkOw9eGHqbmN1OXbzshb/view?usp=sharing) |
 
 
 #### 2.2.3. Análisis de entrevistas
