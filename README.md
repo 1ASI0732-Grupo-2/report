@@ -268,6 +268,16 @@ Para validar la propuesta, se enfocará primero en:
 
 ### 3.4. Product Backlog
 
+| ID  | Historia de Usuario                                                                                                                                     | Prioridad |
+|-----|----------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|
+| 1   | Como freelancer, quiero encontrar la ubicación de los inmuebles por localización para encontrar los lugares más cercanos o convenientes                 | Alta      |
+| 3   | Como freelancer, quiero saber la disponibilidad actual del inmueble para hacer una elección correcta del tiempo que necesite el local                   | Alta      |
+| 7   | Como freelancer, quiero tener la certeza de que la aplicación web tenga un sistema de pago seguro                                                       | Alta      |
+| 8   | Como freelancer, quiero tener la posibilidad de tener una devolución de mi dinero si cancelo una reserva realizada antes del inicio de esta misma      | Media     |
+
+---
+
+
 ---
 
 ## Final
