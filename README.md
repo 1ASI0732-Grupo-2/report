@@ -250,6 +250,18 @@ Para validar la propuesta, se enfocará primero en:
 
 ### 3.1. To-Be Scenario Mapping
 
+## 🗺️ 3.1. To-Be Scenario Mapping
+
+| Actor       | Acción Deseada                                                  | Resultado Esperado                                                | Valor para el Negocio                                  |
+|-------------|------------------------------------------------------------------|--------------------------------------------------------------------|--------------------------------------------------------|
+| Propietario | Responde mensajes de freelancers                                | Coordinan pago                                                     | Mejor experiencia de usuario                           |
+| Propietario | Compara precios y lugares                                       | Hace una mejor elección                                            | Mejores usuarios usando nuestro aplicativo             |
+| Propietario | Obtiene fotos de cómo están dejando el local                    | Siente seguridad del freelancer al que alquiló                     | Mejora la confianza en el aplicativo                   |
+| Freelancer  | Obtiene las llaves del local y se lo da a su propietario        | Tiene la confianza de que este servicio se prestará sin incomodidades | Usuarios más confiados en volver a usarlo             |
+
+---
+
+
 ### 3.2. User Stories
 
 ### 3.3. Impact Mapping
