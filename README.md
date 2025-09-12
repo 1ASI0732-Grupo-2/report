@@ -264,6 +264,19 @@ Para validar la propuesta, se enfocará primero en:
 
 ### 3.2. User Stories
 
+## Epics
+
+| Epic ID | Título                        | Descripción                                                                                                                                     |
+|---------|-------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
+| EP-01   | Desarrollo del Landing Page   | Enfocado en la creación de la página inicial que se presentará al consumidor antes de redirigirlo a la aplicación web principal.               |
+| EP-02   | Desarrollo del Backend        | Cubre la lógica de negocio, estructuras de datos, endpoints y funcionalidades que permiten las operaciones y servicios de la aplicación web.   |
+| EP-03   | Desarrollo del Frontend       | Centrado en la interfaz de usuario, experiencia del cliente y la implementación visual de las funcionalidades para interactuar con el sistema. |
+| EP-04   | Experiencia del desarrollador | Define las metas y metodología de desarrollo, incluyendo herramientas y procesos para asegurar calidad y eficiencia en el proyecto.            |
+| EP-05   | Seguridad de la aplicación    | Garantiza un entorno seguro y confiable para los usuarios, protegiendo datos y privacidad en todas las transacciones.                          |
+
+---
+
+
 ### 3.3. Impact Mapping
 
 ![Mapa](https://media.discordapp.net/attachments/1092294135525949540/1415889866390245448/Plantilla20de20mapa20de20impacto.png?ex=68c4d9b2&is=68c38832&hm=287fad55e251bf91d0d84d192d9e802e543df50f9572803b6c08fe8d2cf8ed32&=&format=webp&quality=lossless&width=1872&height=820)
