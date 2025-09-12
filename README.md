@@ -319,9 +319,9 @@ Este grupo está compuesto por trabajadores independientes, equipos pequeños de
 #### 2.3.1. User Personas
 Para esta sección hemos tomado en cuenta dos User Persona que corresponden a los dos segmentos objetivos nombrados anteriormente: los propietarios de inmuebles y los trabajadores independientes.
 
-![User Persona 1](Imagenes/Propietario%20de%20inmueble.png)
+![User Persona 1](https://github.com/1ASI0732-Grupo-2/report/blob/develop/assets/img/Chapter-I/Propietario%20de%20inmueble.png)
 
-![User Persona 2](Imagenes/Trabajador%20independiente%20_%20freelancer.png)
+![User Persona 2](https://github.com/1ASI0732-Grupo-2/report/blob/develop/assets/img/Chapter-I/Trabajador%20independiente%20_%20freelancer.png)
 
 #### 2.3.2. User Task Matrix
 Estamos considerando los segmentos objetivos "Propietario de Inmueble" y "Trabajador independiente" como fueron definidos anteriormente como User Persona
@@ -355,18 +355,18 @@ Entre las tareas encontradas, la que ambos User Persona coinciden en que es impo
 
 #### 2.3.3. User Journey Mapping
 <p align="center">
-  <img src="Imagenes/Customer Journey Map Brainstorm.png" alt="Customer Journey Map Brainstorm.png" />
+  <img src="https://github.com/1ASI0732-Grupo-2/report/blob/develop/assets/img/Chapter-I/Customer Journey Map Brainstorm.png" alt="Customer Journey Map Brainstorm.png" />
 </p>
 #### 2.3.4. Empathy Mapping
 <p align="center">
-  <img src="Imagenes/Empathy Map Brainstorm.png" alt="Empathy Map Brainstorm.png" />
+  <img src="https://github.com/1ASI0732-Grupo-2/report/blob/develop/assets/img/Chapter-I/Empathy Map Brainstorm.png" alt="Empathy Map Brainstorm.png" />
 </p>
 #### 2.3.5. As-is Scenario Mapping
 **Freelancers**
 ![As-Is Freelancer](Imagenes/as-is-freelancer.jpg)
 
 **Propietarios de Inmuebles**
-![As-Is-Propietario](Imagenes/as-is-propietario.jpg)
+![As-Is-Propietario](https://github.com/1ASI0732-Grupo-2/report/blob/develop/assets/img/Chapter-I/as-is-propietario.jpg)
 
 ### 2.4. Ubiquitous Language
 | Término      | Definición                                                                                                  |
@@ -457,7 +457,7 @@ Entre las tareas encontradas, la que ambos User Persona coinciden en que es impo
 | EP-05   | Seguridad de la aplicacion  | Esta enfocado en ofrecer un entorno seguro y confiable para los usuarios, garantizando la protección de datos y la privacidad en todas las transacciones.                   |
 
 ### 3.3. Impact Mapping
-![ImpactMap](Imagenes/Plantilla%20de%20mapa%20de%20impacto.jpg)
+![ImpactMap](https://github.com/1ASI0732-Grupo-2/report/blob/develop/assets/img/Chapter-I/Plantilla%20de%20mapa%20de%20impacto.jpg)
 ### 3.4. Product Backlog
 
 | ID  | Historia de Usuario                                                                                                                                | Prioridad |
