@@ -24,7 +24,7 @@ Fundamentos de Arquitectura de Software <br>
 | Rodrigo Liberato Saldana | U202215623 |
 | Henry Kevin Diaz Gutierrez | U201819674 |
 | Diego Sebastián Zúñiga Murillo | U202310636 |
-|                          |            |
+| Braulio Rodrigo Torrejon Navarro | U201711828  |
 |                          |            |
 
 </div>
