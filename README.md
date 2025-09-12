@@ -311,6 +311,29 @@ Este grupo está compuesto por trabajadores independientes, equipos pequeños de
 
 
 #### 2.2.2. Registro de entrevistas
+##### Propietarios de Inmuebles
+| **Campo**                | **Detalle** |
+|--------------------------|-------------|
+| **Nombre**               |  |
+| **Entrevistador**        |  |
+| **Edad**                 |  |
+| **Resumen**              | |
+| **Tiempo que empieza**   | 0:00 minutos |
+| **Duración de la entrevista** |  minutos |
+| **URL de la entrevista** | [Ver entrevista]() |
+
+##### Freelancers/Startups
+
+| **Campo**                | **Detalle** |
+|--------------------------|-------------|
+| **Nombre**               |  |
+| **Entrevistador**        | Renzo Miguel Llerena Delgado |
+| **Edad**                 | 21 años |
+| **Resumen**              | |
+| **Tiempo que empieza**   | 0:00 minutos |
+| **Duración de la entrevista** |  minutos |
+| **URL de la entrevista** | [Ver entrevista]() |
+
 
 #### 2.2.3. Análisis de entrevistas
 
