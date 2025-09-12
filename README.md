@@ -264,6 +264,19 @@ Para validar la propuesta, se enfocará primero en:
 
 ### 3.2. User Stories
 
+| User Story ID | Título                  | Descripción                                                                                                                                     | Criterios de Aceptación                                                                                                                                                         | Epic ID |
+|---------------|-------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------|
+| US-01         | Ubicación de inmuebles  | Como freelancer, quiero encontrar la ubicación de los inmuebles para conocer los lugares más cercanos o convenientes                           | **Escenario 1:** Encontrar inmueble por ubicación  
+**Dado que** el freelancer busca un inmueble por ubicación  
+**Entonces** se muestra el inmueble con la ubicación seleccionada | EP-01   |
+| US-02         | Disponibilidad de inmuebles | Como freelancer, quiero saber la disponibilidad actual de un inmueble para hacer una elección correcta del tiempo que necesito rentar         | **Escenario 1:** Ver disponibilidad  
+**Dado que** el freelancer quiere ver la disponibilidad actual del inmueble  
+**Entonces** se muestra la disponibilidad actual del inmueble | EP-01   |
+| US-03         | Filtros de búsqueda     | Como freelancer quiero hacer una búsqueda personalizada tomando en cuenta el aforo, tipo de espacio y servicios ofrecidos para mi equipo       | **Escenario 1:** Búsqueda de inmueble con filtros  
+**Dado que** el freelancer usa los filtros de búsqueda con las especificaciones  
+**Entonces** se muestran todos los inmuebles que cumplen con las especificaciones | EP-01   |
+
+
 ## Epics
 
 | Epic ID | Título                        | Descripción                                                                                                                                     |
