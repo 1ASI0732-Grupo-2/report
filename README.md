@@ -266,7 +266,7 @@ Para validar la propuesta, se enfocará primero en:
 
 ### 3.3. Impact Mapping
 
-![Mapa]([https://media.discordapp.net/attachments/1082800870334419014/1415786757659693106/69ed58d9-a022-48a1-86b3-b7fa8ae451bb.png?ex=68c479ab&is=68c3282b&hm=04b6e642e588c672e684388b42f293d845cd831a6eaf6e0c60d29f8af4bf103f&=&format=webp&quality=lossless&width=574&height=1022](https://media.discordapp.net/attachments/1092294135525949540/1415889866390245448/Plantilla20de20mapa20de20impacto.png?ex=68c4d9b2&is=68c38832&hm=287fad55e251bf91d0d84d192d9e802e543df50f9572803b6c08fe8d2cf8ed32&=&format=webp&quality=lossless&width=1872&height=820)) 
+![Mapa](https://media.discordapp.net/attachments/1092294135525949540/1415889866390245448/Plantilla20de20mapa20de20impacto.png?ex=68c4d9b2&is=68c38832&hm=287fad55e251bf91d0d84d192d9e802e543df50f9572803b6c08fe8d2cf8ed32&=&format=webp&quality=lossless&width=1872&height=820)
 
 ### 3.4. Product Backlog
 
