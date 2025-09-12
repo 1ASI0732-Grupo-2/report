@@ -357,13 +357,17 @@ Entre las tareas encontradas, la que ambos User Persona coinciden en que es impo
 <p align="center">
   <img src="https://github.com/1ASI0732-Grupo-2/report/blob/develop/assets/img/Chapter-I/Customer Journey Map Brainstorm.png" alt="Customer Journey Map Brainstorm.png" />
 </p>
+
 #### 2.3.4. Empathy Mapping
+
 <p align="center">
   <img src="https://github.com/1ASI0732-Grupo-2/report/blob/develop/assets/img/Chapter-I/Empathy Map Brainstorm.png" alt="Empathy Map Brainstorm.png" />
 </p>
+
 #### 2.3.5. As-is Scenario Mapping
+
 **Freelancers**
-![As-Is Freelancer](Imagenes/as-is-freelancer.jpg)
+![As-Is-Freelancer](https://github.com/1ASI0732-Grupo-2/report/blob/develop/assets/img/Chapter-I/as-is-freelancer.jpg)
 
 **Propietarios de Inmuebles**
 ![As-Is-Propietario](https://github.com/1ASI0732-Grupo-2/report/blob/develop/assets/img/Chapter-I/as-is-propietario.jpg)
