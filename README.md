@@ -19,13 +19,13 @@ Fundamentos de Arquitectura de Software <br>
 
 <div align="center">
 
-| **Member**               | **Code**   |
-| ------------------------ | ---------- |
-| Rodrigo Liberato Saldana | U202215623 |
-| Renzo Miguel Llerena Delgado     | U202312399  |
-| Henry Kevin Diaz Gutierrez     | U201819674            |
-| Diego Sebastián Zúñiga Murillo |  U202310636        |
-|                          |            |
+| **Member**                     | **Code**   |
+| ------------------------------ | ---------- |
+| Rodrigo Liberato Saldana       | U202215623 |
+| Renzo Miguel Llerena Delgado   | U202312399 |
+| Henry Kevin Diaz Gutierrez     | U201819674 |
+| Diego Sebastián Zúñiga Murillo | U202310636 |
+|                                |            |
 
 </div>
 
@@ -103,14 +103,14 @@ Considerando la flexibilidad y adaptabilidad como factores clave en el crecimien
 
 #### 1.1.2. Perfiles de integrantes del equipo
 
-| Foto                                                                                                                                                                                                                               | Alumno                   | Descripción                                                                                                                                                                                                            |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ![Rodrigo](https://media.discordapp.net/attachments/766316535290789908/1414761032928464907/rodrigo.png?ex=68c0be63&is=68bf6ce3&hm=ff615cb9f2f6cd66256a62ab4857639fcf3cd26cacefcbd283c385287daf8c64&=&format=webp&quality=lossless) | Liberato Saldaña Rodrigo | Estudiante de Ingeniería de Software que planea enfocarse en Ciencia de Datos y Ciberseguridad. Planea dar apoyo activo al grupo y asumir el rol de líder para encaminar al equipo hacia el cumplimiento de sus metas. |
-|       ![Renzo](https://github.com/1ASI0732-Grupo-2/report/blob/develop/assets/img/Chapter-I/RenzoLlerena.png?raw=true)                                                                                                                                                                                                                             |     Renzo Miguel Llerena Delgado                     |      Me destaco por ser responsable, trabajador y tener un enfoque en la perfección y la calidad en todos mis proyectos. Disfruto trabajando en equipo, colaborando para alcanzar mis objetivos y siempre buscando superar expectativas. Me mantengo en constante aprendizaje, dispuesto a enfrentar desafíos con una actitud proactiva y resolutiva.                                                               |
-|![Henry](https://github.com/1ASI0732-Grupo-2/report/blob/develop/assets/img/Chapter-I/Henry.png?raw=true)                |   Henry Kevin Diaz Gutierrez                       |  Soy estudiante de Ingenieria de Software en la UPC.Me caracterizo por ser creativo , cumplir con lo que se me brinda y ayudar a resolver problemas si se presenta.Desde siempre me intereso el tema de los videojuegos y de el tipo de diseño que se empleaba, eso hizo que me guste el desarrollo de software.         |
-|  ![Diego](https://media.discordapp.net/attachments/1082800870334419014/1415786757659693106/69ed58d9-a022-48a1-86b3-b7fa8ae451bb.png?ex=68c479ab&is=68c3282b&hm=04b6e642e588c672e684388b42f293d845cd831a6eaf6e0c60d29f8af4bf103f&=&format=webp&quality=lossless&width=574&height=1022)                                                                                                                                                                                                                                  | Diego Sebastián Zúñiga Murillo |  Estudiante en el sexto ciclo de la carrera de Ingenieria de Software que busca expandir sus conocimientos en diversas tecnologías, soy una persona participativa y colaborativa y siempre me adapto rápido a las situaciones de cambio, estoy preparado para afrontar las adversidades que este trabajo signifca para mi y como grupo                                                                                                                                                |
-|                                                                                                                                                                                                                                    |                          |                                                                                                                                                                                                                        |
-|                                                                                                                                                                                                                                    |                          |                                                                                                                                                                                                                        |
+| Foto                                                                                                                                                                                                                                                                                 | Alumno                         | Descripción                                                                                                                                                                                                                                                                                                                                      |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| ![Rodrigo](https://media.discordapp.net/attachments/766316535290789908/1414761032928464907/rodrigo.png?ex=68c0be63&is=68bf6ce3&hm=ff615cb9f2f6cd66256a62ab4857639fcf3cd26cacefcbd283c385287daf8c64&=&format=webp&quality=lossless)                                                   | Liberato Saldaña Rodrigo       | Estudiante de Ingeniería de Software que planea enfocarse en Ciencia de Datos y Ciberseguridad. Planea dar apoyo activo al grupo y asumir el rol de líder para encaminar al equipo hacia el cumplimiento de sus metas.                                                                                                                           |
+| ![Renzo](https://github.com/1ASI0732-Grupo-2/report/blob/develop/assets/img/Chapter-I/RenzoLlerena.png?raw=true)                                                                                                                                                                     | Renzo Miguel Llerena Delgado   | Me destaco por ser responsable, trabajador y tener un enfoque en la perfección y la calidad en todos mis proyectos. Disfruto trabajando en equipo, colaborando para alcanzar mis objetivos y siempre buscando superar expectativas. Me mantengo en constante aprendizaje, dispuesto a enfrentar desafíos con una actitud proactiva y resolutiva. |
+| ![Henry](https://github.com/1ASI0732-Grupo-2/report/blob/develop/assets/img/Chapter-I/Henry.png?raw=true)                                                                                                                                                                            | Henry Kevin Diaz Gutierrez     | Soy estudiante de Ingenieria de Software en la UPC.Me caracterizo por ser creativo , cumplir con lo que se me brinda y ayudar a resolver problemas si se presenta.Desde siempre me intereso el tema de los videojuegos y de el tipo de diseño que se empleaba, eso hizo que me guste el desarrollo de software.                                  |
+| ![Diego](https://media.discordapp.net/attachments/1082800870334419014/1415786757659693106/69ed58d9-a022-48a1-86b3-b7fa8ae451bb.png?ex=68c479ab&is=68c3282b&hm=04b6e642e588c672e684388b42f293d845cd831a6eaf6e0c60d29f8af4bf103f&=&format=webp&quality=lossless&width=574&height=1022) | Diego Sebastián Zúñiga Murillo | Estudiante en el sexto ciclo de la carrera de Ingenieria de Software que busca expandir sus conocimientos en diversas tecnologías, soy una persona participativa y colaborativa y siempre me adapto rápido a las situaciones de cambio, estoy preparado para afrontar las adversidades que este trabajo signifca para mi y como grupo            |
+|                                                                                                                                                                                                                                                                                      |                                |                                                                                                                                                                                                                                                                                                                                                  |
+|                                                                                                                                                                                                                                                                                      |                                |                                                                                                                                                                                                                                                                                                                                                  |
 
 ### 1.2. Solution Profile
 
@@ -212,6 +212,7 @@ Para validar la propuesta, se enfocará primero en:
 | **8. What’s the least amount of work we need to do to learn the next most important thing?** | Realizar entrevistas, recolectar feedback y pruebas de usabilidad para medir la relevancia de las reservas de espacios tanto para usuarios como para propietarios.                                                                                                                                                                                                                                                             |
 
 ### 1.3. Segmentos objetivo
+
 En el proyecto nos enfocamos en dos segmentos principales de usuarios, directamente relacionados con el dominio del problema: los propietarios de espacios de coworking y los usuarios que buscan dichos espacios, como freelancers y startups. A continuación, se describen en detalle ambos perfiles.
 
 ### Propietarios de Inmuebles (Coworkings)
@@ -265,7 +266,6 @@ Este grupo está compuesto por trabajadores independientes, equipos pequeños de
 - Información clara sobre servicios incluidos (wifi, café, salas, etc.).
 - Reseñas de otros usuarios para tomar decisiones confiables.
 
-
 ---
 
 ## Capítulo II: Requirements Elicitation & Analysis
@@ -310,37 +310,38 @@ Este grupo está compuesto por trabajadores independientes, equipos pequeños de
 - 11. Que funcionalidades cree que debería tener una aplicación como esta?
 - 12. ¿De que manera buscaría hacer este espacio uno seguro para ambas partes?
 
-
 #### 2.2.2. Registro de entrevistas
+
 ##### Propietarios de Inmuebles
-| **Campo**                | **Detalle** |
-|--------------------------|-------------|
-| **Nombre**               |  |
-| **Entrevistador**        |  |
-| **Edad**                 |  |
-| **Resumen**              | |
-| **Tiempo que empieza**   | 0:00 minutos |
-| **Duración de la entrevista** |  minutos |
-| **URL de la entrevista** | [Ver entrevista]() |
+
+| **Campo**                     | **Detalle**                                                                                                                                                                                                                                                                                                                                   |
+| ----------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Nombre**                    | Alejandra Izaguirre                                                                                                                                                                                                                                                                                                                           |
+| **Entrevistador**             | Rodrigo Liberato                                                                                                                                                                                                                                                                                                                              |
+| **Edad**                      | 25                                                                                                                                                                                                                                                                                                                                            |
+| **Resumen**                   | La entrevistada realizo una entrevista donde comparte sus expectativas acerca de una aplicacion que tenga la funcionalidad descrita con anterioridad y las funcionalidades que esperaria que tuviera, ademas de brindar informacion desde su experiencia para que la aplicacion siga un buen camino escuchando activamente a los usuarios.    |
+| **Tiempo que empieza**        | 0:00 minutos                                                                                                                                                                                                                                                                                                                                  |
+| **Duración de la entrevista** | 4:26 minutos                                                                                                                                                                                                                                                                                                                                  |
+| **URL de la entrevista**      | [Ver entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202215623_upc_edu_pe/EZQz2DANI71MkOrpc1fJq3EBIRLd8PZ4sQAEEFybRm3YOg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=t6qB71) |
 
 ##### Freelancers/Startups
 
-| **Campo**                | **Detalle** |
-|--------------------------|-------------|
-| **Nombre**               | Renato Guillermo Calvo Yalan |
-| **Entrevistador**        | Renzo Miguel Llerena Delgado |
-| **Edad**                 | 21 años |
-| **Resumen**              | El entrevistado compartio su necesidad de tener espacion coworking para trabajar con su equipo, ya que en su casa carece del espacio indicado para poder trabajar y también compartió su punto de vista sobre cómo debería ser nuestra propuesta bajo su propio criterio teniendo, por encima de todo, ubicaciones accesibles para el en San Isidro|
-| **Tiempo que empieza**   | 0:00 minutos |
-| **Duración de la entrevista** | 4:29 minutos |
-| **URL de la entrevista** | [Ver entrevista](https://drive.google.com/file/d/18nyxMf-ZdvX-bkOw9eGHqbmN1OXbzshb/view?usp=sharing) |
-
+| **Campo**                     | **Detalle**                                                                                                                                                                                                                                                                                                                                         |
+| ----------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Nombre**                    | Renato Guillermo Calvo Yalan                                                                                                                                                                                                                                                                                                                        |
+| **Entrevistador**             | Renzo Miguel Llerena Delgado                                                                                                                                                                                                                                                                                                                        |
+| **Edad**                      | 21 años                                                                                                                                                                                                                                                                                                                                             |
+| **Resumen**                   | El entrevistado compartio su necesidad de tener espacion coworking para trabajar con su equipo, ya que en su casa carece del espacio indicado para poder trabajar y también compartió su punto de vista sobre cómo debería ser nuestra propuesta bajo su propio criterio teniendo, por encima de todo, ubicaciones accesibles para el en San Isidro |
+| **Tiempo que empieza**        | 0:00 minutos                                                                                                                                                                                                                                                                                                                                        |
+| **Duración de la entrevista** | 4:29 minutos                                                                                                                                                                                                                                                                                                                                        |
+| **URL de la entrevista**      | [Ver entrevista](https://drive.google.com/file/d/18nyxMf-ZdvX-bkOw9eGHqbmN1OXbzshb/view?usp=sharing)                                                                                                                                                                                                                                                |
 
 #### 2.2.3. Análisis de entrevistas
 
 ### 2.3. Needfinding
 
 #### 2.3.1. User Personas
+
 Para esta sección hemos tomado en cuenta dos User Persona que corresponden a los dos segmentos objetivos nombrados anteriormente: los propietarios de inmuebles y los trabajadores independientes.
 
 ![User Persona 1](https://github.com/1ASI0732-Grupo-2/report/blob/develop/assets/img/Chapter-I/Propietario%20de%20inmueble.png)
@@ -348,6 +349,7 @@ Para esta sección hemos tomado en cuenta dos User Persona que corresponden a lo
 ![User Persona 2](https://github.com/1ASI0732-Grupo-2/report/blob/develop/assets/img/Chapter-I/Trabajador%20independiente%20_%20freelancer.png)
 
 #### 2.3.2. User Task Matrix
+
 Estamos considerando los segmentos objetivos "Propietario de Inmueble" y "Trabajador independiente" como fueron definidos anteriormente como User Persona
 
 |                                                    | **Propietario de Inmueble** |              | **Trabajador independiente** |              |
@@ -378,6 +380,7 @@ Frecuencia
 Entre las tareas encontradas, la que ambos User Persona coinciden en que es importante y frecuente son tanto el contactarse mutuamente como el acordar precio y forma de pago, se debe a que ambos buscan que el préstamo del servicio se concrete y bajo condiciones favorables para ambos. Además, cada User Persona tiene su tarea particular: para el propietario es importante ofrecer su local y para el freelancer es importante buscar espacios de trabajo. Por último tenemos un tarea particular frecuente para el freelancer la cual es comparar diferentes ofertas de espacios de trabajo para ver lo que más se ajuste a su presupuesto y cuente con las características necesarias. Mientras que para el propietario, esto lo hace rara vez cuando desee ver qué precios ponen sus competidores.
 
 #### 2.3.3. User Journey Mapping
+
 <p align="center">
   <img src="https://github.com/1ASI0732-Grupo-2/report/blob/develop/assets/img/Chapter-I/Customer Journey Map Brainstorm.png" alt="Customer Journey Map Brainstorm.png" />
 </p>
@@ -397,6 +400,7 @@ Entre las tareas encontradas, la que ambos User Persona coinciden en que es impo
 ![As-Is-Propietario](https://github.com/1ASI0732-Grupo-2/report/blob/develop/assets/img/Chapter-I/as-is-propietario.jpg)
 
 ### 2.4. Ubiquitous Language
+
 | Término      | Definición                                                                                                  |
 | ------------ | ----------------------------------------------------------------------------------------------------------- |
 | Workspace    | Un espacio físico disponible para alquiler como sitio de trabajo.                                           |
@@ -412,11 +416,13 @@ Entre las tareas encontradas, la que ambos User Persona coinciden en que es impo
 | Cancellation | La anulación de una reserva, por parte de Host o Renter.                                                    |
 | Contract     | El contrato que se realiza entre Renter y Host.                                                             |
 | Review       | Las reseñas dadas del Renter al Host después del uso del Workspace, visibles para otros usuarios.           |
+
 ---
 
 ## Capítulo III: Requirements Specification
 
 ### 3.1. To-Be Scenario Mapping
+
 # To-Be Scenario Mapping
 
 | Actor       | Acción Deseada                               | Resultado Esperado                                               | Valor para el Negocio                         |
@@ -425,7 +431,6 @@ Entre las tareas encontradas, la que ambos User Persona coinciden en que es impo
 | Freelancer  | Compara precios y lugares                    | Obtiene una mejor elección                                       | Ese cliente seguirá usando nuestro aplicativo |
 | Propietario | Obtiene fotos de cómo están dejando el local | Siente seguridad del freelancer al que alquiló                   | Mayor confianza en el aplicativo              |
 | Freelancer  | Lee reseñas del local y de su propietario    | Tiene la confianza de que será una experiencia sin incomodidades | Usuarios más confiados en volver a usarlo     |
-
 
 ### 3.2. User Stories
 
@@ -485,7 +490,9 @@ Entre las tareas encontradas, la que ambos User Persona coinciden en que es impo
 | EP-05   | Seguridad de la aplicacion  | Esta enfocado en ofrecer un entorno seguro y confiable para los usuarios, garantizando la protección de datos y la privacidad en todas las transacciones.                   |
 
 ### 3.3. Impact Mapping
+
 ![ImpactMap](https://github.com/1ASI0732-Grupo-2/report/blob/develop/assets/img/Chapter-I/Plantilla%20de%20mapa%20de%20impacto.jpg)
+
 ### 3.4. Product Backlog
 
 | ID  | Historia de Usuario                                                                                                                                | Prioridad |
