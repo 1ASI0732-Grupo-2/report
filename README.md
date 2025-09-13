@@ -609,3 +609,11 @@ Entre las tareas encontradas, la que ambos User Persona coinciden en que es impo
 ## Final
 
 ### Avance de Conclusiones, Bibliografía y Anexos (links)
+
+### Conclusión TB1: 
+WorkStation llega a resolver un problema que todo freelancer o dueño de coworking conoce demasiado bien: la fragmentación caótica de la oferta y la demanda. Hoy, conseguir un espacio de trabajo es un vía crucis entre mensajes en WhatsApp, consultas en grupos de Facebook o páginas web que nunca actualizan la disponibilidad. Del otro lado, los propietarios lidian con reservas poco serias, pagos informales y un control limitado sobre lo que pasa en sus espacios. Esa desconexión hace perder tiempo, clientes y, sobre todo, dinero.
+
+La propuesta es simple pero potente: un marketplace centralizado que no necesita alquilar ni operar oficinas propias, sino conectar a ambas partes de manera transparente y eficiente. Para los usuarios, WorkStation ofrece comodidad y confianza: búsqueda con filtros claros (precio, ubicación, servicios), disponibilidad actualizada en vivo y pagos seguros desde un solo lugar. Para los dueños de coworking, la app representa un tablero de control que incluye calendario, reglas visibles para inquilinos, reseñas verificadas y menos carga administrativa. En resumen, cada clic suma productividad y menos dolores de cabeza.
+
+La magia está en convertir interacciones dispersas y poco confiables en un flujo digital directo y fluido: encontrar, comparar, reservar y pagar en minutos. Pasamos de la incertidumbre del clásico “¿hola, sigue disponible?” a una experiencia estandarizada de “reservado en 3 clics”, donde cada parte sabe exactamente qué esperar. Eso no solo eleva la satisfacción del usuario, también genera más ocupación y confianza para los hosts, logrando que el mercado del coworking en ciudades como Lima, Bogotá o CDMX tenga por fin una solución a la altura del nuevo mundo laboral.
+
