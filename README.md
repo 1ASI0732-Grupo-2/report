@@ -110,7 +110,7 @@ Considerando la flexibilidad y adaptabilidad como factores clave en el crecimien
 | ![Henry](https://github.com/1ASI0732-Grupo-2/report/blob/develop/assets/img/Chapter-I/Henry.png?raw=true)                                                                                                                                                                            | Henry Kevin Diaz Gutierrez     | Soy estudiante de Ingenieria de Software en la UPC.Me caracterizo por ser creativo , cumplir con lo que se me brinda y ayudar a resolver problemas si se presenta.Desde siempre me intereso el tema de los videojuegos y de el tipo de diseño que se empleaba, eso hizo que me guste el desarrollo de software.                                  |
 | ![Diego](https://media.discordapp.net/attachments/1082800870334419014/1415786757659693106/69ed58d9-a022-48a1-86b3-b7fa8ae451bb.png?ex=68c479ab&is=68c3282b&hm=04b6e642e588c672e684388b42f293d845cd831a6eaf6e0c60d29f8af4bf103f&=&format=webp&quality=lossless&width=574&height=1022) | Diego Sebastián Zúñiga Murillo | Estudiante en el sexto ciclo de la carrera de Ingenieria de Software que busca expandir sus conocimientos en diversas tecnologías, soy una persona participativa y colaborativa y siempre me adapto rápido a las situaciones de cambio, estoy preparado para afrontar las adversidades que este trabajo signifca para mi y como grupo            |
 |![Braulio](https://media.discordapp.net/attachments/1092294135525949540/1416127872682164314/image.png?ex=68c5b75b&is=68c465db&hm=8ff06e48619ca4e4c4c4cb601db661f18d69cb47a6ca4d8b39670620f8a9af73&=&format=webp&quality=lossless)| Braulio Torrejon Navarro | Estudiante de Ingenieria de software del 7mo ciclo, planeo dar lo mejor de mi en este grupo, tambien deseo aprender mucho del curso para mi futuro profesional                                                                                                                                                                                                                                                  |
-|                                                                                                                                                                                                                                                                                      |                                |                                                                                                                                                                                                                                                                                                                                                  |
+
 
 ### 1.2. Solution Profile
 
@@ -419,6 +419,26 @@ Oficinas YA! es una plataforma líder en América Latina especializada en la�
 | **URL de la entrevista**      | [Ver entrevista](https://drive.google.com/file/d/1J5AS7eGplnLPDjFKJDMXJjuVzqm2OcxO/view?usp=sharing)                                                                                                                                                                                                                                                |
 
 #### 2.2.3. Análisis de entrevistas
+
+**Segmento 1: Propietarios de espacios de coworking**
+
+Los entrevistados pertenecientes a este segmento manifestaron una preocupación recurrente por la seguridad, el orden y el respeto por las normas del lugar por parte de los usuarios. En particular, se hizo hincapié en la necesidad de que las personas que acceden a sus propiedades respeten las condiciones establecidas desde el inicio, sin alterar el entorno ni generar conflictos. La funcionalidad más valorada en la aplicación sería la capacidad de gestionar contratos, registrar condiciones de uso, y garantizar que los usuarios estén informados y comprometidos con las reglas del espacio.
+
+Además, se destaca el interés de este segmento en que la aplicación permita una comunicación clara entre anfitriones y usuarios, así como herramientas que contribuyan a preservar el orden y brindar una experiencia segura y controlada. Las entrevistas también reflejan una disposición positiva a colaborar con el desarrollo del producto, aportando su experiencia directa para mejorar la propuesta de valor de la plataforma.
+
+**Segmento 2: Usuarios que buscan espacios de coworking**
+
+Este grupo estuvo conformado principalmente por profesionales jóvenes que residen en distritos urbanos como Comas y San Juan de Lurigancho, donde existe una demanda latente por espacios de trabajo adecuados. Los entrevistados señalaron que en sus hogares no cuentan con condiciones óptimas para desarrollar sus actividades laborales, y por ello consideran valioso disponer de espacios accesibles, bien equipados y funcionales para trabajar de manera individual o colaborativa.
+
+La preferencia por espacios tranquilos, con buena conexión a internet y opciones de alquiler por horas o días, fue destacada como un factor decisivo. Asimismo, los usuarios esperan que la aplicación incluya funcionalidades clave como: búsqueda y comparación de espacios disponibles, reservas en línea, y mecanismos de verificación y calificación, que garanticen la seguridad y la calidad del servicio.
+
+Este segmento demuestra una actitud proactiva hacia el uso de tecnología para facilitar sus dinámicas laborales, y valora especialmente las herramientas digitales que simplifican procesos y ofrecen transparencia en las transacciones.
+
+**Conclusionesl analisis**
+
+El análisis de las entrevistas indica que tanto los propietarios de espacios de coworking como los usuarios que buscan estos espacios comparten un interés común por la seguridad, el orden y la facilidad de uso. Sin embargo, cada segmento prioriza diferentes funcionalidades de la aplicación: mientras que los propietarios se enfocan en el control del entorno y cumplimiento de normas, los usuarios valoran la comodidad, accesibilidad y confianza en el servicio.
+
+Esta información sugiere que el desarrollo de WorkStation debe considerar una doble experiencia de usuario, personalizada para anfitriones y para trabajadores, con herramientas específicas que respondan a las necesidades de cada grupo. Escuchar activamente las experiencias y recomendaciones de ambos perfiles será fundamental para construir una aplicación útil, escalable y alineada con las dinámicas reales del mercado.
 
 ### 2.3. Needfinding
 
