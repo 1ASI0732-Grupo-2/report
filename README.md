@@ -92,6 +92,34 @@ Fundamentos de Arquitectura de Software <br>
 - [3.4. Product Backlog](#34-product-backlog)
 
 ---
+## Capítulo IV: Design
+
+- [4.1 Design Concepts, ViewPoints & ER Diagrams](#41-design-concepts-viewpoints--er-diagrams)
+  - [4.1.1 Principles Statements](#411-principles-statements)
+  - [4.1.2 Approaches Statements Architectural Styles & Patterns](#412-approaches-statements-architectural-styles--patterns)
+  - [4.1.3 Context Diagram](#413-context-diagram)
+  - [4.1.4 Approach driven ViewPoints Diagrams](#414-approach-driven-viewpoints-diagrams)
+  - [4.1.5 Relational/Non Relational Database Diagram](#415-relationalnon-relational-database-diagram)
+  - [4.1.6 Design Patterns](#416-design-patterns)
+  - [4.1.7 Tactics](#417-tactics)
+
+- [4.2 Architectural Drivers](#42-architectural-drivers)
+  - [4.1.8 Design Purpose](#418-design-purpose)
+  - [4.1.9 Primary Functionality (Primary User Stories)](#419-primary-functionality-primary-user-stories)
+  - [4.1.10 Quality Attribute Scenarios](#4110-quality-attribute-scenarios)
+  - [4.1.11 Constraints](#4111-constraints)
+  - [4.1.12 Architectural Concerns](#4112-architectural-concerns)
+
+- [4.3 ADD Iterations](#43-add-iterations)
+  - [4.2.1 Iteration 1: Workstation Office Recommendation](#421-iteration-1-workstation-office-recommendation)
+    - [4.2.1.1 Architectural Design Backlog 1](#4211-architectural-design-backlog-n)
+    - [4.2.1.2 Establish Iteration Goal by Selecting Drivers](#4212-establish-iteration-goal-by-selecting-drivers)
+    - [4.2.1.3 Choose One or More Elements of the System to Refine](#4213-choose-one-or-more-elements-of-the-system-to-refine)
+    - [4.2.1.4 Choose One or More Design Concepts That Satisfy the Selected Drivers](#4214-choose-one-or-more-design-concepts-that-satisfy-the-selected-drivers)
+    - [4.2.1.5 Instantiate Architectural Elements, Allocate Responsibilities, and Define Interfaces](#4215-instantiate-architectural-elements-allocate-responsibilities-and-define-interfaces)
+    - [4.2.1.6 Sketch Views (C4 & UML) and Record Design Decisions](#4216-sketch-views-c4--uml-and-record-design-decisions)
+    - [4.2.1.7 Analysis of Current Design and Review Iteration Goal (Kanban Board)](#4217-analysis-of-current-design-and-review-iteration-goal-kanban-board)
+
 
 - [Avance de Conclusiones, Bibliografía y Anexos (links)](#avance-de-conclusiones-bibliografía-y-anexos-links)
 
@@ -610,6 +638,38 @@ Entre las tareas encontradas, la que ambos User Persona coinciden en que es impo
 | 7   | Como freelancer quiero tener la certeza de que la aplicacion web tenga un sistema de pago seguro                                                   | Alta      |
 
 ---
+
+# Capítulo 4
+
+## 4.1 Design Concepts, ViewPoints & ER Diagrams
+### 4.1.1 Principles Statements
+### 4.1.2 Approaches Statements Architectural Styles & Patterns
+### 4.1.3 Context Diagram
+### 4.1.4 Approach driven ViewPoints Diagrams
+### 4.1.5 Relational/Non Relational Database Diagram
+### 4.1.6 Design Patterns
+### 4.1.7 Tactics
+
+## 4.2 Architectural Drivers
+### 4.1.8 Design Purpose
+### 4.1.9 Primary Functionality (Primary User Stories)
+### 4.1.10 Quality Attribute Scenarios
+### 4.1.11 Constraints
+### 4.1.12 Architectural Concerns
+
+## 4.3 ADD Iterations
+### 4.2.1 Iteration 1: Workstation Office Recommendation
+#### 4.2.1.1 Architectural Design Backlog 1
+#### 4.2.1.2 Establish Iteration Goal by Selecting Drivers
+#### 4.2.1.3 Choose One or More Elements of the System to Refine
+#### 4.2.1.4 Choose One or More Design Concepts That Satisfy the Selected Drivers
+#### 4.2.1.5 Instantiate Architectural Elements, Allocate Responsibilities, and Define Interfaces
+#### 4.2.1.6 Sketch Views (C4 & UML) and Record Design Decisions
+#### 4.2.1.7 Analysis of Current Design and Review Iteration Goal (Kanban Board)
+
+
+
+
 
 ## Final
 
