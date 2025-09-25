@@ -709,26 +709,41 @@ Por ultimo, la logica de recomendaciones se debe poder utilizar datos de diferen
 
 #### 4.2.1.2 Establish Iteration Goal by Selecting Drivers
 
-En este punto, definiremos los Drivers necesarios para establecer la meta de esta iteracion y de las siguientes. Asimismo, estas metas estaran alineadas a los atributos anteriormente mencionados para poder cumplir aquellos atributos de calidad y proporcionar un producto que cumpla con los estandares establecidos por el equipo.
+En este punto, definiremos los Drivers necesarios para establecer la meta de esta iteración y de las siguientes. Asimismo, estas metas estarán alineadas a los atributos anteriormente mencionados para poder cumplir aquellos atributos de calidad y proporcionar un producto que cumpla con los estándares establecidos por el equipo.
 
-**Meta de Modificabilidad**
+**Meta de Modificabilidad**  
+Diseñar la arquitectura del motor de recomendaciones de manera modular, permitiendo incorporar fácilmente nuevos criterios de recomendación sin necesidad de reestructurar el sistema completo.
 
-**Meta de Usabilidad**
+**Meta de Usabilidad**  
+Proporcionar una interfaz de búsqueda simple e intuitiva que permita a los usuarios encontrar oficinas basadas en ubicación, rating y servicios clave, ofreciendo resultados claros y ordenados que faciliten la toma de decisiones.
 
-**Meta de Seguridad**
+**Meta de Seguridad**  
+Implementar un mecanismo básico de autenticación y autorización con JWT y OAuth 2.0, asegurando que solo usuarios registrados puedan acceder a funcionalidades sensibles como recomendaciones personalizadas, mensajería y valoraciones.
 
-**Meta de Interoperabilidad**
+**Meta de Interoperabilidad**  
+Definir APIs REST estandarizadas para los contextos de Usuarios, Oficinas, Ratings y Mensajería, permitiendo la integración futura con servicios externos (ej. pasarelas de pago, proveedores de geolocalización, o plataformas de terceros).
 
-**Objetivo de la Iteracion 1**
-
+**Objetivo de la Iteración 1**  
+Construir un MVP funcional que permita a los usuarios autenticados buscar y recibir recomendaciones de oficinas basadas en ubicación y rating, con capacidad de aplicar filtros iniciales (capacidad, servicios), registrar valoraciones y enviar mensajes básicos a propietarios. Esto sentará la base técnica y funcional para escalar el producto en siguientes iteraciones.
 
 #### 4.2.1.3 Choose One or More Elements of the System to Refine
 
-Luego de haber revisado y establecido los Drivers para nuestra solucion, se eligio uno de estos con el fin de hacer un refinamiento. Este elemento es:
+Luego de haber revisado y establecido los Drivers para nuestra solución, se eligió uno de estos con el fin de hacer un refinamiento. Este elemento es: el motor de recomendaciones (Search Context).
 
+**Razón de la elección**  
+El motor de recomendaciones es el núcleo funcional de la primera iteración y el principal diferenciador competitivo de la plataforma WorkStation. Refinarlo desde el inicio permite:
 
+- **Alineación con los Drivers**:  
+  - *Modificabilidad*: diseñar la lógica de recomendaciones como un servicio modular y extensible.  
+  - *Usabilidad*: garantizar que los usuarios reciban resultados claros, ordenados y relevantes.  
+  - *Seguridad*: restringir recomendaciones personalizadas solo a usuarios autenticados.  
+  - *Interoperabilidad*: exponer las recomendaciones mediante un endpoint REST estandarizado que pueda integrarse con otros módulos o servicios externos en el futuro.
 
-**Arquitectura de Microservicios**
+- **Impacto en la experiencia del usuario**: si las recomendaciones no son rápidas, precisas o fáciles de entender, el valor de la plataforma disminuye drásticamente.
+
+- **Dependencia de otros contextos**: el motor requiere datos de *Usuarios* (preferencias), *Offices* (información de espacios) y *Rating* (calidad de oficinas), lo que lo convierte en un punto central que asegura la coherencia e integración inicial entre los bounded contexts.
+
+Por estas razones, refinar el **motor de recomendaciones** garantiza que la primera iteración entregue valor tangible y escalable, sentando la base para las funcionalidades futuras.
 
 #### 4.2.1.4 Choose One or More Design Concepts That Satisfy the Selected Drivers
 
