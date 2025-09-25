@@ -659,12 +659,86 @@ Entre las tareas encontradas, la que ambos User Persona coinciden en que es impo
 
 ## 4.3 ADD Iterations
 ### 4.2.1 Iteration 1: Workstation Office Recommendation
+
 #### 4.2.1.1 Architectural Design Backlog 1
+
+Para esta primera iteracion del diseño de Arquitectura de Workstation, el equipo se centrará en enfocar las historias de usuario en el desarrollo de las recomendaciones de las oficinas dependiendo de su rating, ubicacion, necesidades o preferencias del usuario con un efoque funcional y escalable. Los principales atributos que se pudieron identificar fueron:
+
+- Modificabilidad:
+Para este punto lo que se busca es permitir ajustes o modificaciones en los espacios sin impactar el resto del sistema.
+- Usabilidad:
+La experiencia durante la busqueda en el contexto de Searching debe ser intuitiva y clara. El UI responsive, filtros dinamicos y catching eficiente
+- Seguridad:
+Para la seguridad se requiere una autenticacion con OAuth 2.0 por roles y proteccion contra inyeccion de consultas
+- Interoperabilidad:
+Por ultimo, la logica de recomendaciones se debe poder utilizar datos de diferentes fuentes, para ello el uso de microservicios.
+
+**Historias de Usuario**
+
+- Como **usuario**, quiero ver oficinas recomendadas con capacidad adecuada y alto rating para asegurar comodidad de mi equipo.
+- Como **Propietario de oficina**, quiero que mi espacio sea recomendado a usuarios con necesidades compatibles para aumentar la tasa de reservas.
+- Como **usuario**, quiero ver oficinas con detalles claros (ubicación, capacidad, costo y servicios) para comparar opciones fácilmente.
+- Como **usuario**, quiero que el sistema me recomiende oficinas cercanas con buen rating y que se ajusten a mis preferencias, para ahorrar tiempo al elegir
+- Como **usuario**, quiero ver el historial de mensajes con cada propietario, para tener contexto antes de tomar decisiones.
+- Como **propietario de oficina**, quiero asegurar que el sistema de mensajería filtre spam o mensajes inapropiados.
+
+**Tareas iniciales del backlog de la arquitectura**
+
+| **Contexto**      | **Tarea**                                                                                      | **Descripción** |
+|--------------------|------------------------------------------------------------------------------------------------|-----------------|
+| **Usuarios**       | Diseñar entidad `User` con campos de perfil y preferencias                                     | Modelo con datos básicos (nombre, email, rol, preferencias de búsqueda). |
+|                    | Implementar autenticación básica con JWT                                                       | Seguridad inicial para proteger endpoints. |
+|                    | Exponer endpoint `GET /users/{id}/preferences`                                                 | Permitir que el motor de recomendaciones acceda a las preferencias. |
+| **Property Owner** | Definir entidad `PropertyOwner`                                                                | Modelo con datos del propietario. |
+|                    | Implementar CRUD de oficinas ligadas al propietario (`/owners/{id}/offices`)                   | Crear, editar y eliminar oficinas. |
+|                    | Validar disponibilidad y capacidad en la creación de oficinas                                  | Evitar inconsistencias en reservas futuras. |
+| **Offices**        | Modelar entidad `Office` con ubicación, capacidad, costo y servicios                           | Incluyendo soporte geoespacial. |
+|                    | Crear endpoint básico `/offices` con filtros iniciales                                         | Filtrar por ubicación, capacidad y servicios. |
+| **Rating**         | Crear entidad `Rating` (userId, officeId, score, comment)                                      | Asociar puntuaciones y comentarios. |
+|                    | Implementar endpoint `POST /offices/{id}/ratings`                                              | Permitir registrar valoraciones. |
+|                    | Implementar cálculo de promedio y normalización de puntuaciones                                | Exponerlo en `/offices/{id}` y en recomendaciones. |
+| **Search**         | Diseñar servicio `RecommendationService` extensible                                            | Permitir agregar criterios de búsqueda sin romper arquitectura. |
+|                    | Implementar endpoint `GET /search/recommendations`                                             | Recibir filtros y devolver resultados. |
+|                    | Integrar Redis para caching de resultados frecuentes                                           | Mejorar performance de búsquedas comunes. |
+| **Messaging**      | Modelar entidad `Message` (senderId, receiverId, officeId?, body, timestamp)                   | Permitir registrar comunicaciones. |
+|                    | Implementar endpoint `POST /messages`                                                          | Enviar mensajes entre usuario ↔ propietario. |
+|                    | Implementar endpoint `GET /messages/conversation/{userId}/{ownerId}`                           | Recuperar historial de conversación. |
+|                    | Integrar notificaciones en tiempo real (WebSockets / SignalR / STOMP)                          | Recibir mensajes instantáneamente. |
+|                    | Diseñar moderación inicial de contenido (spam/inapropiado)                                     | Garantizar seguridad y confianza en la mensajería. |
+
+
 #### 4.2.1.2 Establish Iteration Goal by Selecting Drivers
+
+En este punto, definiremos los Drivers necesarios para establecer la meta de esta iteracion y de las siguientes. Asimismo, estas metas estaran alineadas a los atributos anteriormente mencionados para poder cumplir aquellos atributos de calidad y proporcionar un producto que cumpla con los estandares establecidos por el equipo.
+
+**Meta de Modificabilidad**
+
+**Meta de Usabilidad**
+
+**Meta de Seguridad**
+
+**Meta de Interoperabilidad**
+
+**Objetivo de la Iteracion 1**
+
+
 #### 4.2.1.3 Choose One or More Elements of the System to Refine
+
+Luego de haber revisado y establecido los Drivers para nuestra solucion, se eligio uno de estos con el fin de hacer un refinamiento. Este elemento es:
+
+
+
+**Arquitectura de Microservicios**
+
 #### 4.2.1.4 Choose One or More Design Concepts That Satisfy the Selected Drivers
+
+
 #### 4.2.1.5 Instantiate Architectural Elements, Allocate Responsibilities, and Define Interfaces
+
+
 #### 4.2.1.6 Sketch Views (C4 & UML) and Record Design Decisions
+
+
 #### 4.2.1.7 Analysis of Current Design and Review Iteration Goal (Kanban Board)
 
 
