@@ -1,4 +1,4 @@
-# **Informe Trabajo Final**
+<img width="2300" height="1900" alt="image" src="https://github.com/user-attachments/assets/90bd1719-ae1f-47b1-a270-49aa77fba8cc" /># **Informe Trabajo Final**
 
 <p align="center">
   <img src="assets/upc_logo.png" alt="Logo de la UPC" />
@@ -662,10 +662,14 @@ Estilos arquitectónicos propuestos:
 9. Circuit Breaker / Bulkhead — resiliencia en llamadas a servicios externos (p. ej. pasarela de pagos, mapas).
 10. CQRS ligero — separar rutas de lectura intensiva (search) de escrituras (bookings/ratings) cuando sea necesario.
 ### 4.1.3 Context Diagram
-Este contexto refleja los actores y sistemas externos clave mencionados en tu README (usuarios, propietarios, pagos, mapas, auth). 
+<p align="center">
+  <img src="https://github.com/1ASI0732-Grupo-2/report/blob/develop/assets/img/Chapter-4/structurizr-workstation_context.png" />
+</p>
 
 ### 4.1.4 Approach driven ViewPoints Diagrams
-
+<p align="center">
+  <img src="https://github.com/1ASI0732-Grupo-2/report/blob/develop/assets/img/Chapter-4/structurizr-container_view.png" />
+</p>
 
 - Notas de diseño (viewpoint → decisiones):
 
@@ -675,6 +679,9 @@ Este contexto refleja los actores y sistemas externos clave mencionados en tu RE
 - Messaging separado para permitir WebSockets/Push y no bloquear el flow síncrono de la API.
 ### 4.1.5 Relational/Non Relational Database Diagram
 
+<p align="center">
+  <img src="https://github.com/1ASI0732-Grupo-2/report/blob/develop/assets/img/Chapter-4/DATABASE.png" />
+</p>
 
 
 
