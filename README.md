@@ -643,6 +643,12 @@ Entre las tareas encontradas, la que ambos User Persona coinciden en que es impo
 
 ## 4.1 Design Concepts, ViewPoints & ER Diagrams
 ### 4.1.1 Principles Statements
+1. Single Responsibility by Bounded Contexts (DDD) — separar dominios: Users, Offices, Bookings, Rating, Messaging, Search/Recommendation. (Apoya la mantenibilidad y evolución del motor de recomendaciones). 
+2. API-first & Interoperability — diseñar APIs REST estandarizadas para permitir integración con pasarelas de pago, geocoding/maps y proveedores externos. 
+3. Security-by-Design — autenticación/autorization con OAuth2/JWT; validar entradas y proteger endpoints críticos (pagos, mensajes, creación de oficinas). 
+4. Progressive Delivery / Incremental MVP — iterar desde el motor de recomendaciones (iteración 1) y exponer funcionalidades mínimas comprobables. 
+5. Observable & Measurable — telemetría (logs, métricas, traces) en servicios clave (recomendaciones, pagos) para permitir diagnóstico rápido.
+6. User-driven UX — priorizar velocidad de búsqueda, filtros y calendario; UI responsiva y accesible.
 ### 4.1.2 Approaches Statements Architectural Styles & Patterns
 ### 4.1.3 Context Diagram
 ### 4.1.4 Approach driven ViewPoints Diagrams
