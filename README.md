@@ -1,4 +1,4 @@
-<img width="2300" height="1900" alt="image" src="https://github.com/user-attachments/assets/90bd1719-ae1f-47b1-a270-49aa77fba8cc" /># **Informe Trabajo Final**
+# **Informe Trabajo Final**
 
 <p align="center">
   <img src="assets/upc_logo.png" alt="Logo de la UPC" />
