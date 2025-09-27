@@ -664,16 +664,15 @@ Estilos arquitectónicos propuestos:
 ### 4.1.3 Context Diagram
 Este contexto refleja los actores y sistemas externos clave mencionados en tu README (usuarios, propietarios, pagos, mapas, auth). 
 
-README (1)
 ### 4.1.4 Approach driven ViewPoints Diagrams
 
 
-Notas de diseño (viewpoint → decisiones):
+- Notas de diseño (viewpoint → decisiones):
 
-El Recommendation Service se separa para poder escalar y experimentar con diferentes estrategias (Strategy pattern). 
+- El Recommendation Service se separa para poder escalar y experimentar con diferentes estrategias (Strategy pattern). 
 
-Search Index (Elasticsearch) soporta consultas geoespaciales y filtros rápidos (necesario para UX de búsqueda y filtros). 
-Messaging separado para permitir WebSockets/Push y no bloquear el flow síncrono de la API.
+- Search Index (Elasticsearch) soporta consultas geoespaciales y filtros rápidos (necesario para UX de búsqueda y filtros). 
+- Messaging separado para permitir WebSockets/Push y no bloquear el flow síncrono de la API.
 ### 4.1.5 Relational/Non Relational Database Diagram
 
 
