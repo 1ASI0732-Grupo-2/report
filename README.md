@@ -666,7 +666,7 @@ Este contexto refleja los actores y sistemas externos clave mencionados en tu RE
 
 README (1)
 ### 4.1.4 Approach driven ViewPoints Diagrams
-A continuación tienes un Container View (útil como viewpoint operacional / deployment planning). Pégalo en Structurizr para generar la vista.
+
 
 Notas de diseño (viewpoint → decisiones):
 
@@ -678,33 +678,32 @@ Messaging separado para permitir WebSockets/Push y no bloquear el flow síncrono
 
 
 
-Sugerencias prácticas:
-Usa UUIDs para PK por escalabilidad y distribución.
-Mantén un índice geoespacial en Offices(latitude, longitude) para consultas por proximidad (o usa el Search Index para consultas intensivas). 
+
+
 ### 4.1.6 Design Patterns
-Repository + Unit of Work — para transacciones en BookingService.
-Strategy — para múltiples algoritmos de ranking en Recommendation Service (proximidad vs rating vs precio). 
-Adapter / Facade — para integrar pagos y servicios externos (Maps, Payments).
-Observer / Event pub-sub — publicar eventos BookingCreated, RatingAdded para actualizar índices o generar notificaciones.
-Builder — para crear objetos de reservas con reglas (cálculo de precio, descuentos, impuestos).
+- Repository + Unit of Work — para transacciones en BookingService.
+- Strategy — para múltiples algoritmos de ranking en Recommendation Service (proximidad vs rating vs precio). 
+- Adapter / Facade — para integrar pagos y servicios externos (Maps, Payments).
+- Observer / Event pub-sub — publicar eventos BookingCreated, RatingAdded para actualizar índices o generar notificaciones.
+- Builder — para crear objetos de reservas con reglas (cálculo de precio, descuentos, impuestos).
 ### 4.1.7 Tactics
-Seguridad
-Autenticación OAuth2/JWT; refresh tokens. 
-Validación y sanitización de entradas (prevención inyección SQL / XSS).
-Roles y permisos (owner vs renter vs admin).
-Performance / Scalability
-Escalar Recommendation Service horizontalmente.
-Cache de resultados frecuentes (Redis) y cache del Search Index.
-Indexar geolocalización y filtros en Elasticsearch.
-Availability / Resilience
-Circuit Breaker en llamadas a pasarelas externas (payment/maps).
-Retry con backoff para operaciones no-idempotentes; compensating transactions para bookings/pagos.
-Backups regulares de la BD y snapshot del search index.
-Modifiability
-Separar servicios por bounded contexts; versionado de APIs; feature toggles para despliegues controlados.
-Usability / UX
-Búsqueda con autocompletado y filtros por capacidad, amenities y precio.
-Calendario visual para disponibilidad y bloqueo de horarios.
+1. Seguridad
+2. Autenticación OAuth2/JWT; refresh tokens. 
+3. Validación y sanitización de entradas (prevención inyección SQL / XSS).
+4. Roles y permisos (owner vs renter vs admin).
+5. Performance / Scalability
+6. Escalar Recommendation Service horizontalmente.
+7. Cache de resultados frecuentes (Redis) y cache del Search Index.
+8. Indexar geolocalización y filtros en Elasticsearch.
+9. Availability / Resilience
+10. Circuit Breaker en llamadas a pasarelas externas (payment/maps).
+11. Retry con backoff para operaciones no-idempotentes; compensating transactions para bookings/pagos.
+12. Backups regulares de la BD y snapshot del search index.
+13. Modifiability
+14. Separar servicios por bounded contexts; versionado de APIs; feature toggles para despliegues controlados.
+15. Usability / UX
+16. Búsqueda con autocompletado y filtros por capacidad, amenities y precio.
+17. Calendario visual para disponibilidad y bloqueo de horarios.
 ## 4.2 Architectural Drivers
 ### 4.1.8 Design Purpose
 ### 4.1.9 Primary Functionality (Primary User Stories)
