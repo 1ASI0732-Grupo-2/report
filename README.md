@@ -650,6 +650,17 @@ Entre las tareas encontradas, la que ambos User Persona coinciden en que es impo
 5. Observable & Measurable — telemetría (logs, métricas, traces) en servicios clave (recomendaciones, pagos) para permitir diagnóstico rápido.
 6. User-driven UX — priorizar velocidad de búsqueda, filtros y calendario; UI responsiva y accesible.
 ### 4.1.2 Approaches Statements Architectural Styles & Patterns
+Estilos arquitectónicos propuestos:
+1. Microservices (bounded contexts) para Recommendations, Users, Offices, Bookings, Ratings, Messaging. Razonamiento: escalabilidad y despliegue independiente del motor de recomendaciones (driver). 
+2. API Gateway + REST: punto único para exposición pública, manejo de autenticación y rate-limiting.
+3. Event-Driven (mensajería asíncrona) para procesos eventual-consistent (p. ej. actualizar índices de búsqueda después de una reserva o rating).
+4. Search Index (Elasticsearch / OpenSearch) para búsquedas por ubicación, filtros y recomendaciones rápidas.
+5. Patrones de diseño (a nivel de aplicación)
+6. Repository Pattern — acceso a datos desacoplado (OficesRepository, BookingRepository).
+7. Factory / Builder — para crear objetos complejos (Booking con políticas).
+8. Strategy — motores de ranking/recomendación intercambiables (por rating, proximidad, precio).
+9. Circuit Breaker / Bulkhead — resiliencia en llamadas a servicios externos (p. ej. pasarela de pagos, mapas).
+10. CQRS ligero — separar rutas de lectura intensiva (search) de escrituras (bookings/ratings) cuando sea necesario.
 ### 4.1.3 Context Diagram
 ### 4.1.4 Approach driven ViewPoints Diagrams
 ### 4.1.5 Relational/Non Relational Database Diagram
