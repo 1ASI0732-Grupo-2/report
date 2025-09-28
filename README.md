@@ -769,6 +769,10 @@ HoTech no es una solución genérica: es una plataforma construida desde la real
 
 ### 4.1.11 Constraints
 
+En proyectos de software y arquitectura, las constraints son los límites que debemos respetar al planear y construir la solución.
+Pueden ser de tipo legal, técnico, económico u operativo (por ejemplo, normas de datos, compatibilidad de navegadores, presupuesto o plazos) y condicionan nuestras decisiones sobre tecnologías, diseño y despliegue.
+
+
 | ID    | Constraint                                                                                                                       |
 |-------|----------------------------------------------------------------------------------------------------------------------------------|
 | CON01 | Cumplimiento legal: adherir a la Ley de Protección de Datos Personales (Ley N° 29733) y a la Ley de Comercio Electrónico peruana. |
