@@ -722,6 +722,15 @@ Estilos arquitectónicos propuestos:
 17. Calendario visual para disponibilidad y bloqueo de horarios.
 ## 4.2 Architectural Drivers
 ### 4.1.8 Design Purpose
+En el corazón de HoTech está la convicción de que la tecnología no debe ser un lujo, sino una herramienta accesible que empodere a cada hotelero peruano. Nuestra plataforma nace de escuchar las frustraciones reales: habitaciones que no se actualizan, inventarios que se pierden, tareas que se olvidan, y decisiones que se toman sin datos. HoTech transforma esa realidad en una operación fluida, conectada y estratégica.
+
+Cada módulo ha sido diseñado con propósito: desde la creación de habitaciones hasta la gestión de insumos, pasando por la asignación de tareas y la generación de reportes. No se trata solo de digitalizar procesos, sino de reimaginar cómo se trabaja en el día a día. Con interfaces intuitivas y flujos pensados para usuarios con poca experiencia tecnológica, HoTech democratiza la gestión hotelera.
+
+Además, entendemos que la rentabilidad no solo depende de reducir costos, sino de mejorar la experiencia del huésped. Por eso, nuestro sistema permite anticiparse a sus necesidades, coordinar al personal con precisión y mantener cada espacio en óptimas condiciones. La comunicación interna se convierte en un motor de eficiencia, y los datos dejan de ser un lujo para convertirse en aliados estratégicos.
+
+HoTech no es una solución genérica: es una plataforma construida desde la realidad peruana, con sensibilidad a los ritmos, desafíos y oportunidades del sector. Ya sea en un hostal en Cusco o un hotel en Lima, nuestra arquitectura se adapta, crece y evoluciona contigo. Porque creemos que la excelencia operativa debe estar al alcance de todos, sin importar el tamaño del negocio.
+
+
 ### 4.1.9 Primary Functionality (Primary User Stories)
 ### 4.1.10 Quality Attribute Scenarios
 ### 4.1.11 Constraints
