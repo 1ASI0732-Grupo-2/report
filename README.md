@@ -41,6 +41,8 @@ Fundamentos de Arquitectura de Software <br>
 
 ![insights](https://media.discordapp.net/attachments/766316535290789908/1416270438958633052/image.png?ex=68c63c21&is=68c4eaa1&hm=3941bcc1e27ba6ca7d5d2cddd15afc5ab8324c40937426745902c2d3188b8943&=&format=webp&quality=lossless)
 
+![insights2](/assets/insights2.png)
+
 # Contenido
 
 - [Registro de Versiones del Informe](#registro-de-versiones-del-informe)
