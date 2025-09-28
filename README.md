@@ -662,11 +662,13 @@ Estilos arquitectónicos propuestos:
 9. Circuit Breaker / Bulkhead — resiliencia en llamadas a servicios externos (p. ej. pasarela de pagos, mapas).
 10. CQRS ligero — separar rutas de lectura intensiva (search) de escrituras (bookings/ratings) cuando sea necesario.
 ### 4.1.3 Context Diagram
+#### Diagrama de Contexto
 <p align="center">
   <img src="https://github.com/1ASI0732-Grupo-2/report/blob/develop/assets/img/Chapter-4/structurizr-workstation_context.png" />
 </p>
 
 ### 4.1.4 Approach driven ViewPoints Diagrams
+#### Diagrama de Contenedores
 <p align="center">
   <img src="https://github.com/1ASI0732-Grupo-2/report/blob/develop/assets/img/Chapter-4/structurizr-container_view.png" />
 </p>
@@ -677,15 +679,16 @@ Estilos arquitectónicos propuestos:
 
 - Search Index (Elasticsearch) soporta consultas geoespaciales y filtros rápidos (necesario para UX de búsqueda y filtros). 
 - Messaging separado para permitir WebSockets/Push y no bloquear el flow síncrono de la API.
-  
+
+#### Diagrama de Componentes  
 <p align="center">
-  <img src="https://github.com/1ASI0732-Grupo-2/report/blob/develop/assets/img/Chapter-4/structurizr-api_components.png />
+  <img src="https://github.com/1ASI0732-Grupo-2/report/blob/develop/assets/img/Chapter-4/structurizr-api_components.png" />
 </p>
 
 
   
 ### 4.1.5 Relational/Non Relational Database Diagram
-
+#### Diagrama de Base de Datos Relacional
 <p align="center">
   <img src="https://github.com/1ASI0732-Grupo-2/report/blob/develop/assets/img/Chapter-4/DATABASE.png" />
 </p>
