@@ -677,6 +677,13 @@ Estilos arquitectónicos propuestos:
 
 - Search Index (Elasticsearch) soporta consultas geoespaciales y filtros rápidos (necesario para UX de búsqueda y filtros). 
 - Messaging separado para permitir WebSockets/Push y no bloquear el flow síncrono de la API.
+  
+<p align="center">
+  <img src="https://github.com/1ASI0732-Grupo-2/report/blob/develop/assets/img/Chapter-4/structurizr-api_components.png />
+</p>
+
+
+  
 ### 4.1.5 Relational/Non Relational Database Diagram
 
 <p align="center">
