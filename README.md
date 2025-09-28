@@ -755,6 +755,18 @@ HoTech no es una solución genérica: es una plataforma construida desde la real
 | EP-05   | US-35           | Cambiar lenguaje e idioma                  | Usuario     | Asegura accesibilidad para usuarios con distintos niveles de alfabetización digital.      |
 
 ### 4.1.10 Quality Attribute Scenarios
+
+| ID   | Atributo de Calidad | Escenario                                                                                   | Historia de Usuario Relacionada         |
+|------|----------------------|---------------------------------------------------------------------------------------------|------------------------------------------|
+| QA1  | Usabilidad           | Un empleado nuevo puede actualizar un ítem en el inventario en menos de 2 minutos           | US-14 (Actualizar ítem), US-06 (Crear cuenta empleado) |
+| QA2  | Disponibilidad       | El sistema permite visualizar el estado de habitaciones sin interrupciones durante el check-in | US-11 (Ver estado de habitaciones)       |
+| QA3  | Seguridad            | El sistema bloquea el acceso tras 3 intentos fallidos de autenticación de gerente           | US-27 (API verificación gerente), US-28 (Seguridad empleado) |
+| QA4  | Rendimiento          | El sistema responde a 100 solicitudes de creación de habitaciones en menos de 5 segundos    | US-10 (Crear habitaciones)               |
+| QA5  | Mantenibilidad       | El gerente puede modificar la información de un ítem sin afectar otras funcionalidades      | US-14 (Actualizar ítem), US-09 (Publicación de inmueble) |
+| QA6  | Escalabilidad        | El sistema soporta la incorporación de 50 nuevas habitaciones sin degradar el rendimiento   | US-10 (Crear habitaciones), US-11 (Ver estado) |
+| QA7  | Interoperabilidad    | El sistema sincroniza datos de reservas con plataformas externas cada 10 minutos sin errores | US-27 (API verificación), EP-05 (Integraciones externas) |
+| QA8  | Comunicación interna | Un gerente puede asignar tareas y recibir confirmaciones sin pérdida de información         | US-15 (Asignar tareas), US-16 (Confirmar tareas), US-29 (Canal de comunicación) |
+
 ### 4.1.11 Constraints
 ### 4.1.12 Architectural Concerns
 
