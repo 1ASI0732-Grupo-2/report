@@ -92,9 +92,11 @@ Fundamentos de Arquitectura de Software <br>
 - [3.4. Product Backlog](#34-product-backlog)
 
 ---
+
 ## Capítulo IV: Design
 
 - [4.1 Design Concepts, ViewPoints & ER Diagrams](#41-design-concepts-viewpoints--er-diagrams)
+
   - [4.1.1 Principles Statements](#411-principles-statements)
   - [4.1.2 Approaches Statements Architectural Styles & Patterns](#412-approaches-statements-architectural-styles--patterns)
   - [4.1.3 Context Diagram](#413-context-diagram)
@@ -104,6 +106,7 @@ Fundamentos de Arquitectura de Software <br>
   - [4.1.7 Tactics](#417-tactics)
 
 - [4.2 Architectural Drivers](#42-architectural-drivers)
+
   - [4.1.8 Design Purpose](#418-design-purpose)
   - [4.1.9 Primary Functionality (Primary User Stories)](#419-primary-functionality-primary-user-stories)
   - [4.1.10 Quality Attribute Scenarios](#4110-quality-attribute-scenarios)
@@ -111,6 +114,7 @@ Fundamentos de Arquitectura de Software <br>
   - [4.1.12 Architectural Concerns](#4112-architectural-concerns)
 
 - [4.3 ADD Iterations](#43-add-iterations)
+
   - [4.2.1 Iteration 1: Workstation Office Recommendation](#421-iteration-1-workstation-office-recommendation)
     - [4.2.1.1 Architectural Design Backlog 1](#4211-architectural-design-backlog-n)
     - [4.2.1.2 Establish Iteration Goal by Selecting Drivers](#4212-establish-iteration-goal-by-selecting-drivers)
@@ -119,7 +123,6 @@ Fundamentos de Arquitectura de Software <br>
     - [4.2.1.5 Instantiate Architectural Elements, Allocate Responsibilities, and Define Interfaces](#4215-instantiate-architectural-elements-allocate-responsibilities-and-define-interfaces)
     - [4.2.1.6 Sketch Views (C4 & UML) and Record Design Decisions](#4216-sketch-views-c4--uml-and-record-design-decisions)
     - [4.2.1.7 Analysis of Current Design and Review Iteration Goal (Kanban Board)](#4217-analysis-of-current-design-and-review-iteration-goal-kanban-board)
-
 
 - [Avance de Conclusiones, Bibliografía y Anexos (links)](#avance-de-conclusiones-bibliografía-y-anexos-links)
 
@@ -137,13 +140,13 @@ Considerando la flexibilidad y adaptabilidad como factores clave en el crecimien
 
 #### 1.1.2. Perfiles de integrantes del equipo
 
-| Foto                                                                                                                                                                                                                                                                                 | Alumno                         | Descripción                                                                                                                                                                                                                                                                                                                                      |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| ![Rodrigo](https://media.discordapp.net/attachments/766316535290789908/1414761032928464907/rodrigo.png?ex=68c0be63&is=68bf6ce3&hm=ff615cb9f2f6cd66256a62ab4857639fcf3cd26cacefcbd283c385287daf8c64&=&format=webp&quality=lossless)                                                   | Liberato Saldaña Rodrigo       | Estudiante de Ingeniería de Software que planea enfocarse en Ciencia de Datos y Ciberseguridad. Planea dar apoyo activo al grupo y asumir el rol de líder para encaminar al equipo hacia el cumplimiento de sus metas.                                                                                                                           |
-| ![Renzo](https://github.com/1ASI0732-Grupo-2/report/blob/develop/assets/img/Chapter-I/RenzoLlerena.png?raw=true)                                                                                                                                                                     | Renzo Miguel Llerena Delgado   | Me destaco por ser responsable, trabajador y tener un enfoque en la perfección y la calidad en todos mis proyectos. Disfruto trabajando en equipo, colaborando para alcanzar mis objetivos y siempre buscando superar expectativas. Me mantengo en constante aprendizaje, dispuesto a enfrentar desafíos con una actitud proactiva y resolutiva. |
-| ![Henry](https://github.com/1ASI0732-Grupo-2/report/blob/develop/assets/img/Chapter-I/Henry.png?raw=true)                                                                                                                                                                            | Henry Kevin Diaz Gutierrez     | Soy estudiante de Ingenieria de Software en la UPC.Me caracterizo por ser creativo , cumplir con lo que se me brinda y ayudar a resolver problemas si se presenta.Desde siempre me intereso el tema de los videojuegos y de el tipo de diseño que se empleaba, eso hizo que me guste el desarrollo de software.                                  |
+| Foto                                                                                                                                                                                                                                                                                | Alumno                         | Descripción                                                                                                                                                                                                                                                                                                                                      |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| ![Rodrigo](https://github.com/WorkStation-MarronCoders/Report/raw/main/Imagenes/rodrigo.png)                                                                                                                                                                                        | Liberato Saldaña Rodrigo       | Estudiante de Ingeniería de Software que planea enfocarse en Ciencia de Datos y Ciberseguridad. Planea dar apoyo activo al grupo y asumir el rol de líder para encaminar al equipo hacia el cumplimiento de sus metas.                                                                                                                           |
+| ![Renzo](https://github.com/1ASI0732-Grupo-2/report/blob/develop/assets/img/Chapter-I/RenzoLlerena.png?raw=true)                                                                                                                                                                    | Renzo Miguel Llerena Delgado   | Me destaco por ser responsable, trabajador y tener un enfoque en la perfección y la calidad en todos mis proyectos. Disfruto trabajando en equipo, colaborando para alcanzar mis objetivos y siempre buscando superar expectativas. Me mantengo en constante aprendizaje, dispuesto a enfrentar desafíos con una actitud proactiva y resolutiva. |
+| ![Henry](https://github.com/1ASI0732-Grupo-2/report/blob/develop/assets/img/Chapter-I/Henry.png?raw=true)                                                                                                                                                                           | Henry Kevin Diaz Gutierrez     | Soy estudiante de Ingenieria de Software en la UPC.Me caracterizo por ser creativo , cumplir con lo que se me brinda y ayudar a resolver problemas si se presenta.Desde siempre me intereso el tema de los videojuegos y de el tipo de diseño que se empleaba, eso hizo que me guste el desarrollo de software.                                  |
 | ![Diego](https://media.discordapp.net/attachments/1082800870334419014/1415786757659693106/69ed58d9-a022-48a1-86b3-b7fa8ae451bb.png?ex=68dae32b&is=68d991ab&hm=5888d299c549f50b71d4a7ca1b0e63e5990ecfc24a812ae9d80c0069dca502ae&=&format=webp&quality=lossless&width=528&height=939) | Diego Sebastián Zúñiga Murillo | Estudiante en el sexto ciclo de la carrera de Ingenieria de Software que busca expandir sus conocimientos en diversas tecnologías, soy una persona participativa y colaborativa y siempre me adapto rápido a las situaciones de cambio, estoy preparado para afrontar las adversidades que este trabajo signifca para mi y como grupo            |
-| ![Braulio](https://media.discordapp.net/attachments/1092294135525949540/1416127872682164314/image.png?ex=68c5b75b&is=68c465db&hm=8ff06e48619ca4e4c4c4cb601db661f18d69cb47a6ca4d8b39670620f8a9af73&=&format=webp&quality=lossless)                                                    | Braulio Torrejon Navarro       | Estudiante de Ingenieria de software del 7mo ciclo, planeo dar lo mejor de mi en este grupo, tambien deseo aprender mucho del curso para mi futuro profesional                                                                                                                                                                                   |
+| ![Braulio](https://media.discordapp.net/attachments/1092294135525949540/1416127872682164314/image.png?ex=68c5b75b&is=68c465db&hm=8ff06e48619ca4e4c4c4cb601db661f18d69cb47a6ca4d8b39670620f8a9af73&=&format=webp&quality=lossless)                                                   | Braulio Torrejon Navarro       | Estudiante de Ingenieria de software del 7mo ciclo, planeo dar lo mejor de mi en este grupo, tambien deseo aprender mucho del curso para mi futuro profesional                                                                                                                                                                                   |
 
 ### 1.2. Solution Profile
 
@@ -642,16 +645,21 @@ Entre las tareas encontradas, la que ambos User Persona coinciden en que es impo
 # Capítulo 4
 
 ## 4.1 Design Concepts, ViewPoints & ER Diagrams
+
 ### 4.1.1 Principles Statements
-1. Single Responsibility by Bounded Contexts (DDD) — separar dominios: Users, Offices, Bookings, Rating, Messaging, Search/Recommendation. (Apoya la mantenibilidad y evolución del motor de recomendaciones). 
-2. API-first & Interoperability — diseñar APIs REST estandarizadas para permitir integración con pasarelas de pago, geocoding/maps y proveedores externos. 
-3. Security-by-Design — autenticación/autorization con OAuth2/JWT; validar entradas y proteger endpoints críticos (pagos, mensajes, creación de oficinas). 
-4. Progressive Delivery / Incremental MVP — iterar desde el motor de recomendaciones (iteración 1) y exponer funcionalidades mínimas comprobables. 
+
+1. Single Responsibility by Bounded Contexts (DDD) — separar dominios: Users, Offices, Bookings, Rating, Messaging, Search/Recommendation. (Apoya la mantenibilidad y evolución del motor de recomendaciones).
+2. API-first & Interoperability — diseñar APIs REST estandarizadas para permitir integración con pasarelas de pago, geocoding/maps y proveedores externos.
+3. Security-by-Design — autenticación/autorization con OAuth2/JWT; validar entradas y proteger endpoints críticos (pagos, mensajes, creación de oficinas).
+4. Progressive Delivery / Incremental MVP — iterar desde el motor de recomendaciones (iteración 1) y exponer funcionalidades mínimas comprobables.
 5. Observable & Measurable — telemetría (logs, métricas, traces) en servicios clave (recomendaciones, pagos) para permitir diagnóstico rápido.
 6. User-driven UX — priorizar velocidad de búsqueda, filtros y calendario; UI responsiva y accesible.
+
 ### 4.1.2 Approaches Statements Architectural Styles & Patterns
+
 Estilos arquitectónicos propuestos:
-1. Microservices (bounded contexts) para Recommendations, Users, Offices, Bookings, Ratings, Messaging. Razonamiento: escalabilidad y despliegue independiente del motor de recomendaciones (driver). 
+
+1. Microservices (bounded contexts) para Recommendations, Users, Offices, Bookings, Ratings, Messaging. Razonamiento: escalabilidad y despliegue independiente del motor de recomendaciones (driver).
 2. API Gateway + REST: punto único para exposición pública, manejo de autenticación y rate-limiting.
 3. Event-Driven (mensajería asíncrona) para procesos eventual-consistent (p. ej. actualizar índices de búsqueda después de una reserva o rating).
 4. Search Index (Elasticsearch / OpenSearch) para búsquedas por ubicación, filtros y recomendaciones rápidas.
@@ -661,50 +669,56 @@ Estilos arquitectónicos propuestos:
 8. Strategy — motores de ranking/recomendación intercambiables (por rating, proximidad, precio).
 9. Circuit Breaker / Bulkhead — resiliencia en llamadas a servicios externos (p. ej. pasarela de pagos, mapas).
 10. CQRS ligero — separar rutas de lectura intensiva (search) de escrituras (bookings/ratings) cuando sea necesario.
+
 ### 4.1.3 Context Diagram
+
 #### Diagrama de Contexto
+
 <p align="center">
   <img src="https://github.com/1ASI0732-Grupo-2/report/blob/develop/assets/img/Chapter-4/structurizr-workstation_context.png" />
 </p>
 
 ### 4.1.4 Approach driven ViewPoints Diagrams
+
 #### Diagrama de Contenedores
+
 <p align="center">
   <img src="https://github.com/1ASI0732-Grupo-2/report/blob/develop/assets/img/Chapter-4/structurizr-container_view.png" />
 </p>
 
 - Notas de diseño (viewpoint → decisiones):
 
-- El Recommendation Service se separa para poder escalar y experimentar con diferentes estrategias (Strategy pattern). 
+- El Recommendation Service se separa para poder escalar y experimentar con diferentes estrategias (Strategy pattern).
 
-- Search Index (Elasticsearch) soporta consultas geoespaciales y filtros rápidos (necesario para UX de búsqueda y filtros). 
+- Search Index (Elasticsearch) soporta consultas geoespaciales y filtros rápidos (necesario para UX de búsqueda y filtros).
 - Messaging separado para permitir WebSockets/Push y no bloquear el flow síncrono de la API.
 
-#### Diagrama de Componentes  
+#### Diagrama de Componentes
+
 <p align="center">
   <img src="https://github.com/1ASI0732-Grupo-2/report/blob/develop/assets/img/Chapter-4/structurizr-api_components.png" />
 </p>
 
-
-  
 ### 4.1.5 Relational/Non Relational Database Diagram
+
 #### Diagrama de Base de Datos Relacional
+
 <p align="center">
   <img src="https://github.com/1ASI0732-Grupo-2/report/blob/develop/assets/img/Chapter-4/DATABASE.png" />
 </p>
 
-
-
-
 ### 4.1.6 Design Patterns
+
 - Repository + Unit of Work — para transacciones en BookingService.
-- Strategy — para múltiples algoritmos de ranking en Recommendation Service (proximidad vs rating vs precio). 
+- Strategy — para múltiples algoritmos de ranking en Recommendation Service (proximidad vs rating vs precio).
 - Adapter / Facade — para integrar pagos y servicios externos (Maps, Payments).
 - Observer / Event pub-sub — publicar eventos BookingCreated, RatingAdded para actualizar índices o generar notificaciones.
 - Builder — para crear objetos de reservas con reglas (cálculo de precio, descuentos, impuestos).
+
 ### 4.1.7 Tactics
+
 1. Seguridad
-2. Autenticación OAuth2/JWT; refresh tokens. 
+2. Autenticación OAuth2/JWT; refresh tokens.
 3. Validación y sanitización de entradas (prevención inyección SQL / XSS).
 4. Roles y permisos (owner vs renter vs admin).
 5. Performance / Scalability
@@ -720,8 +734,11 @@ Estilos arquitectónicos propuestos:
 15. Usability / UX
 16. Búsqueda con autocompletado y filtros por capacidad, amenities y precio.
 17. Calendario visual para disponibilidad y bloqueo de horarios.
+
 ## 4.2 Architectural Drivers
+
 ### 4.1.8 Design Purpose
+
 En el corazón de Workstation está la convicción de que la tecnología no debe ser un lujo, sino una herramienta accesible que empodere a cada hotelero peruano. Nuestra plataforma nace de escuchar las frustraciones reales: habitaciones que no se actualizan, inventarios que se pierden, tareas que se olvidan, y decisiones que se toman sin datos. HoTech transforma esa realidad en una operación fluida, conectada y estratégica.
 
 Cada módulo ha sido diseñado con propósito: desde la creación de habitaciones hasta la gestión de insumos, pasando por la asignación de tareas y la generación de reportes. No se trata solo de digitalizar procesos, sino de reimaginar cómo se trabaja en el día a día. Con interfaces intuitivas y flujos pensados para usuarios con poca experiencia tecnológica, Workstation democratiza la gestión hotelera.
@@ -730,89 +747,85 @@ Además, entendemos que la rentabilidad no solo depende de reducir costos, sino 
 
 Workstation no es una solución genérica: es una plataforma construida desde la realidad peruana, con sensibilidad a los ritmos, desafíos y oportunidades del sector. Ya sea en un hostal en Cusco o un hotel en Lima, nuestra arquitectura se adapta, crece y evoluciona contigo. Porque creemos que la excelencia operativa debe estar al alcance de todos, sin importar el tamaño del negocio.
 
-
 ### 4.1.9 Primary Functionality (Primary User Stories)
 
-
-| Epic ID | User Story ID | Título                                      | Rol         | Justificación Estratégica                                                                 |
-|---------|----------------|---------------------------------------------|-------------|--------------------------------------------------------------------------------------------|
-| EP-02   | US-06           | Crear cuenta empleado                      | Empleado    | Permite acceso al sistema para personal operativo.                                         |
-| EP-02   | US-07           | Crear cuenta gerente                       | Gerente     | Habilita la gestión del sistema y la creación de códigos para empleados.                  |
-| EP-03   | US-10           | Crear habitaciones                         | Gerente     | Configura la infraestructura del hotel en el sistema.                                     |
-| EP-03   | US-11           | Ver estado de habitaciones                 | Gerente     | Proporciona visibilidad operativa en tiempo real.                                         |
-| EP-04   | US-14           | Actualizar ítem                            | Empleado    | Mantiene actualizado el inventario asignado a tareas.                                     |
-| EP-03   | US-09           | Publicación de inmueble                    | Propietario | Permite registrar habitaciones con fotos, tarifas y servicios.                            |
-| EP-04   | US-15           | Asignar tareas de limpieza                 | Gerente     | Coordina al personal operativo de forma eficiente.                                        |
-| EP-04   | US-16           | Confirmar tareas completadas               | Empleado    | Cierra el ciclo operativo de limpieza y mantenimiento.                                    |
-| EP-05   | US-27           | API de verificación clave gerente          | Developer   | Asegura autenticación segura y control de acceso.                                         |
-| EP-05   | US-28           | Seguridad de empleado                      | Empleado    | Garantiza acceso seguro y personalizado al sistema.                                       |
-| EP-05   | US-29           | Canal de comunicación interna              | Empleado    | Mejora la coordinación entre personal y gerencia.                                         |
-| EP-05   | US-30           | Usuarios verificados con LinkedIn o DNI    | Propietario | Refuerza la confianza en la contratación de personal.                                     |
-| EP-05   | US-31           | Navegación por el landing page             | Usuario     | Facilita el acceso inicial a la plataforma.                                               |
-| EP-05   | US-32           | Ver información del startup                | Usuario     | Brinda contexto sobre el proyecto y sus beneficios.                                       |
-| EP-05   | US-33           | Conocer los servicios                      | Usuario     | Permite evaluar si la plataforma se ajusta a sus necesidades.                             |
-| EP-05   | US-34           | Contactar el equipo de soporte             | Usuario     | Resuelve dudas y problemas operativos.                                                    |
-| EP-05   | US-35           | Cambiar lenguaje e idioma                  | Usuario     | Asegura accesibilidad para usuarios con distintos niveles de alfabetización digital.      |
+| Epic ID | User Story ID | Título                                  | Rol         | Justificación Estratégica                                                            |
+| ------- | ------------- | --------------------------------------- | ----------- | ------------------------------------------------------------------------------------ |
+| EP-02   | US-06         | Crear cuenta empleado                   | Empleado    | Permite acceso al sistema para personal operativo.                                   |
+| EP-02   | US-07         | Crear cuenta gerente                    | Gerente     | Habilita la gestión del sistema y la creación de códigos para empleados.             |
+| EP-03   | US-10         | Crear habitaciones                      | Gerente     | Configura la infraestructura del hotel en el sistema.                                |
+| EP-03   | US-11         | Ver estado de habitaciones              | Gerente     | Proporciona visibilidad operativa en tiempo real.                                    |
+| EP-04   | US-14         | Actualizar ítem                         | Empleado    | Mantiene actualizado el inventario asignado a tareas.                                |
+| EP-03   | US-09         | Publicación de inmueble                 | Propietario | Permite registrar habitaciones con fotos, tarifas y servicios.                       |
+| EP-04   | US-15         | Asignar tareas de limpieza              | Gerente     | Coordina al personal operativo de forma eficiente.                                   |
+| EP-04   | US-16         | Confirmar tareas completadas            | Empleado    | Cierra el ciclo operativo de limpieza y mantenimiento.                               |
+| EP-05   | US-27         | API de verificación clave gerente       | Developer   | Asegura autenticación segura y control de acceso.                                    |
+| EP-05   | US-28         | Seguridad de empleado                   | Empleado    | Garantiza acceso seguro y personalizado al sistema.                                  |
+| EP-05   | US-29         | Canal de comunicación interna           | Empleado    | Mejora la coordinación entre personal y gerencia.                                    |
+| EP-05   | US-30         | Usuarios verificados con LinkedIn o DNI | Propietario | Refuerza la confianza en la contratación de personal.                                |
+| EP-05   | US-31         | Navegación por el landing page          | Usuario     | Facilita el acceso inicial a la plataforma.                                          |
+| EP-05   | US-32         | Ver información del startup             | Usuario     | Brinda contexto sobre el proyecto y sus beneficios.                                  |
+| EP-05   | US-33         | Conocer los servicios                   | Usuario     | Permite evaluar si la plataforma se ajusta a sus necesidades.                        |
+| EP-05   | US-34         | Contactar el equipo de soporte          | Usuario     | Resuelve dudas y problemas operativos.                                               |
+| EP-05   | US-35         | Cambiar lenguaje e idioma               | Usuario     | Asegura accesibilidad para usuarios con distintos niveles de alfabetización digital. |
 
 ### 4.1.10 Quality Attribute Scenarios
 
-| ID   | Atributo de Calidad | Escenario                                                                                   | Historia de Usuario Relacionada         |
-|------|----------------------|---------------------------------------------------------------------------------------------|------------------------------------------|
-| QA1  | Usabilidad           | Un empleado nuevo puede actualizar un ítem en el inventario en menos de 2 minutos           | US-14 (Actualizar ítem), US-06 (Crear cuenta empleado) |
-| QA2  | Disponibilidad       | El sistema permite visualizar el estado de habitaciones sin interrupciones durante el check-in | US-11 (Ver estado de habitaciones)       |
-| QA3  | Seguridad            | El sistema bloquea el acceso tras 3 intentos fallidos de autenticación de gerente           | US-27 (API verificación gerente), US-28 (Seguridad empleado) |
-| QA4  | Rendimiento          | El sistema responde a 100 solicitudes de creación de habitaciones en menos de 5 segundos    | US-10 (Crear habitaciones)               |
-| QA5  | Mantenibilidad       | El gerente puede modificar la información de un ítem sin afectar otras funcionalidades      | US-14 (Actualizar ítem), US-09 (Publicación de inmueble) |
-| QA6  | Escalabilidad        | El sistema soporta la incorporación de 50 nuevas habitaciones sin degradar el rendimiento   | US-10 (Crear habitaciones), US-11 (Ver estado) |
-| QA7  | Interoperabilidad    | El sistema sincroniza datos de reservas con plataformas externas cada 10 minutos sin errores | US-27 (API verificación), EP-05 (Integraciones externas) |
-| QA8  | Comunicación interna | Un gerente puede asignar tareas y recibir confirmaciones sin pérdida de información         | US-15 (Asignar tareas), US-16 (Confirmar tareas), US-29 (Canal de comunicación) |
+| ID  | Atributo de Calidad  | Escenario                                                                                      | Historia de Usuario Relacionada                                                 |
+| --- | -------------------- | ---------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- |
+| QA1 | Usabilidad           | Un empleado nuevo puede actualizar un ítem en el inventario en menos de 2 minutos              | US-14 (Actualizar ítem), US-06 (Crear cuenta empleado)                          |
+| QA2 | Disponibilidad       | El sistema permite visualizar el estado de habitaciones sin interrupciones durante el check-in | US-11 (Ver estado de habitaciones)                                              |
+| QA3 | Seguridad            | El sistema bloquea el acceso tras 3 intentos fallidos de autenticación de gerente              | US-27 (API verificación gerente), US-28 (Seguridad empleado)                    |
+| QA4 | Rendimiento          | El sistema responde a 100 solicitudes de creación de habitaciones en menos de 5 segundos       | US-10 (Crear habitaciones)                                                      |
+| QA5 | Mantenibilidad       | El gerente puede modificar la información de un ítem sin afectar otras funcionalidades         | US-14 (Actualizar ítem), US-09 (Publicación de inmueble)                        |
+| QA6 | Escalabilidad        | El sistema soporta la incorporación de 50 nuevas habitaciones sin degradar el rendimiento      | US-10 (Crear habitaciones), US-11 (Ver estado)                                  |
+| QA7 | Interoperabilidad    | El sistema sincroniza datos de reservas con plataformas externas cada 10 minutos sin errores   | US-27 (API verificación), EP-05 (Integraciones externas)                        |
+| QA8 | Comunicación interna | Un gerente puede asignar tareas y recibir confirmaciones sin pérdida de información            | US-15 (Asignar tareas), US-16 (Confirmar tareas), US-29 (Canal de comunicación) |
 
 ### 4.1.11 Constraints
 
 En proyectos de software y arquitectura, las constraints son los límites que debemos respetar al planear y construir la solución.
 Pueden ser de tipo legal, técnico, económico u operativo (por ejemplo, normas de datos, compatibilidad de navegadores, presupuesto o plazos) y condicionan nuestras decisiones sobre tecnologías, diseño y despliegue.
 
-
-| ID    | Constraint                                                                                                                       |
-|-------|----------------------------------------------------------------------------------------------------------------------------------|
+| ID    | Constraint                                                                                                                        |
+| ----- | --------------------------------------------------------------------------------------------------------------------------------- |
 | CON01 | Cumplimiento legal: adherir a la Ley de Protección de Datos Personales (Ley N° 29733) y a la Ley de Comercio Electrónico peruana. |
 | CON02 | Disponibilidad: 99.9 % de uptime en horario crítico (06:00–22:00, Lima), con recuperación ante fallos < 30 s.                     |
 | CON03 | Compatibilidad: soportar Chrome, Firefox y Safari (últimas 3 versiones); WebView en Android e iOS.                                |
-| CON04 | Rendimiento: búsqueda de espacios y filtrado en < 2 s; confirmación de reserva en < 1 s bajo carga normal.                         |
+| CON04 | Rendimiento: búsqueda de espacios y filtrado en < 2 s; confirmación de reserva en < 1 s bajo carga normal.                        |
 | CON05 | Escalabilidad: escalar horizontalmente hasta un 200 % más de usuarios o listados sin refactorización ni degradar el desempeño.    |
 | CON06 | Seguridad: autenticación OAuth 2.0/JWT; cifrado TLS 1.2+ en tránsito y AES-256 en reposo; pruebas de penetración anuales.         |
 | CON07 | Internacionalización: interfaz bilingüe (ES/EN) en MVP; soporte para agregar al menos 3 idiomas más sin retrabajo de código.      |
-| CON08 | Accesibilidad: cumplir WCAG 2.1 nivel AA para usuarios con discapacidad (teclado, lector de pantalla, contraste de colores).       |
-| CON09 | Integración: Google Maps Geocoding y pasarelas de pago (Stripe, PayPal); tolerancia a fallos y retry con back-off en 3 intentos. |
-
+| CON08 | Accesibilidad: cumplir WCAG 2.1 nivel AA para usuarios con discapacidad (teclado, lector de pantalla, contraste de colores).      |
+| CON09 | Integración: Google Maps Geocoding y pasarelas de pago (Stripe, PayPal); tolerancia a fallos y retry con back-off en 3 intentos.  |
 
 ### 4.1.12 Architectural Concerns
 
-En el contexto de **WorkStation**, las preocupaciones arquitectónicas son aquellas decisiones de diseño con alto impacto en la capacidad del sistema para cumplir con los requisitos funcionales y no funcionales de propietarios de coworkings y usuarios finales. Estas preocupaciones se derivan tanto de las *user stories* como de riesgos asociados a la operación de la plataforma.
+En el contexto de **WorkStation**, las preocupaciones arquitectónicas son aquellas decisiones de diseño con alto impacto en la capacidad del sistema para cumplir con los requisitos funcionales y no funcionales de propietarios de coworkings y usuarios finales. Estas preocupaciones se derivan tanto de las _user stories_ como de riesgos asociados a la operación de la plataforma.
 
 ### Principales Preocupaciones
 
-| Preocupación | Justificación | Riesgo Asociado |
-|--------------|---------------|-----------------|
-| **Autenticación y Seguridad de Acceso** | Historias como **US-06**, **US-07**, **US-27** y **US-28** evidencian la necesidad de controlar el acceso y proteger datos sensibles. | Acceso indebido a información de usuarios o propietarios; vulneración de datos. |
-| **Escalabilidad y Disponibilidad** | La reserva y consulta en tiempo real (**US-09**, **US-11**) requieren que el sistema soporte alta concurrencia y tiempos de respuesta bajos. | Caídas del sistema en horas punta; mala experiencia de usuario. |
-| **Gestión de Información en Tiempo Real** | Funcionalidades como **US-14** (actualizar ítem) o **US-11** (estado de habitaciones) exigen consistencia y sincronización inmediata. | Inconsistencias de datos entre usuarios concurrentes. |
-| **Comunicación y Coordinación Interna** | La existencia de un canal interno (**US-29**) obliga a integrar servicios de mensajería seguros. | Filtración de información sensible del personal. |
-| **Accesibilidad y Experiencia de Usuario** | Historias como **US-31**, **US-33** y **US-35** muestran la necesidad de accesibilidad y usabilidad para perfiles diversos. | Baja adopción del sistema por usuarios con distintos niveles de alfabetización digital. |
+| Preocupación                               | Justificación                                                                                                                                | Riesgo Asociado                                                                         |
+| ------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
+| **Autenticación y Seguridad de Acceso**    | Historias como **US-06**, **US-07**, **US-27** y **US-28** evidencian la necesidad de controlar el acceso y proteger datos sensibles.        | Acceso indebido a información de usuarios o propietarios; vulneración de datos.         |
+| **Escalabilidad y Disponibilidad**         | La reserva y consulta en tiempo real (**US-09**, **US-11**) requieren que el sistema soporte alta concurrencia y tiempos de respuesta bajos. | Caídas del sistema en horas punta; mala experiencia de usuario.                         |
+| **Gestión de Información en Tiempo Real**  | Funcionalidades como **US-14** (actualizar ítem) o **US-11** (estado de habitaciones) exigen consistencia y sincronización inmediata.        | Inconsistencias de datos entre usuarios concurrentes.                                   |
+| **Comunicación y Coordinación Interna**    | La existencia de un canal interno (**US-29**) obliga a integrar servicios de mensajería seguros.                                             | Filtración de información sensible del personal.                                        |
+| **Accesibilidad y Experiencia de Usuario** | Historias como **US-31**, **US-33** y **US-35** muestran la necesidad de accesibilidad y usabilidad para perfiles diversos.                  | Baja adopción del sistema por usuarios con distintos niveles de alfabetización digital. |
 
 ### Riesgos como Preocupaciones Gestionadas
 
 Los riesgos se aceptan formalmente como preocupaciones arquitectónicas que deben ser mitigadas.  
 Por ejemplo, brindar acceso administrativo a clientes o gerentes puede ser necesario para la operación, pero representa un riesgo alto si no se controla. La arquitectura debe contemplar medidas como:
 
-- Autenticación multifactor.  
-- Definición clara de roles y permisos.  
-- Auditoría y trazabilidad de cambios.  
+- Autenticación multifactor.
+- Definición clara de roles y permisos.
+- Auditoría y trazabilidad de cambios.
 
-De esta forma, las preocupaciones arquitectónicas no solo responden a los requisitos planteados en las *user stories*, sino también a la necesidad de reducir riesgos que impactan en la confiabilidad, seguridad y crecimiento de la plataforma.
-
+De esta forma, las preocupaciones arquitectónicas no solo responden a los requisitos planteados en las _user stories_, sino también a la necesidad de reducir riesgos que impactan en la confiabilidad, seguridad y crecimiento de la plataforma.
 
 ## 4.3 ADD Iterations
+
 ### 4.2.1 Iteration 1: Workstation Office Recommendation
 
 #### 4.2.1.1 Architectural Design Backlog 1
@@ -820,13 +833,13 @@ De esta forma, las preocupaciones arquitectónicas no solo responden a los requi
 Para esta primera iteracion del diseño de Arquitectura de Workstation, el equipo se centrará en enfocar las historias de usuario en el desarrollo de las recomendaciones de las oficinas dependiendo de su rating, ubicacion, necesidades o preferencias del usuario con un efoque funcional y escalable. Los principales atributos que se pudieron identificar fueron:
 
 - Modificabilidad:
-Para este punto lo que se busca es permitir ajustes o modificaciones en los espacios sin impactar el resto del sistema.
+  Para este punto lo que se busca es permitir ajustes o modificaciones en los espacios sin impactar el resto del sistema.
 - Usabilidad:
-La experiencia durante la busqueda en el contexto de Searching debe ser intuitiva y clara. El UI responsive, filtros dinamicos y catching eficiente
+  La experiencia durante la busqueda en el contexto de Searching debe ser intuitiva y clara. El UI responsive, filtros dinamicos y catching eficiente
 - Seguridad:
-Para la seguridad se requiere una autenticacion con OAuth 2.0 por roles y proteccion contra inyeccion de consultas
+  Para la seguridad se requiere una autenticacion con OAuth 2.0 por roles y proteccion contra inyeccion de consultas
 - Interoperabilidad:
-Por ultimo, la logica de recomendaciones se debe poder utilizar datos de diferentes fuentes, para ello el uso de microservicios.
+  Por ultimo, la logica de recomendaciones se debe poder utilizar datos de diferentes fuentes, para ello el uso de microservicios.
 
 **Historias de Usuario**
 
@@ -839,28 +852,27 @@ Por ultimo, la logica de recomendaciones se debe poder utilizar datos de diferen
 
 **Tareas iniciales del backlog de la arquitectura**
 
-| **Contexto**      | **Tarea**                                                                                      | **Descripción** |
-|--------------------|------------------------------------------------------------------------------------------------|-----------------|
-| **Usuarios**       | Diseñar entidad `User` con campos de perfil y preferencias                                     | Modelo con datos básicos (nombre, email, rol, preferencias de búsqueda). |
-|                    | Implementar autenticación básica con JWT                                                       | Seguridad inicial para proteger endpoints. |
-|                    | Exponer endpoint `GET /users/{id}/preferences`                                                 | Permitir que el motor de recomendaciones acceda a las preferencias. |
-| **Property Owner** | Definir entidad `PropertyOwner`                                                                | Modelo con datos del propietario. |
-|                    | Implementar CRUD de oficinas ligadas al propietario (`/owners/{id}/offices`)                   | Crear, editar y eliminar oficinas. |
-|                    | Validar disponibilidad y capacidad en la creación de oficinas                                  | Evitar inconsistencias en reservas futuras. |
-| **Offices**        | Modelar entidad `Office` con ubicación, capacidad, costo y servicios                           | Incluyendo soporte geoespacial. |
-|                    | Crear endpoint básico `/offices` con filtros iniciales                                         | Filtrar por ubicación, capacidad y servicios. |
-| **Rating**         | Crear entidad `Rating` (userId, officeId, score, comment)                                      | Asociar puntuaciones y comentarios. |
-|                    | Implementar endpoint `POST /offices/{id}/ratings`                                              | Permitir registrar valoraciones. |
-|                    | Implementar cálculo de promedio y normalización de puntuaciones                                | Exponerlo en `/offices/{id}` y en recomendaciones. |
-| **Search**         | Diseñar servicio `RecommendationService` extensible                                            | Permitir agregar criterios de búsqueda sin romper arquitectura. |
-|                    | Implementar endpoint `GET /search/recommendations`                                             | Recibir filtros y devolver resultados. |
-|                    | Integrar Redis para caching de resultados frecuentes                                           | Mejorar performance de búsquedas comunes. |
-| **Messaging**      | Modelar entidad `Message` (senderId, receiverId, officeId?, body, timestamp)                   | Permitir registrar comunicaciones. |
-|                    | Implementar endpoint `POST /messages`                                                          | Enviar mensajes entre usuario ↔ propietario. |
-|                    | Implementar endpoint `GET /messages/conversation/{userId}/{ownerId}`                           | Recuperar historial de conversación. |
-|                    | Integrar notificaciones en tiempo real (WebSockets / SignalR / STOMP)                          | Recibir mensajes instantáneamente. |
-|                    | Diseñar moderación inicial de contenido (spam/inapropiado)                                     | Garantizar seguridad y confianza en la mensajería. |
-
+| **Contexto**       | **Tarea**                                                                    | **Descripción**                                                          |
+| ------------------ | ---------------------------------------------------------------------------- | ------------------------------------------------------------------------ |
+| **Usuarios**       | Diseñar entidad `User` con campos de perfil y preferencias                   | Modelo con datos básicos (nombre, email, rol, preferencias de búsqueda). |
+|                    | Implementar autenticación básica con JWT                                     | Seguridad inicial para proteger endpoints.                               |
+|                    | Exponer endpoint `GET /users/{id}/preferences`                               | Permitir que el motor de recomendaciones acceda a las preferencias.      |
+| **Property Owner** | Definir entidad `PropertyOwner`                                              | Modelo con datos del propietario.                                        |
+|                    | Implementar CRUD de oficinas ligadas al propietario (`/owners/{id}/offices`) | Crear, editar y eliminar oficinas.                                       |
+|                    | Validar disponibilidad y capacidad en la creación de oficinas                | Evitar inconsistencias en reservas futuras.                              |
+| **Offices**        | Modelar entidad `Office` con ubicación, capacidad, costo y servicios         | Incluyendo soporte geoespacial.                                          |
+|                    | Crear endpoint básico `/offices` con filtros iniciales                       | Filtrar por ubicación, capacidad y servicios.                            |
+| **Rating**         | Crear entidad `Rating` (userId, officeId, score, comment)                    | Asociar puntuaciones y comentarios.                                      |
+|                    | Implementar endpoint `POST /offices/{id}/ratings`                            | Permitir registrar valoraciones.                                         |
+|                    | Implementar cálculo de promedio y normalización de puntuaciones              | Exponerlo en `/offices/{id}` y en recomendaciones.                       |
+| **Search**         | Diseñar servicio `RecommendationService` extensible                          | Permitir agregar criterios de búsqueda sin romper arquitectura.          |
+|                    | Implementar endpoint `GET /search/recommendations`                           | Recibir filtros y devolver resultados.                                   |
+|                    | Integrar Redis para caching de resultados frecuentes                         | Mejorar performance de búsquedas comunes.                                |
+| **Messaging**      | Modelar entidad `Message` (senderId, receiverId, officeId?, body, timestamp) | Permitir registrar comunicaciones.                                       |
+|                    | Implementar endpoint `POST /messages`                                        | Enviar mensajes entre usuario ↔ propietario.                             |
+|                    | Implementar endpoint `GET /messages/conversation/{userId}/{ownerId}`         | Recuperar historial de conversación.                                     |
+|                    | Integrar notificaciones en tiempo real (WebSockets / SignalR / STOMP)        | Recibir mensajes instantáneamente.                                       |
+|                    | Diseñar moderación inicial de contenido (spam/inapropiado)                   | Garantizar seguridad y confianza en la mensajería.                       |
 
 #### 4.2.1.2 Establish Iteration Goal by Selecting Drivers
 
@@ -888,19 +900,21 @@ Luego de haber revisado y establecido los Drivers para nuestra solución, se eli
 **Razón de la elección**  
 El motor de recomendaciones es el núcleo funcional de la primera iteración y el principal diferenciador competitivo de la plataforma WorkStation. Refinarlo desde el inicio permite:
 
-- **Alineación con los Drivers**:  
-  - *Modificabilidad*: diseñar la lógica de recomendaciones como un servicio modular y extensible.  
-  - *Usabilidad*: garantizar que los usuarios reciban resultados claros, ordenados y relevantes.  
-  - *Seguridad*: restringir recomendaciones personalizadas solo a usuarios autenticados.  
-  - *Interoperabilidad*: exponer las recomendaciones mediante un endpoint REST estandarizado que pueda integrarse con otros módulos o servicios externos en el futuro.
+- **Alineación con los Drivers**:
+
+  - _Modificabilidad_: diseñar la lógica de recomendaciones como un servicio modular y extensible.
+  - _Usabilidad_: garantizar que los usuarios reciban resultados claros, ordenados y relevantes.
+  - _Seguridad_: restringir recomendaciones personalizadas solo a usuarios autenticados.
+  - _Interoperabilidad_: exponer las recomendaciones mediante un endpoint REST estandarizado que pueda integrarse con otros módulos o servicios externos en el futuro.
 
 - **Impacto en la experiencia del usuario**: si las recomendaciones no son rápidas, precisas o fáciles de entender, el valor de la plataforma disminuye drásticamente.
 
-- **Dependencia de otros contextos**: el motor requiere datos de *Usuarios* (preferencias), *Offices* (información de espacios) y *Rating* (calidad de oficinas), lo que lo convierte en un punto central que asegura la coherencia e integración inicial entre los bounded contexts.
+- **Dependencia de otros contextos**: el motor requiere datos de _Usuarios_ (preferencias), _Offices_ (información de espacios) y _Rating_ (calidad de oficinas), lo que lo convierte en un punto central que asegura la coherencia e integración inicial entre los bounded contexts.
 
 Por estas razones, refinar el **motor de recomendaciones** garantiza que la primera iteración entregue valor tangible y escalable, sentando la base para las funcionalidades futuras.
 
 #### 4.2.1.4 Choose One or More Design Concepts That Satisfy the Selected Drivers
+
 Tras identificar el motor de recomendaciones como el elemento crítico a refinar, se seleccionaron conceptos de diseño clave que satisfacen los drivers arquitectónicos definidos para Workstation Office Recommendation. Estos conceptos permitirán construir una arquitectura segura, modular, interoperable y con una experiencia de usuario clara e intuitiva.
 
 **Modificabilidad**
@@ -940,20 +954,21 @@ Tras identificar el motor de recomendaciones como el elemento crítico a refinar
 - Proveer una base arquitectónica que garantice la modificabilidad mediante módulos desacoplados, la usabilidad con un buscador rápido e intuitivo, la seguridad con mecanismos de autenticación y control de acceso robustos, y la interoperabilidad a través de microservicios y APIs estandarizadas.
 
 #### 4.2.1.5 Instantiate Architectural Elements, Allocate Responsibilities, and Define Interfaces
-| **Decisiones** | **Justificación** |
-|----------------|--------------------|
-| Utilizar **Spring Boot con Spring Security (OAuth 2.0 + JWT)** | Se selecciona Spring Boot junto con Spring Security para manejar la autenticación y autorización. OAuth 2.0 por roles y generación de tokens JWT ofrecen un estándar moderno, seguro y ampliamente probado que protege el acceso a recursos sensibles como recomendaciones, mensajería y valoraciones. |
-| Implementar **arquitectura de microservicios desacoplados** | Cada contexto (Usuarios, Propietarios, Oficinas, Ratings, Mensajería, Búsqueda) será un microservicio independiente comunicado mediante APIs REST. Esto permite escalabilidad horizontal, mantenibilidad modular y despliegues independientes. |
-| Utilizar **PostgreSQL con soporte geoespacial (PostGIS)** | PostgreSQL se selecciona como base de datos principal por su robustez en transacciones, soporte para índices geoespaciales y extensiones como PostGIS, necesarias para consultas de ubicación de oficinas. Asegura consistencia e integridad de la información. |
-| Implementar **Redis para caching** | Redis se integrará para optimizar el rendimiento del motor de recomendaciones, almacenando resultados frecuentes de búsqueda. Esto reduce la latencia y mejora la experiencia del usuario en búsquedas repetitivas. |
-| Utilizar **Angular con Material Design** | Angular proveerá una interfaz responsiva y modular, mientras que Material Design asegurará consistencia, accesibilidad y una experiencia visual clara. Los filtros dinámicos permitirán búsquedas más intuitivas. |
-| Usar **AuthGuard en Angular** | Se protegerán las rutas del frontend mediante AuthGuard, asegurando que solo usuarios autenticados y con roles correctos puedan acceder a funciones sensibles como mensajería o valoraciones. |
-| Implementar **API Gateway con Spring Cloud Gateway** | Un API Gateway permitirá centralizar la autenticación, seguridad, enrutamiento, logging y monitoreo de tráfico hacia los microservicios. Esto fortalece la gobernanza y control de la arquitectura distribuida. |
-| Integrar **WebSockets (SignalR / STOMP)** para mensajería en tiempo real | Se añade un canal de comunicación en tiempo real entre usuarios y propietarios, mejorando la interacción directa y la experiencia de uso. |
-| Integrar **Prometheus y Grafana para monitoreo** | Prometheus recopilará métricas de cada microservicio y Grafana visualizará dashboards de disponibilidad, latencia y uso. Esto permite identificar cuellos de botella y reaccionar ante fallos. |
 
+| **Decisiones**                                                           | **Justificación**                                                                                                                                                                                                                                                                                      |
+| ------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Utilizar **Spring Boot con Spring Security (OAuth 2.0 + JWT)**           | Se selecciona Spring Boot junto con Spring Security para manejar la autenticación y autorización. OAuth 2.0 por roles y generación de tokens JWT ofrecen un estándar moderno, seguro y ampliamente probado que protege el acceso a recursos sensibles como recomendaciones, mensajería y valoraciones. |
+| Implementar **arquitectura de microservicios desacoplados**              | Cada contexto (Usuarios, Propietarios, Oficinas, Ratings, Mensajería, Búsqueda) será un microservicio independiente comunicado mediante APIs REST. Esto permite escalabilidad horizontal, mantenibilidad modular y despliegues independientes.                                                         |
+| Utilizar **PostgreSQL con soporte geoespacial (PostGIS)**                | PostgreSQL se selecciona como base de datos principal por su robustez en transacciones, soporte para índices geoespaciales y extensiones como PostGIS, necesarias para consultas de ubicación de oficinas. Asegura consistencia e integridad de la información.                                        |
+| Implementar **Redis para caching**                                       | Redis se integrará para optimizar el rendimiento del motor de recomendaciones, almacenando resultados frecuentes de búsqueda. Esto reduce la latencia y mejora la experiencia del usuario en búsquedas repetitivas.                                                                                    |
+| Utilizar **Angular con Material Design**                                 | Angular proveerá una interfaz responsiva y modular, mientras que Material Design asegurará consistencia, accesibilidad y una experiencia visual clara. Los filtros dinámicos permitirán búsquedas más intuitivas.                                                                                      |
+| Usar **AuthGuard en Angular**                                            | Se protegerán las rutas del frontend mediante AuthGuard, asegurando que solo usuarios autenticados y con roles correctos puedan acceder a funciones sensibles como mensajería o valoraciones.                                                                                                          |
+| Implementar **API Gateway con Spring Cloud Gateway**                     | Un API Gateway permitirá centralizar la autenticación, seguridad, enrutamiento, logging y monitoreo de tráfico hacia los microservicios. Esto fortalece la gobernanza y control de la arquitectura distribuida.                                                                                        |
+| Integrar **WebSockets (SignalR / STOMP)** para mensajería en tiempo real | Se añade un canal de comunicación en tiempo real entre usuarios y propietarios, mejorando la interacción directa y la experiencia de uso.                                                                                                                                                              |
+| Integrar **Prometheus y Grafana para monitoreo**                         | Prometheus recopilará métricas de cada microservicio y Grafana visualizará dashboards de disponibilidad, latencia y uso. Esto permite identificar cuellos de botella y reaccionar ante fallos.                                                                                                         |
 
 #### 4.2.1.6 Sketch Views (C4 & UML) and Record Design Decisions
+
 <p align="center">
   <img src="https://github.com/1ASI0732-Grupo-2/report/blob/develop/assets/img/Chapter-4/4.3.1.6.png" />
 </p>
@@ -973,36 +988,32 @@ Tras identificar el motor de recomendaciones como el elemento crítico a refinar
 
 ## In Progress
 
-| ID | Descripción |
-|----|-------------|
+| ID     | Descripción                                                                                                                                         |
+| ------ | --------------------------------------------------------------------------------------------------------------------------------------------------- |
 | CON-04 | El sistema se desarrollará utilizando un enfoque de microservicios para facilitar el mantenimiento y la escalabilidad del motor de recomendaciones. |
 
 ## Done (Conceptos y Arquitectura)
 
-| ID | Descripción |
-|----|-------------|
-| CON-01 | El sistema será desarrollado en Java Spring Boot (backend), React/TypeScript (frontend) y PostgreSQL como base de datos principal. |
-| CON-02 | La aplicación podrá usarse en navegadores modernos como Chrome, Firefox, Safari y Edge con UI responsive. |
-| CON-03 | Se emplearán tecnologías Open Source para reducir costos y garantizar flexibilidad. |
+| ID     | Descripción                                                                                                                              |
+| ------ | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| CON-01 | El sistema será desarrollado en Java Spring Boot (backend), React/TypeScript (frontend) y PostgreSQL como base de datos principal.       |
+| CON-02 | La aplicación podrá usarse en navegadores modernos como Chrome, Firefox, Safari y Edge con UI responsive.                                |
+| CON-03 | Se emplearán tecnologías Open Source para reducir costos y garantizar flexibilidad.                                                      |
 | CON-05 | El sistema adoptará el patrón Domain Driven Design (DDD) para estructurar los microservicios de manera alineada al negocio de coworking. |
-| ARC-01 | Aplicar conocimientos previos en tecnologías como Java Spring Boot, React, PostgreSQL, Elasticsearch, Redis y herramientas de CI/CD. |
-| ARC-02 | Reconocer las habilidades del equipo para distribuir tareas según fortalezas individuales. |
-| ARC-04 | Entender que todos estamos en constante aprendizaje y fomentar la colaboración para resolver desafíos técnicos. |
+| ARC-01 | Aplicar conocimientos previos en tecnologías como Java Spring Boot, React, PostgreSQL, Elasticsearch, Redis y herramientas de CI/CD.     |
+| ARC-02 | Reconocer las habilidades del equipo para distribuir tareas según fortalezas individuales.                                               |
+| ARC-04 | Entender que todos estamos en constante aprendizaje y fomentar la colaboración para resolver desafíos técnicos.                          |
 
 ## Done (Criterios de Aceptación y User Stories)
 
-| ID | Descripción |
-|----|-------------|
+| ID               | Descripción                                                                                                                                 |
+| ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
 | AC-01 Usabilidad | El usuario podrá navegar fácilmente por la aplicación para buscar espacios de coworking, gestionar reservas y comunicarse con propietarios. |
-| AC-04 Seguridad | El usuario iniciará sesión con OAuth2/JWT; se generará un token para mantener la sesión activa y segura. |
-| US-01 | Como usuario, quiero ver oficinas recomendadas con capacidad adecuada y alto rating para asegurar comodidad de mi equipo. |
-| US-02 | Como propietario, quiero que mi espacio sea recomendado a usuarios con necesidades compatibles para aumentar la tasa de reservas. |
-| TS-08 | Como desarrollador, necesito crear un endpoint que permita iniciar sesión a los usuarios con autenticación OAuth2 segura. |
-| TS-09 | Como desarrollador, necesito implementar endpoints para actualizar la información del usuario y sus preferencias de búsqueda. |
-
-
-
-
+| AC-04 Seguridad  | El usuario iniciará sesión con OAuth2/JWT; se generará un token para mantener la sesión activa y segura.                                    |
+| US-01            | Como usuario, quiero ver oficinas recomendadas con capacidad adecuada y alto rating para asegurar comodidad de mi equipo.                   |
+| US-02            | Como propietario, quiero que mi espacio sea recomendado a usuarios con necesidades compatibles para aumentar la tasa de reservas.           |
+| TS-08            | Como desarrollador, necesito crear un endpoint que permita iniciar sesión a los usuarios con autenticación OAuth2 segura.                   |
+| TS-09            | Como desarrollador, necesito implementar endpoints para actualizar la información del usuario y sus preferencias de búsqueda.               |
 
 ## Final
 
