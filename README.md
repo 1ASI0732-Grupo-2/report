@@ -788,6 +788,30 @@ Pueden ser de tipo legal, técnico, económico u operativo (por ejemplo, normas 
 
 ### 4.1.12 Architectural Concerns
 
+En el contexto de **WorkStation**, las preocupaciones arquitectónicas son aquellas decisiones de diseño con alto impacto en la capacidad del sistema para cumplir con los requisitos funcionales y no funcionales de propietarios de coworkings y usuarios finales. Estas preocupaciones se derivan tanto de las *user stories* como de riesgos asociados a la operación de la plataforma.
+
+### Principales Preocupaciones
+
+| Preocupación | Justificación | Riesgo Asociado |
+|--------------|---------------|-----------------|
+| **Autenticación y Seguridad de Acceso** | Historias como **US-06**, **US-07**, **US-27** y **US-28** evidencian la necesidad de controlar el acceso y proteger datos sensibles. | Acceso indebido a información de usuarios o propietarios; vulneración de datos. |
+| **Escalabilidad y Disponibilidad** | La reserva y consulta en tiempo real (**US-09**, **US-11**) requieren que el sistema soporte alta concurrencia y tiempos de respuesta bajos. | Caídas del sistema en horas punta; mala experiencia de usuario. |
+| **Gestión de Información en Tiempo Real** | Funcionalidades como **US-14** (actualizar ítem) o **US-11** (estado de habitaciones) exigen consistencia y sincronización inmediata. | Inconsistencias de datos entre usuarios concurrentes. |
+| **Comunicación y Coordinación Interna** | La existencia de un canal interno (**US-29**) obliga a integrar servicios de mensajería seguros. | Filtración de información sensible del personal. |
+| **Accesibilidad y Experiencia de Usuario** | Historias como **US-31**, **US-33** y **US-35** muestran la necesidad de accesibilidad y usabilidad para perfiles diversos. | Baja adopción del sistema por usuarios con distintos niveles de alfabetización digital. |
+
+### Riesgos como Preocupaciones Gestionadas
+
+Los riesgos se aceptan formalmente como preocupaciones arquitectónicas que deben ser mitigadas.  
+Por ejemplo, brindar acceso administrativo a clientes o gerentes puede ser necesario para la operación, pero representa un riesgo alto si no se controla. La arquitectura debe contemplar medidas como:
+
+- Autenticación multifactor.  
+- Definición clara de roles y permisos.  
+- Auditoría y trazabilidad de cambios.  
+
+De esta forma, las preocupaciones arquitectónicas no solo responden a los requisitos planteados en las *user stories*, sino también a la necesidad de reducir riesgos que impactan en la confiabilidad, seguridad y crecimiento de la plataforma.
+
+
 ## 4.3 ADD Iterations
 ### 4.2.1 Iteration 1: Workstation Office Recommendation
 
