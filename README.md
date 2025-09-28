@@ -877,15 +877,104 @@ El motor de recomendaciones es el núcleo funcional de la primera iteración y e
 Por estas razones, refinar el **motor de recomendaciones** garantiza que la primera iteración entregue valor tangible y escalable, sentando la base para las funcionalidades futuras.
 
 #### 4.2.1.4 Choose One or More Design Concepts That Satisfy the Selected Drivers
+Tras identificar el motor de recomendaciones como el elemento crítico a refinar, se seleccionaron conceptos de diseño clave que satisfacen los drivers arquitectónicos definidos para Workstation Office Recommendation. Estos conceptos permitirán construir una arquitectura segura, modular, interoperable y con una experiencia de usuario clara e intuitiva.
 
+**Modificabilidad**
+
+- **Concepto de Diseño:** Arquitectura modular con servicios desacoplados.
+
+- **Descripción:** Diseñar el motor de recomendaciones y los servicios de soporte (Usuarios, Oficinas, Ratings, Mensajería) como módulos independientes comunicados por APIs REST.
+
+- **Justificación:** Permite incorporar nuevos criterios de recomendación (ej. costo, disponibilidad en tiempo real) sin necesidad de reestructurar la solución completa.
+
+**Usabilidad**
+
+- **Concepto de Diseño:** Interfaz responsiva con filtros dinámicos y caching.
+
+- **Descripción:** Implementar un UI adaptable a dispositivos móviles y de escritorio, con opciones de filtrado (capacidad, servicios, ubicación) y resultados rápidos gracias a caching con Redis.
+
+- **Justificación:** Mejora la experiencia de búsqueda, ofreciendo resultados claros y ordenados que facilitan la comparación de oficinas.
+
+**Seguridad**
+
+- **Concepto de Diseño:** Autenticación con JWT y autorización con OAuth 2.0 por roles.
+
+- **Descripción:** Proteger el acceso a recomendaciones personalizadas, mensajería y valoraciones mediante un esquema de autenticación y autorización robusto basado en roles (usuario, propietario).
+
+- **Justificación:** Garantiza que solo usuarios registrados accedan a funcionalidades sensibles, reduciendo riesgos de accesos indebidos e inyecciones de consultas.
+
+**Interoperabilidad**
+
+- **Concepto de Diseño:** Uso de microservicios con APIs estandarizadas.
+
+- **Descripción:** Diseñar los contextos principales (Usuarios, Oficinas, Ratings, Mensajería) como microservicios con APIs REST bien definidas, preparados para futuras integraciones.
+
+- **Justificación:** Permite conectar el motor de recomendaciones con servicios externos (pagos, geolocalización, notificaciones) y asegura escalabilidad en la evolución del producto.
+
+**Objetivo de los Conceptos de Diseño:**
+
+- Proveer una base arquitectónica que garantice la modificabilidad mediante módulos desacoplados, la usabilidad con un buscador rápido e intuitivo, la seguridad con mecanismos de autenticación y control de acceso robustos, y la interoperabilidad a través de microservicios y APIs estandarizadas.
 
 #### 4.2.1.5 Instantiate Architectural Elements, Allocate Responsibilities, and Define Interfaces
+| **Decisiones** | **Justificación** |
+|----------------|--------------------|
+| Utilizar **Spring Boot con Spring Security (OAuth 2.0 + JWT)** | Se selecciona Spring Boot junto con Spring Security para manejar la autenticación y autorización. OAuth 2.0 por roles y generación de tokens JWT ofrecen un estándar moderno, seguro y ampliamente probado que protege el acceso a recursos sensibles como recomendaciones, mensajería y valoraciones. |
+| Implementar **arquitectura de microservicios desacoplados** | Cada contexto (Usuarios, Propietarios, Oficinas, Ratings, Mensajería, Búsqueda) será un microservicio independiente comunicado mediante APIs REST. Esto permite escalabilidad horizontal, mantenibilidad modular y despliegues independientes. |
+| Utilizar **PostgreSQL con soporte geoespacial (PostGIS)** | PostgreSQL se selecciona como base de datos principal por su robustez en transacciones, soporte para índices geoespaciales y extensiones como PostGIS, necesarias para consultas de ubicación de oficinas. Asegura consistencia e integridad de la información. |
+| Implementar **Redis para caching** | Redis se integrará para optimizar el rendimiento del motor de recomendaciones, almacenando resultados frecuentes de búsqueda. Esto reduce la latencia y mejora la experiencia del usuario en búsquedas repetitivas. |
+| Utilizar **Angular con Material Design** | Angular proveerá una interfaz responsiva y modular, mientras que Material Design asegurará consistencia, accesibilidad y una experiencia visual clara. Los filtros dinámicos permitirán búsquedas más intuitivas. |
+| Usar **AuthGuard en Angular** | Se protegerán las rutas del frontend mediante AuthGuard, asegurando que solo usuarios autenticados y con roles correctos puedan acceder a funciones sensibles como mensajería o valoraciones. |
+| Implementar **API Gateway con Spring Cloud Gateway** | Un API Gateway permitirá centralizar la autenticación, seguridad, enrutamiento, logging y monitoreo de tráfico hacia los microservicios. Esto fortalece la gobernanza y control de la arquitectura distribuida. |
+| Integrar **WebSockets (SignalR / STOMP)** para mensajería en tiempo real | Se añade un canal de comunicación en tiempo real entre usuarios y propietarios, mejorando la interacción directa y la experiencia de uso. |
+| Integrar **Prometheus y Grafana para monitoreo** | Prometheus recopilará métricas de cada microservicio y Grafana visualizará dashboards de disponibilidad, latencia y uso. Esto permite identificar cuellos de botella y reaccionar ante fallos. |
 
 
 #### 4.2.1.6 Sketch Views (C4 & UML) and Record Design Decisions
+<p align="center">
+  <img src="https://github.com/1ASI0732-Grupo-2/report/blob/develop/assets/img/Chapter-4/4.3.1.6.png" />
+</p>
 
+**Elementos y Responsabilidades del Sistema Workstation**
+| Elemento | Tipo | Responsabilidad |
+|----------|------|----------------|
+| **Usuario** | Person | Freelancer o profesional que busca espacios de coworking. Usa el sistema para buscar y reservar espacios. |
+| **Propietario** | Person | Dueño o administrador de espacios de coworking. Usa el sistema para gestionar espacios. |
+| **WorkStation** | Software System | Sistema de gestión para espacios de coworking. Envía notificaciones por email y sincroniza disponibilidad. |
+| **Google Maps API** | External System | Servicio de geolocalización y mapas. Proporciona geocodificación de ubicaciones. |
+| **OAuth2 Provider** | External System | Servicio de autenticación externa. Gestiona la autorización externa de usuarios. |
+| **Gmail** | External System | Servicio de email para notificaciones. Envía notificaciones por email a los usuarios. |
+| **Google Calendar** | External System | Servicio para gestión de calendarios. Sincroniza disponibilidad de espacios. |
 
 #### 4.2.1.7 Analysis of Current Design and Review Iteration Goal (Kanban Board)
+
+## In Progress
+
+| ID | Descripción |
+|----|-------------|
+| CON-04 | El sistema se desarrollará utilizando un enfoque de microservicios para facilitar el mantenimiento y la escalabilidad del motor de recomendaciones. |
+
+## Done (Conceptos y Arquitectura)
+
+| ID | Descripción |
+|----|-------------|
+| CON-01 | El sistema será desarrollado en Java Spring Boot (backend), React/TypeScript (frontend) y PostgreSQL como base de datos principal. |
+| CON-02 | La aplicación podrá usarse en navegadores modernos como Chrome, Firefox, Safari y Edge con UI responsive. |
+| CON-03 | Se emplearán tecnologías Open Source para reducir costos y garantizar flexibilidad. |
+| CON-05 | El sistema adoptará el patrón Domain Driven Design (DDD) para estructurar los microservicios de manera alineada al negocio de coworking. |
+| ARC-01 | Aplicar conocimientos previos en tecnologías como Java Spring Boot, React, PostgreSQL, Elasticsearch, Redis y herramientas de CI/CD. |
+| ARC-02 | Reconocer las habilidades del equipo para distribuir tareas según fortalezas individuales. |
+| ARC-04 | Entender que todos estamos en constante aprendizaje y fomentar la colaboración para resolver desafíos técnicos. |
+
+## Done (Criterios de Aceptación y User Stories)
+
+| ID | Descripción |
+|----|-------------|
+| AC-01 Usabilidad | El usuario podrá navegar fácilmente por la aplicación para buscar espacios de coworking, gestionar reservas y comunicarse con propietarios. |
+| AC-04 Seguridad | El usuario iniciará sesión con OAuth2/JWT; se generará un token para mantener la sesión activa y segura. |
+| US-01 | Como usuario, quiero ver oficinas recomendadas con capacidad adecuada y alto rating para asegurar comodidad de mi equipo. |
+| US-02 | Como propietario, quiero que mi espacio sea recomendado a usuarios con necesidades compatibles para aumentar la tasa de reservas. |
+| TS-08 | Como desarrollador, necesito crear un endpoint que permita iniciar sesión a los usuarios con autenticación OAuth2 segura. |
+| TS-09 | Como desarrollador, necesito implementar endpoints para actualizar la información del usuario y sus preferencias de búsqueda. |
 
 
 
