@@ -768,6 +768,20 @@ HoTech no es una solución genérica: es una plataforma construida desde la real
 | QA8  | Comunicación interna | Un gerente puede asignar tareas y recibir confirmaciones sin pérdida de información         | US-15 (Asignar tareas), US-16 (Confirmar tareas), US-29 (Canal de comunicación) |
 
 ### 4.1.11 Constraints
+
+| ID    | Constraint                                                                                                                       |
+|-------|----------------------------------------------------------------------------------------------------------------------------------|
+| CON01 | Cumplimiento legal: adherir a la Ley de Protección de Datos Personales (Ley N° 29733) y a la Ley de Comercio Electrónico peruana. |
+| CON02 | Disponibilidad: 99.9 % de uptime en horario crítico (06:00–22:00, Lima), con recuperación ante fallos < 30 s.                     |
+| CON03 | Compatibilidad: soportar Chrome, Firefox y Safari (últimas 3 versiones); WebView en Android e iOS.                                |
+| CON04 | Rendimiento: búsqueda de espacios y filtrado en < 2 s; confirmación de reserva en < 1 s bajo carga normal.                         |
+| CON05 | Escalabilidad: escalar horizontalmente hasta un 200 % más de usuarios o listados sin refactorización ni degradar el desempeño.    |
+| CON06 | Seguridad: autenticación OAuth 2.0/JWT; cifrado TLS 1.2+ en tránsito y AES-256 en reposo; pruebas de penetración anuales.         |
+| CON07 | Internacionalización: interfaz bilingüe (ES/EN) en MVP; soporte para agregar al menos 3 idiomas más sin retrabajo de código.      |
+| CON08 | Accesibilidad: cumplir WCAG 2.1 nivel AA para usuarios con discapacidad (teclado, lector de pantalla, contraste de colores).       |
+| CON09 | Integración: Google Maps Geocoding y pasarelas de pago (Stripe, PayPal); tolerancia a fallos y retry con back-off en 3 intentos. |
+
+
 ### 4.1.12 Architectural Concerns
 
 ## 4.3 ADD Iterations
