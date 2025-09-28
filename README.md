@@ -732,6 +732,28 @@ HoTech no es una solución genérica: es una plataforma construida desde la real
 
 
 ### 4.1.9 Primary Functionality (Primary User Stories)
+
+
+| Epic ID | User Story ID | Título                                      | Rol         | Justificación Estratégica                                                                 |
+|---------|----------------|---------------------------------------------|-------------|--------------------------------------------------------------------------------------------|
+| EP-02   | US-06           | Crear cuenta empleado                      | Empleado    | Permite acceso al sistema para personal operativo.                                         |
+| EP-02   | US-07           | Crear cuenta gerente                       | Gerente     | Habilita la gestión del sistema y la creación de códigos para empleados.                  |
+| EP-03   | US-10           | Crear habitaciones                         | Gerente     | Configura la infraestructura del hotel en el sistema.                                     |
+| EP-03   | US-11           | Ver estado de habitaciones                 | Gerente     | Proporciona visibilidad operativa en tiempo real.                                         |
+| EP-04   | US-14           | Actualizar ítem                            | Empleado    | Mantiene actualizado el inventario asignado a tareas.                                     |
+| EP-03   | US-09           | Publicación de inmueble                    | Propietario | Permite registrar habitaciones con fotos, tarifas y servicios.                            |
+| EP-04   | US-15           | Asignar tareas de limpieza                 | Gerente     | Coordina al personal operativo de forma eficiente.                                        |
+| EP-04   | US-16           | Confirmar tareas completadas               | Empleado    | Cierra el ciclo operativo de limpieza y mantenimiento.                                    |
+| EP-05   | US-27           | API de verificación clave gerente          | Developer   | Asegura autenticación segura y control de acceso.                                         |
+| EP-05   | US-28           | Seguridad de empleado                      | Empleado    | Garantiza acceso seguro y personalizado al sistema.                                       |
+| EP-05   | US-29           | Canal de comunicación interna              | Empleado    | Mejora la coordinación entre personal y gerencia.                                         |
+| EP-05   | US-30           | Usuarios verificados con LinkedIn o DNI    | Propietario | Refuerza la confianza en la contratación de personal.                                     |
+| EP-05   | US-31           | Navegación por el landing page             | Usuario     | Facilita el acceso inicial a la plataforma.                                               |
+| EP-05   | US-32           | Ver información del startup                | Usuario     | Brinda contexto sobre el proyecto y sus beneficios.                                       |
+| EP-05   | US-33           | Conocer los servicios                      | Usuario     | Permite evaluar si la plataforma se ajusta a sus necesidades.                             |
+| EP-05   | US-34           | Contactar el equipo de soporte             | Usuario     | Resuelve dudas y problemas operativos.                                                    |
+| EP-05   | US-35           | Cambiar lenguaje e idioma                  | Usuario     | Asegura accesibilidad para usuarios con distintos niveles de alfabetización digital.      |
+
 ### 4.1.10 Quality Attribute Scenarios
 ### 4.1.11 Constraints
 ### 4.1.12 Architectural Concerns
