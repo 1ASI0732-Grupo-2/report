@@ -722,7 +722,7 @@ Estilos arquitectónicos propuestos:
 17. Calendario visual para disponibilidad y bloqueo de horarios.
 ## 4.2 Architectural Drivers
 ### 4.1.8 Design Purpose
-En el corazón de HoTech está la convicción de que la tecnología no debe ser un lujo, sino una herramienta accesible que empodere a cada hotelero peruano. Nuestra plataforma nace de escuchar las frustraciones reales: habitaciones que no se actualizan, inventarios que se pierden, tareas que se olvidan, y decisiones que se toman sin datos. HoTech transforma esa realidad en una operación fluida, conectada y estratégica.
+En el corazón de Workstation está la convicción de que la tecnología no debe ser un lujo, sino una herramienta accesible que empodere a cada hotelero peruano. Nuestra plataforma nace de escuchar las frustraciones reales: habitaciones que no se actualizan, inventarios que se pierden, tareas que se olvidan, y decisiones que se toman sin datos. HoTech transforma esa realidad en una operación fluida, conectada y estratégica.
 
 Cada módulo ha sido diseñado con propósito: desde la creación de habitaciones hasta la gestión de insumos, pasando por la asignación de tareas y la generación de reportes. No se trata solo de digitalizar procesos, sino de reimaginar cómo se trabaja en el día a día. Con interfaces intuitivas y flujos pensados para usuarios con poca experiencia tecnológica, HoTech democratiza la gestión hotelera.
 
