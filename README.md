@@ -1017,6 +1017,30 @@ Tras identificar el motor de recomendaciones como el elemento crítico a refinar
 | TS-08            | Como desarrollador, necesito crear un endpoint que permita iniciar sesión a los usuarios con autenticación OAuth2 segura.                   |
 | TS-09            | Como desarrollador, necesito implementar endpoints para actualizar la información del usuario y sus preferencias de búsqueda.               |
 
+
+# Capítulo 5
+## 5.1 Testing Suites & General Patterns
+### 5.1.1 Backend Application Core Testing Suite
+### 5.1.2 Pattern Based Backend Application(s)
+### 5.1.3 Pattern Based Custom Software Library
+### 5.1.4 Framework Pattern Driven Refactoring Report
+## 5.2 Software Configuration Management
+### 5.2.1 Software Development Environment Configuration
+### 5.2.2 Source Code Management
+### 5.2.3 Source Code Style Guide & Conventions
+### 5.2.4 Software Deployment Configuration
+## 5.3 Microservices Implementation
+### 5.2.1.5 Microservices Documentation Evidence for Sprint Review
+### 5.2.1.6 Software Deployment Evidence for Sprint Review
+### 5.2.1.8 Kanban Board
+### 5.2.1 Sprint 1
+#### 5.2.1.1 Sprint Backlog 1
+#### 5.2.1.2 Development Evidence for Sprint Review
+#### 5.2.1.3 Testing Suite Evidence for Sprint Review
+#### 5.2.1.4 Execution Evidence for Sprint Review
+#### 5.2.1.7 Team Collaboration Insights during Sprint
+
+
 ## Final
 
 ### Avance de Conclusiones, Bibliografía y Anexos (links)
