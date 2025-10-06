@@ -36,6 +36,7 @@ Fundamentos de Arquitectura de Software <br>
 | Versión | Fecha      | Autor(es)                                                                                                                                      | Descripción de la modificación                                                                                                     |
 | ------- | ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
 | TB1     | 25-04-2025 | Liberato Rodrigo, Renzo Miguel Llerena Delgado, Henry Kevin Diaz Gutierrez , Diego Sebastián Zúñiga Murillo y Braulio Rodrigo Torrejon Navarro | Los 3 capitulos del primer avance fueron completados, junto a las conclusiones e informacion necesaria para el avance del trabajo. |
+| TP      | 08-10-2025 | Liberato Rodrigo, Renzo Miguel Llerena Delgado, Henry Kevin Diaz Gutierrez , Diego Sebastián Zúñiga Murillo y Braulio Rodrigo Torrejon Navarro | El nuevo capitulo 4 y 5 fue completado con exito y las conclusiones fueron avanzadas, asi mismo como la solucion fue avanzada.     |
 
 # Project Report Collaboration Insights
 
@@ -1017,29 +1018,96 @@ Tras identificar el motor de recomendaciones como el elemento crítico a refinar
 | TS-08            | Como desarrollador, necesito crear un endpoint que permita iniciar sesión a los usuarios con autenticación OAuth2 segura.                   |
 | TS-09            | Como desarrollador, necesito implementar endpoints para actualizar la información del usuario y sus preferencias de búsqueda.               |
 
-
 # Capítulo 5
-## 5.1 Testing Suites & General Patterns
-### 5.1.1 Backend Application Core Testing Suite
-### 5.1.2 Pattern Based Backend Application(s)
-### 5.1.3 Pattern Based Custom Software Library
-### 5.1.4 Framework Pattern Driven Refactoring Report
-## 5.2 Software Configuration Management
-### 5.2.1 Software Development Environment Configuration
-### 5.2.2 Source Code Management
-### 5.2.3 Source Code Style Guide & Conventions
-### 5.2.4 Software Deployment Configuration
-## 5.3 Microservices Implementation
-### 5.2.1.5 Microservices Documentation Evidence for Sprint Review
-### 5.2.1.6 Software Deployment Evidence for Sprint Review
-### 5.2.1.8 Kanban Board
-### 5.2.1 Sprint 1
-#### 5.2.1.1 Sprint Backlog 1
-#### 5.2.1.2 Development Evidence for Sprint Review
-#### 5.2.1.3 Testing Suite Evidence for Sprint Review
-#### 5.2.1.4 Execution Evidence for Sprint Review
-#### 5.2.1.7 Team Collaboration Insights during Sprint
 
+## 5.1 Testing Suites & General Patterns
+
+### 5.1.1 Backend Application Core Testing Suite
+
+Para las pruebas de nuestro [Backend](https://github.com/1ASI0732-Grupo-2/Backend.git) hecho en .NET 9, se utilizo la libreria de Nunit. De esta manera se lograron hacer las pruebas de Integracion.
+
+![integrationTest1](/assets/img/Chapter-4/integrationtest1.png)
+
+![integrationTest2](/assets/img/Chapter-4/integrationtest2.png)
+
+En total 3 pruebas de integracion que ven la persistencia de los datos en una base de datos de testeo. Todas estas corriendo satisfactoriamente.
+
+![integrationTest3](/assets/img/Chapter-4/integrationtest3.png)
+
+### 5.1.2 Pattern Based Backend Application(s)
+
+Dentro del backend podemos encontrar diferentes patrones utilizados para seguir buenas practicas durante el desarrollo y despliegue de la aplicacion:
+
+#### 1. Patrón Repository
+
+Las interfaces como `IOfficeRepository`, `IRatingRepository` y sus implementaciones concretas como `OfficeRepository` y `RatingRepository` abstrae el acceso a los datos y permite realizar pruebas más fácilmente, además de facilitar el cambio de la fuente de datos.
+
+#### 2. Patrón Unit of Work
+
+La presencia de `IUnitOfWork` y su uso en los servicios (por ejemplo, `OfficeCommandService`) quiere decir que la aplicación del patrón Unit of Work, el cual coordina la escritura de los cambios y gestiona las transacciones.
+
+#### 3. Patrón Command / CQRS
+
+El uso de clases de comando como `CreateOfficeCommand`, `DeleteOfficeCommand`, `UpdateOfficeCommand` y los servicios correspondientes hace que la aplicación siga el patrón Command y el enfoque CQRS, que separa las operaciones de lectura y escritura.
+
+#### 4. Patrón Service Layer
+
+Clases como `OfficeCommandService`, `OfficeQueryService` y servicios similares en la capa de Aplicación encapsulan la lógica de negocio, siguiendo el patrón de Capa de Servicio (Service Layer).
+
+#### 5. Patrón Domain Model
+
+La presencia de entidades de dominio como `Office`, `OfficeService`, `Rating` y sus relaciones, así como los servicios de dominio, indica la aplicación del patrón Domain Model.
+
+#### 6. Inyección de Dependencias
+
+Usado:
+Se utiliza la inyección por constructor en los servicios y repositorios, lo cual es una práctica central del patrón de Inyección de Dependencias (Dependency Injection).
+
+#### 7. Patrón DTO/Assembler
+
+La existencia de carpetas como Transform dentro de la capa de Interface y archivos como `OfficeResourceFromEntityAssembler.cs` hubo uso de Objetos de Transferencia de Datos y Assemblers para mapear entre entidades de dominio y recursos de la API.
+
+#### 8. Patrón de Validación
+
+El uso de `FluentValidation` y validadores para los comandos represento el patrón clásico de Validación, que separa la lógica de validación de la lógica de negocio.
+
+#### 9. Patrón de Pruebas de Integración
+
+La estructura dentro de la carpeta Integration y el uso de bases de datos en memoria para las pruebas de repositorios sigue el patrón de Pruebas de Integración (Integration Test Pattern).
+
+### 5.1.3 Pattern Based Custom Software Library
+
+### 5.1.4 Framework Pattern Driven Refactoring Report
+
+## 5.2 Software Configuration Management
+
+### 5.2.1 Software Development Environment Configuration
+
+### 5.2.2 Source Code Management
+
+### 5.2.3 Source Code Style Guide & Conventions
+
+### 5.2.4 Software Deployment Configuration
+
+## 5.3 Microservices Implementation
+
+### 5.2.1.5 Microservices Documentation Evidence for Sprint Review
+
+### 5.2.1.6 Software Deployment Evidence for Sprint Review
+
+### 5.2.1.8 Kanban Board
+
+### 5.2.1 Sprint 1
+
+#### 5.2.1.1 Sprint Backlog 1
+
+#### 5.2.1.2 Development Evidence for Sprint Review
+
+#### 5.2.1.3 Testing Suite Evidence for Sprint Review
+
+#### 5.2.1.4 Execution Evidence for Sprint Review
+
+#### 5.2.1.7 Team Collaboration Insights during Sprint
 
 ## Final
 
