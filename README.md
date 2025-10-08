@@ -1140,6 +1140,16 @@ Durante el desarrollo de **Workstation API**, se aplicó un proceso de **refacto
 ## 5.2 Software Configuration Management
 
 ### 5.2.1 Software Development Environment Configuration
+**Project Management**
+
+**Whatsapp:** Aplicación de mensajeria, utilizada para coordinar mediante mensajes el avance del proyecto, asi como consultar por ayuda cuando es necesario
+https://web.whatsapp.com <br>
+
+**Zoom:** Aplicación para videollamadas, por donde se realizaron reuniones para coordinar el trabajo
+https://www.zoom.com/es <br>
+
+**Requirements Management**
+
 
 ### 5.2.2 Source Code Management
 
