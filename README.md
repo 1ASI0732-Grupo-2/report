@@ -1075,9 +1075,67 @@ El uso de `FluentValidation` y validadores para los comandos represento el patr�
 
 La estructura dentro de la carpeta Integration y el uso de bases de datos en memoria para las pruebas de repositorios sigue el patrón de Pruebas de Integración (Integration Test Pattern).
 
-### 5.1.3 Pattern Based Custom Software Library
+### 5.1.3 Pattern-Based Custom Software Library
 
-### 5.1.4 Framework Pattern Driven Refactoring Report
+El proyecto **Workstation API** implementa una arquitectura basada en **Domain-Driven Design (DDD)** y **Command Query Responsibility Segregation (CQRS)**, apoyada en una biblioteca interna de componentes reutilizables que siguen patrones de diseño bien definidos. Esta aproximación permitió desarrollar un sistema modular, escalable y fácilmente mantenible.
+
+**Patrones aplicados en la biblioteca:**
+
+- **Repository Pattern:**  
+  Implementado en las clases `OfficeRepository` y `RatingRepository`, ubicadas en el módulo `Infrastructure/Repositories`. Este patrón abstrae la lógica de acceso a datos y desacopla las operaciones CRUD del dominio, permitiendo una fácil sustitución de la capa de persistencia sin afectar la lógica de negocio.
+
+- **Unit of Work Pattern:**  
+  Representado en la clase `UnitOfWork.cs`, permite coordinar múltiples repositorios bajo una única transacción, asegurando la consistencia de los datos en operaciones complejas.
+
+- **Command Pattern:**  
+  Las clases `CreateOfficeCommand`, `UpdateOfficeCommand` y `CreateRatingCommand` encapsulan solicitudes de modificación de estado, separando claramente las operaciones de escritura del dominio. Estas son procesadas por los servicios de comando (`OfficeCommandService`, `RatingCommandService`).
+
+- **Query Pattern:**  
+  En paralelo, las consultas se manejan mediante clases de query (`GetOfficeByIdQuery`, `GetAllOfficesQuery`) y servicios especializados (`OfficeQueryService`), alineados con el principio CQRS.
+
+- **Assembler Pattern:**  
+  La clase `OfficeResourceFromEntityAssembler` implementa un transformador que convierte entidades del dominio a recursos de interfaz (`DTOs`), promoviendo el principio de separación entre la capa de dominio y la capa de presentación.
+
+- **Dependency Injection Pattern:**  
+  ASP.NET Core permite inyectar dependencias en los controladores y servicios (por ejemplo, en el `OfficeController`), facilitando la extensibilidad y las pruebas unitarias al eliminar dependencias rígidas.
+
+**Beneficios obtenidos:**
+- Reducción del acoplamiento entre capas.
+- Reutilización de componentes comunes (servicios, repositorios y validadores).
+- Mayor legibilidad y mantenibilidad del código.
+- Facilita la incorporación de pruebas unitarias y de integración.
+- Flexibilidad para reemplazar tecnologías (por ejemplo, el motor de base de datos o el ORM) sin alterar la lógica de negocio.
+
+
+### 5.1.4 Framework Pattern-Driven Refactoring Report
+
+Durante el desarrollo de **Workstation API**, se aplicó un proceso de **refactorización guiado por patrones de diseño** con el fin de mejorar la calidad estructural del código, la mantenibilidad y la separación de responsabilidades.
+
+**Refactorizaciones realizadas:**
+
+1. **Separación del controlador y la lógica de negocio (Controller → Service):**  
+   Inicialmente, parte de la lógica de validación y persistencia se encontraba dentro del `OfficeController`. Mediante la aplicación del **Service Pattern**, se trasladó la lógica a los servicios `OfficeCommandService` y `OfficeQueryService`. Esto permitió que el controlador se enfocara exclusivamente en el manejo de solicitudes HTTP y respuestas JSON.
+
+2. **Introducción del patrón Repository y Unit of Work:**  
+   El acceso a datos se refactorizó desde implementaciones directas en los servicios hacia los repositorios dedicados (`OfficeRepository` y `RatingRepository`), coordinados por un `UnitOfWork`. Esta modificación mejoró la cohesión y garantizó la atomicidad de las transacciones.
+
+3. **Aplicación del patrón Assembler (DTO Transformation):**  
+   Se eliminó la exposición directa de las entidades de dominio en las respuestas del API, implementando `OfficeResourceFromEntityAssembler` para convertir entidades en recursos. Esto mejoró la seguridad y permitió personalizar las respuestas de la API sin modificar el dominio.
+
+4. **Manejo centralizado de excepciones y validaciones:**  
+   A través de `ErrorHandleMiddleware` y excepciones personalizadas (`OfficeNotFoundException`, `NotServicesFoundException`), se implementó una estrategia de manejo de errores coherente, siguiendo el patrón **Middleware** de ASP.NET Core. Esto simplificó la gestión de respuestas HTTP y redujo la duplicación de código.
+
+5. **Aplicación del patrón Dependency Injection:**  
+   Se eliminó la creación manual de dependencias en los controladores, aprovechando la inyección de dependencias del framework. Esto fortaleció el desacoplamiento y permitió la fácil sustitución de implementaciones (por ejemplo, repositorios falsos para pruebas).
+
+**Resultados de la refactorización:**
+- Se logró un aumento de la **cohesión interna** en las capas Application, Domain e Infrastructure.
+- Se redujo el **acoplamiento entre el controlador y la lógica de negocio**.
+- La arquitectura se alineó con los principios **SOLID** y **Clean Architecture**.
+- La cobertura de pruebas unitarias mejoró al facilitar la **mockeabilidad** de las dependencias.
+- Se optimizó la mantenibilidad del código para futuras extensiones (nuevas entidades o endpoints).
+
+---
 
 ## 5.2 Software Configuration Management
 
