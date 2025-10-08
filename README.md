@@ -1142,13 +1142,27 @@ Durante el desarrollo de **Workstation API**, se aplicó un proceso de **refacto
 ### 5.2.1 Software Development Environment Configuration
 **Project Management**
 
-**Whatsapp:** Aplicación de mensajeria, utilizada para coordinar mediante mensajes el avance del proyecto, asi como consultar por ayuda cuando es necesario
+**Whatsapp:** Aplicación de mensajeria, utilizada para coordinar mediante mensajes el avance del proyecto, asi como consultar por ayuda cuando es necesario<br>
 https://web.whatsapp.com <br>
 
-**Zoom:** Aplicación para videollamadas, por donde se realizaron reuniones para coordinar el trabajo
+**Zoom:** Aplicación para videollamadas, por donde se realizaron reuniones para coordinar el trabajo<br>
 https://www.zoom.com/es <br>
 
 **Requirements Management**
+**UXPresia:** Software que sirve para la creacion de User personas, junto con otros graficos necesarios para encontrar las necesidades de los usuarios<br>
+https://uxpressia.com<br>
+
+**Plantuml:** Herramienta de modelado basada en texto que permite crear diagramas de manera declarativa. <br>
+https://plantuml.com/es/<br>
+
+**Software Development:** 
+
+**Github:** Repositorio en linea, usado para almacenar archivos y ordenar el desarrollo de proyectos <br>
+https://github.com/ <br>
+
+**Visual Studio Code:** Entorno de desarrollo integrado (IDE) creado por Microsoft, utilizado para la programación en múltiples lenguajes como C#.<br>
+https://code.visualstudio.com/<br>
+
 
 
 ### 5.2.2 Source Code Management
