@@ -1142,32 +1142,52 @@ Durante el desarrollo de **Workstation API**, se aplicó un proceso de **refacto
 ### 5.2.1 Software Development Environment Configuration
 **Project Management**
 
-**Whatsapp:** Aplicación de mensajeria, utilizada para coordinar mediante mensajes el avance del proyecto, asi como consultar por ayuda cuando es necesario<br>
+Whatsapp: Aplicación de mensajeria, utilizada para coordinar mediante mensajes el avance del proyecto, asi como consultar por ayuda cuando es necesario<br>
 https://web.whatsapp.com <br>
 
-**Zoom:** Aplicación para videollamadas, por donde se realizaron reuniones para coordinar el trabajo<br>
+Zoom: Aplicación para videollamadas, por donde se realizaron reuniones para coordinar el trabajo<br>
 https://www.zoom.com/es <br>
 
 **Requirements Management**
-**UXPresia:** Software que sirve para la creacion de User personas, junto con otros graficos necesarios para encontrar las necesidades de los usuarios<br>
+
+UXPresia: Software que sirve para la creacion de User personas, junto con otros graficos necesarios para encontrar las necesidades de los usuarios<br>
 https://uxpressia.com<br>
 
-**Plantuml:** Herramienta de modelado basada en texto que permite crear diagramas de manera declarativa. <br>
+Miro: Programa en linea usado en la creación de gráficos mediante distintas formas<br>
+https://miro.com/es/<br>
+
+**Product Design**
+
+Structurizr: Plataforma en línea para la creación de diagramas de arquitectura de software basada en el modelo C4 <br>
+https://structurizr.com/<br>
+
+Plantuml: Herramienta de modelado basada en texto que permite crear diagramas de manera declarativa. <br>
 https://plantuml.com/es/<br>
 
 **Software Development:** 
 
-**Github:** Repositorio en linea, usado para almacenar archivos y ordenar el desarrollo de proyectos <br>
+Github: Repositorio en linea, usado para almacenar archivos y ordenar el desarrollo de proyectos <br>
 https://github.com/ <br>
 
-**Visual Studio Code:** Entorno de desarrollo integrado (IDE) creado por Microsoft, utilizado para la programación en múltiples lenguajes como C#.<br>
+Visual Studio Code: Entorno de desarrollo integrado (IDE) creado por Microsoft, utilizado para la programación en múltiples lenguajes como C#.<br>
 https://code.visualstudio.com/<br>
 
 
 
 ### 5.2.2 Source Code Management
 
+El código se subió a repositorios de Github para un mejor manejo de versiones, en este se crearon las ramas: Main, de la que hereda la rama develop, y de esta se crearon los diversos feature para cada aspecto a modificar
+
+URL del repositorio en Github para el backend: https://github.com/1ASI0732-Grupo-2/Backend
+
+
 ### 5.2.3 Source Code Style Guide & Conventions
+
+El lenguaje a utilizar en el código será únicamente ingles.
+
+El Backend se desarrolló en el framework de Spring Boot, haciendo uso de C#
+
+En cuanto a la nomenclatura se utilizó UpperCammelCase para las clase, y lowerCammelCase para los metodos y vaiables.
 
 ### 5.2.4 Software Deployment Configuration
 
