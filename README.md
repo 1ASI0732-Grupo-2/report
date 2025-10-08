@@ -1146,7 +1146,7 @@ Whatsapp: Aplicación de mensajeria, utilizada para coordinar mediante mensajes 
 https://web.whatsapp.com <br>
 
 Zoom: Aplicación para videollamadas, por donde se realizaron reuniones para coordinar el trabajo<br>
-https://www.zoom.com/es <br>
+https://www.zoom.com/es <br><br>
 
 **Requirements Management**
 
@@ -1154,7 +1154,7 @@ UXPresia: Software que sirve para la creacion de User personas, junto con otros 
 https://uxpressia.com<br>
 
 Miro: Programa en linea usado en la creación de gráficos mediante distintas formas<br>
-https://miro.com/es/<br>
+https://miro.com/es/<br><br>
 
 **Product Design**
 
@@ -1162,7 +1162,7 @@ Structurizr: Plataforma en línea para la creación de diagramas de arquitectura
 https://structurizr.com/<br>
 
 Plantuml: Herramienta de modelado basada en texto que permite crear diagramas de manera declarativa. <br>
-https://plantuml.com/es/<br>
+https://plantuml.com/es/<br><br>
 
 **Software Development:** 
 
@@ -1185,7 +1185,7 @@ URL del repositorio en Github para el backend: https://github.com/1ASI0732-Grupo
 
 El lenguaje a utilizar en el código será únicamente ingles.
 
-El Backend se desarrolló en el framework de Spring Boot, haciendo uso de C#
+El Backend se desarrolló en el framework de .NET, haciendo uso de C#
 
 En cuanto a la nomenclatura se utilizó UpperCammelCase para las clase, y lowerCammelCase para los metodos y vaiables.
 
