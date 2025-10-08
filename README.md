@@ -1191,6 +1191,11 @@ En cuanto a la nomenclatura se utilizó UpperCammelCase para las clase, y lowerC
 
 ### 5.2.4 Software Deployment Configuration
 
+Para el despliegue del backend se utilizó Docker para contenerizar la aplicación. Esto permite una mejor organización del sistema mediante el uso de microservicios, cada uno ejecutándose en su propio contenedor.
+El backend fue desplegado en una plataforma compatible con contenedores, permitiendo que los servicios se comuniquen entre sí de forma eficiente.
+
+
+
 ## 5.3 Microservices Implementation
 
 ### 5.2.1.5 Microservices Documentation Evidence for Sprint Review
