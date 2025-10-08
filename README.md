@@ -1104,8 +1104,20 @@ La estructura dentro de la carpeta Integration y el uso de bases de datos en mem
 #### 5.2.1.2 Development Evidence for Sprint Review
 
 #### 5.2.1.3 Testing Suite Evidence for Sprint Review
+En el alcance del sprint 1 se ha desarrollado el backend, priorizando la funcionalidad de los servicios.
+![testing1](https://github.com/1ASI0732-Grupo-2/report/blob/develop/assets/img/Chapter-5/5.2.1.3-1.jpeg)
 
+![testing2](https://github.com/1ASI0732-Grupo-2/report/blob/develop/assets/img/Chapter-5/5.2.1.3-2.jpeg)
+
+![testing1](https://github.com/1ASI0732-Grupo-2/report/blob/develop/assets/img/Chapter-5/5.2.1.3-3.jpeg)
 #### 5.2.1.4 Execution Evidence for Sprint Review
+Para esta entrega, se realizo el backend ,desplegandolo asi mismo en swagger.
+![Execution1](https://github.com/1ASI0732-Grupo-2/report/blob/develop/assets/img/Chapter-5/5.2.1.4-1.jpeg)
+
+![Execution2](https://github.com/1ASI0732-Grupo-2/report/blob/develop/assets/img/Chapter-5/5.2.1.4-2.jpeg)
+
+![Execution3](https://github.com/1ASI0732-Grupo-2/report/blob/develop/assets/img/Chapter-5/5.2.1.4-3.jpeg)
+Link del despliegue del backend : [https://workstation-arqui-fgbngphuh0g4a8at.canadacentral-01.azurewebsites.net/swagger/index.html](https://workstation-arqui-fgbngphuh0g4a8at.canadacentral-01.azurewebsites.net/swagger/index.html) 
 
 #### 5.2.1.7 Team Collaboration Insights during Sprint
 
