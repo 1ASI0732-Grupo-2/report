@@ -1198,9 +1198,90 @@ El backend fue desplegado en una plataforma compatible con contenedores, permiti
 
 ## 5.3 Microservices Implementation
 
+Durante esta etapa del proyecto, el equipo de desarrollo implementó la arquitectura del backend de **WorkStation** siguiendo un enfoque basado en **microservicios**, con el objetivo de garantizar la modularidad, escalabilidad y mantenibilidad del sistema.  
+Cada microservicio fue diseñado para cumplir una función específica dentro del ecosistema de la aplicación, permitiendo la comunicación entre ellos mediante interfaces bien definidas y el uso de contenedores **Docker**.  
+
+Los principales microservicios implementados fueron:  
+- **AuthService:** encargado de la autenticación y autorización de usuarios mediante JWT.  
+- **WorkspaceService:** gestiona la información de los espacios de coworking, incluyendo disponibilidad, servicios y precios.  
+- **BookingService:** administra las reservas realizadas por los usuarios y la comunicación con los propietarios.  
+- **ReviewService:** almacena y procesa las reseñas y valoraciones de los usuarios.  
+
+El backend fue desarrollado con **.NET 9**, empleando una arquitectura **Domain-Driven Design (DDD)** con principios de separación de responsabilidades.  
+Cada servicio cuenta con sus propias entidades, repositorios e interfaces para promover el bajo acoplamiento.  
+
+Las **pruebas de integración** se realizaron utilizando la biblioteca **NUnit**, asegurando el correcto funcionamiento de la interacción entre los servicios y la base de datos.  
+Este proceso permitió validar escenarios como la creación de reservas, el manejo de sesiones de usuario y la actualización de estados de los espacios.
+
+
 ### 5.2.1.5 Microservices Documentation Evidence for Sprint Review
 
+Con el fin de mantener la trazabilidad y comprensión técnica del sistema, se elaboró una **documentación de los microservicios** empleando herramientas propias del entorno de desarrollo .NET y colecciones de **Postman** para validar los endpoints.  
+
+### Endpoints principales
+
+| **Servicio** | **Endpoint** | **Método HTTP** | **Descripción** |
+|--------------|---------------|------------------|------------------|
+| AuthService | `/api/auth/login` | POST | Autenticación de usuario y emisión de token JWT |
+| AuthService | `/api/auth/register` | POST | Registro de nuevos usuarios |
+| WorkspaceService | `/api/workspaces` | GET | Obtiene la lista de espacios disponibles |
+| WorkspaceService | `/api/workspaces/{id}` | GET | Devuelve la información detallada de un workspace |
+| BookingService | `/api/bookings` | POST | Registra una nueva reserva |
+| ReviewService | `/api/reviews/{workspaceId}` | GET | Obtiene las reseñas de un espacio específico |
+
+Cada endpoint fue probado y validado con **Postman**, verificando tanto las respuestas esperadas (códigos **200**, **201**, **400** y **404**) como el manejo de excepciones.  
+Además, se documentó el flujo de interacción entre servicios mediante diagramas UML y archivos **Swagger/OpenAPI** generados automáticamente desde el entorno de desarrollo.
+
+#### Ejemplo de respuesta JSON
+```json
+{
+  "bookingId": "BKG-2025-014",
+  "workspaceId": "WS-09",
+  "userId": "USR-1036",
+  "checkIn": "2025-10-15T09:00:00",
+  "checkOut": "2025-10-15T17:00:00",
+  "status": "Confirmed"
+}
+```
+URL de los endpints en swagger: https://workstation-arqui-fgbngphuh0g4a8at.canadacentral-01.azurewebsites.net/swagger/index.html
+
 ### 5.2.1.6 Software Deployment Evidence for Sprint Review
+
+El despliegue del sistema **WorkStation** se realizó utilizando **Docker**, lo que permitió contenerizar los microservicios y asegurar un entorno uniforme entre desarrollo y producción.  
+Cada servicio se ejecuta dentro de su propio contenedor, con una red interna que facilita la comunicación segura entre ellos.  
+El uso de **Docker Compose** simplificó la orquestación de múltiples contenedores, permitiendo definir dependencias y volúmenes persistentes.  
+
+###  Pasos de despliegue
+
+1. **Construcción de imágenes:**  
+   Se generaron imágenes de Docker para cada microservicio mediante sus respectivos archivos `Dockerfile`.  
+   Cada uno contiene las instrucciones necesarias para compilar y ejecutar el servicio de forma independiente.
+
+2. **Configuración de contenedores:**  
+   Se definieron variables de entorno, puertos expuestos y dependencias entre servicios en el archivo `docker-compose.yml`, garantizando una comunicación eficiente.
+
+3. **Ejecución con Docker Compose:**  
+   Se levantó el entorno completo con el comando:
+   ```bash
+   docker-compose up --build
+
+Esto permitió que los servicios se comunicaran a través de una red virtual compartida dentro del entorno Docker.
+
+![Execution1](https://github.com/1ASI0732-Grupo-2/report/blob/develop/assets/img/Chapter-5/5.2.1.4-1.jpeg)
+
+![Swagger UI](https://github.com/1ASI0732-Grupo-2/report/blob/develop/assets/img/Chapter-5/swaggerD2.png?raw=true)
+
+
+Verificación y pruebas:
+Se validó la correcta ejecución mediante logs y pruebas de endpoints desde Postman y Swagger, asegurando que los microservicios respondan adecuadamente.
+
+#### Plataforma de despliegue
+
+El backend fue desplegado en una plataforma compatible con contenedores, lo que permite escalar los servicios de manera dinámica según la demanda.
+Este enfoque asegura una mayor disponibilidad, resiliencia y facilidad de mantenimiento, permitiendo futuras integraciones con el frontend web o móvil.
+
+La utilización de Docker garantiza que el sistema mantenga la misma configuración en todos los entornos, evitando inconsistencias entre desarrollo, prueba y producción.
+Además, la estructura basada en microservicios facilita la actualización independiente de cada módulo sin afectar el resto del sistema.
 
 ### 5.2.1.8 Kanban Board
 
