@@ -1285,6 +1285,33 @@ Además, la estructura basada en microservicios facilita la actualización indep
 
 ### 5.2.1.8 Kanban Board
 
+El siguiente tablero Kanban representa el estado de avance del equipo durante el **Sprint 1** del proyecto *WorkStation*.  
+Refleja las tareas planificadas, en desarrollo, en validación y completadas, de acuerdo con la metodología ágil aplicada en el ciclo de desarrollo.
+
+| **To Do** |  **In Progress** |  **Testing / Review** |  **Done** |
+|--------------|--------------------|--------------------------|-------------|
+| API de Mensajería (US-40) | Integración Pasarela de Pago (WI07) | Validación de endpoints en Swagger | API Búsqueda por Ubicación (WI01) |
+| Implementar verificación con LinkedIn/DNI (WI16) | API Pagos Seguros (WI06) | Pruebas de integración con NUnit | API Disponibilidad de Espacios (WI04) |
+| Diseño UI de reservas | Servicio de Geolocalización (WI02) | Suite Testing Backend (WI18) | Modelo de Reservas (WI05) |
+| Documentación de microservicios adicionales | | | Configuración de Microservicios (WI17) |
+| | | | API Reseñas y Valoraciones (WI15) |
+| | | | Deployment con Docker Compose |
+
+### 📊 Análisis del flujo
+
+- **To Do:** Tareas planificadas para el siguiente sprint (mensajería, verificación y mejoras UI).  
+- **In Progress:** Actividades en desarrollo, priorizando pasarela de pagos, servicios de geolocalización y seguridad.  
+- **Testing / Review:** Pruebas unitarias y de integración realizadas con **NUnit** y validadas con **Swagger**.  
+- **Done:** Módulos completados e integrados, incluyendo despliegue con Docker y servicios principales funcionales.
+
+
+### 📊 Descripción general
+
+- **To Do:** Contiene las tareas planificadas para futuros sprints, priorizando funcionalidades críticas como mensajería y verificación de usuarios.  
+- **In Progress:** Actividades actualmente en desarrollo por los integrantes del equipo, centradas en integración de servicios y funcionalidades de pago.  
+- **Testing / Review:** Tareas en revisión o fase de pruebas unitarias e integraciones (NUnit y Swagger).  
+- **Done:** Tareas completadas y validadas en los sprints anteriores, con despliegue operativo en Docker y endpoints funcionales.
+
 ### 5.2.1 Sprint 1
 
 #### 5.2.1.1 Sprint Backlog 1
