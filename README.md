@@ -1235,6 +1235,12 @@ Link del despliegue del backend : [https://workstation-arqui-fgbngphuh0g4a8at.ca
 
 #### 5.2.1.7 Team Collaboration Insights during Sprint
 
+![Imagen1](https://github.com/1ASI0732-Grupo-2/report/blob/develop/assets/img/Chapter-5/Imagen1.jpg)
+
+![Imagen3](https://github.com/1ASI0732-Grupo-2/report/blob/develop/assets/img/Chapter-5/Imagen3.jpg)
+
+![Imagen4](https://github.com/1ASI0732-Grupo-2/report/blob/develop/assets/img/Chapter-5/Imagen4.jpg)
+
 ## Final
 
 ### Avance de Conclusiones, Bibliografía y Anexos (links)
