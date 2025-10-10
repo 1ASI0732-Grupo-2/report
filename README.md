@@ -698,17 +698,13 @@ Estilos arquitectónicos propuestos:
 
 #### Diagrama de Componentes
 
-<p align="center">
-  <img src="https://github.com/1ASI0732-Grupo-2/report/blob/develop/assets/img/Chapter-4/structurizr-api_components.png" />
-</p>
+![diagramaComponentes](/assets/img/Chapter-4/structurizr-api_components.png)
 
 ### 4.1.5 Relational/Non Relational Database Diagram
 
 #### Diagrama de Base de Datos Relacional
 
-<p align="center">
-  <img src="https://github.com/1ASI0732-Grupo-2/report/blob/develop/assets/img/Chapter-4/DATABASE.png" />
-</p>
+![basededatos](/assets/img/Chapter-4/DATABASE.png)
 
 ### 4.1.6 Design Patterns
 
@@ -1100,12 +1096,12 @@ El proyecto **Workstation API** implementa una arquitectura basada en **Domain-D
   ASP.NET Core permite inyectar dependencias en los controladores y servicios (por ejemplo, en el `OfficeController`), facilitando la extensibilidad y las pruebas unitarias al eliminar dependencias rígidas.
 
 **Beneficios obtenidos:**
+
 - Reducción del acoplamiento entre capas.
 - Reutilización de componentes comunes (servicios, repositorios y validadores).
 - Mayor legibilidad y mantenibilidad del código.
 - Facilita la incorporación de pruebas unitarias y de integración.
 - Flexibilidad para reemplazar tecnologías (por ejemplo, el motor de base de datos o el ORM) sin alterar la lógica de negocio.
-
 
 ### 5.1.4 Framework Pattern-Driven Refactoring Report
 
@@ -1129,6 +1125,7 @@ Durante el desarrollo de **Workstation API**, se aplicó un proceso de **refacto
    Se eliminó la creación manual de dependencias en los controladores, aprovechando la inyección de dependencias del framework. Esto fortaleció el desacoplamiento y permitió la fácil sustitución de implementaciones (por ejemplo, repositorios falsos para pruebas).
 
 **Resultados de la refactorización:**
+
 - Se logró un aumento de la **cohesión interna** en las capas Application, Domain e Infrastructure.
 - Se redujo el **acoplamiento entre el controlador y la lógica de negocio**.
 - La arquitectura se alineó con los principios **SOLID** y **Clean Architecture**.
@@ -1140,6 +1137,7 @@ Durante el desarrollo de **Workstation API**, se aplicó un proceso de **refacto
 ## 5.2 Software Configuration Management
 
 ### 5.2.1 Software Development Environment Configuration
+
 **Project Management**
 
 Whatsapp: Aplicación de mensajeria, utilizada para coordinar mediante mensajes el avance del proyecto, asi como consultar por ayuda cuando es necesario<br>
@@ -1164,7 +1162,7 @@ https://structurizr.com/<br>
 Plantuml: Herramienta de modelado basada en texto que permite crear diagramas de manera declarativa. <br>
 https://plantuml.com/es/<br><br>
 
-**Software Development:** 
+**Software Development:**
 
 Github: Repositorio en linea, usado para almacenar archivos y ordenar el desarrollo de proyectos <br>
 https://github.com/ <br>
@@ -1172,14 +1170,11 @@ https://github.com/ <br>
 Visual Studio Code: Entorno de desarrollo integrado (IDE) creado por Microsoft, utilizado para la programación en múltiples lenguajes como C#.<br>
 https://code.visualstudio.com/<br>
 
-
-
 ### 5.2.2 Source Code Management
 
 El código se subió a repositorios de Github para un mejor manejo de versiones, en este se crearon las ramas: Main, de la que hereda la rama develop, y de esta se crearon los diversos feature para cada aspecto a modificar
 
 URL del repositorio en Github para el backend: https://github.com/1ASI0732-Grupo-2/Backend
-
 
 ### 5.2.3 Source Code Style Guide & Conventions
 
@@ -1194,45 +1189,44 @@ En cuanto a la nomenclatura se utilizó UpperCammelCase para las clase, y lowerC
 Para el despliegue del backend se utilizó Docker para contenerizar la aplicación. Esto permite una mejor organización del sistema mediante el uso de microservicios, cada uno ejecutándose en su propio contenedor.
 El backend fue desplegado en una plataforma compatible con contenedores, permitiendo que los servicios se comuniquen entre sí de forma eficiente.
 
-
-
 ## 5.3 Microservices Implementation
 
 Durante esta etapa del proyecto, el equipo de desarrollo implementó la arquitectura del backend de **WorkStation** siguiendo un enfoque basado en **microservicios**, con el objetivo de garantizar la modularidad, escalabilidad y mantenibilidad del sistema.  
-Cada microservicio fue diseñado para cumplir una función específica dentro del ecosistema de la aplicación, permitiendo la comunicación entre ellos mediante interfaces bien definidas y el uso de contenedores **Docker**.  
+Cada microservicio fue diseñado para cumplir una función específica dentro del ecosistema de la aplicación, permitiendo la comunicación entre ellos mediante interfaces bien definidas y el uso de contenedores **Docker**.
 
-Los principales microservicios implementados fueron:  
-- **AuthService:** encargado de la autenticación y autorización de usuarios mediante JWT.  
-- **WorkspaceService:** gestiona la información de los espacios de coworking, incluyendo disponibilidad, servicios y precios.  
-- **BookingService:** administra las reservas realizadas por los usuarios y la comunicación con los propietarios.  
-- **ReviewService:** almacena y procesa las reseñas y valoraciones de los usuarios.  
+Los principales microservicios implementados fueron:
+
+- **AuthService:** encargado de la autenticación y autorización de usuarios mediante JWT.
+- **WorkspaceService:** gestiona la información de los espacios de coworking, incluyendo disponibilidad, servicios y precios.
+- **BookingService:** administra las reservas realizadas por los usuarios y la comunicación con los propietarios.
+- **ReviewService:** almacena y procesa las reseñas y valoraciones de los usuarios.
 
 El backend fue desarrollado con **.NET 9**, empleando una arquitectura **Domain-Driven Design (DDD)** con principios de separación de responsabilidades.  
-Cada servicio cuenta con sus propias entidades, repositorios e interfaces para promover el bajo acoplamiento.  
+Cada servicio cuenta con sus propias entidades, repositorios e interfaces para promover el bajo acoplamiento.
 
 Las **pruebas de integración** se realizaron utilizando la biblioteca **NUnit**, asegurando el correcto funcionamiento de la interacción entre los servicios y la base de datos.  
 Este proceso permitió validar escenarios como la creación de reservas, el manejo de sesiones de usuario y la actualización de estados de los espacios.
 
-
 ### 5.2.1.5 Microservices Documentation Evidence for Sprint Review
 
-Con el fin de mantener la trazabilidad y comprensión técnica del sistema, se elaboró una **documentación de los microservicios** empleando herramientas propias del entorno de desarrollo .NET y colecciones de **Postman** para validar los endpoints.  
+Con el fin de mantener la trazabilidad y comprensión técnica del sistema, se elaboró una **documentación de los microservicios** empleando herramientas propias del entorno de desarrollo .NET y colecciones de **Postman** para validar los endpoints.
 
 ### Endpoints principales
 
-| **Servicio** | **Endpoint** | **Método HTTP** | **Descripción** |
-|--------------|---------------|------------------|------------------|
-| AuthService | `/api/auth/login` | POST | Autenticación de usuario y emisión de token JWT |
-| AuthService | `/api/auth/register` | POST | Registro de nuevos usuarios |
-| WorkspaceService | `/api/workspaces` | GET | Obtiene la lista de espacios disponibles |
-| WorkspaceService | `/api/workspaces/{id}` | GET | Devuelve la información detallada de un workspace |
-| BookingService | `/api/bookings` | POST | Registra una nueva reserva |
-| ReviewService | `/api/reviews/{workspaceId}` | GET | Obtiene las reseñas de un espacio específico |
+| **Servicio**     | **Endpoint**                 | **Método HTTP** | **Descripción**                                   |
+| ---------------- | ---------------------------- | --------------- | ------------------------------------------------- |
+| AuthService      | `/api/auth/login`            | POST            | Autenticación de usuario y emisión de token JWT   |
+| AuthService      | `/api/auth/register`         | POST            | Registro de nuevos usuarios                       |
+| WorkspaceService | `/api/workspaces`            | GET             | Obtiene la lista de espacios disponibles          |
+| WorkspaceService | `/api/workspaces/{id}`       | GET             | Devuelve la información detallada de un workspace |
+| BookingService   | `/api/bookings`              | POST            | Registra una nueva reserva                        |
+| ReviewService    | `/api/reviews/{workspaceId}` | GET             | Obtiene las reseñas de un espacio específico      |
 
 Cada endpoint fue probado y validado con **Postman**, verificando tanto las respuestas esperadas (códigos **200**, **201**, **400** y **404**) como el manejo de excepciones.  
 Además, se documentó el flujo de interacción entre servicios mediante diagramas UML y archivos **Swagger/OpenAPI** generados automáticamente desde el entorno de desarrollo.
 
 #### Ejemplo de respuesta JSON
+
 ```json
 {
   "bookingId": "BKG-2025-014",
@@ -1243,15 +1237,16 @@ Además, se documentó el flujo de interacción entre servicios mediante diagram
   "status": "Confirmed"
 }
 ```
+
 URL de los endpints en swagger: https://workstation-arqui-fgbngphuh0g4a8at.canadacentral-01.azurewebsites.net/swagger/index.html
 
 ### 5.2.1.6 Software Deployment Evidence for Sprint Review
 
 El despliegue del sistema **WorkStation** se realizó utilizando **Docker**, lo que permitió contenerizar los microservicios y asegurar un entorno uniforme entre desarrollo y producción.  
 Cada servicio se ejecuta dentro de su propio contenedor, con una red interna que facilita la comunicación segura entre ellos.  
-El uso de **Docker Compose** simplificó la orquestación de múltiples contenedores, permitiendo definir dependencias y volúmenes persistentes.  
+El uso de **Docker Compose** simplificó la orquestación de múltiples contenedores, permitiendo definir dependencias y volúmenes persistentes.
 
-###  Pasos de despliegue
+### Pasos de despliegue
 
 1. **Construcción de imágenes:**  
    Se generaron imágenes de Docker para cada microservicio mediante sus respectivos archivos `Dockerfile`.  
@@ -1264,13 +1259,13 @@ El uso de **Docker Compose** simplificó la orquestación de múltiples contened
    Se levantó el entorno completo con el comando:
    ```bash
    docker-compose up --build
+   ```
 
 Esto permitió que los servicios se comunicaran a través de una red virtual compartida dentro del entorno Docker.
 
 ![Execution1](https://github.com/1ASI0732-Grupo-2/report/blob/develop/assets/img/Chapter-5/5.2.1.4-1.jpeg)
 
 ![Swagger UI](https://github.com/1ASI0732-Grupo-2/report/blob/develop/assets/img/Chapter-5/swaggerD2.png?raw=true)
-
 
 Verificación y pruebas:
 Se validó la correcta ejecución mediante logs y pruebas de endpoints desde Postman y Swagger, asegurando que los microservicios respondan adecuadamente.
@@ -1285,69 +1280,71 @@ Además, la estructura basada en microservicios facilita la actualización indep
 
 ### 5.2.1.8 Kanban Board
 
-El siguiente tablero Kanban representa el estado de avance del equipo durante el **Sprint 1** del proyecto *WorkStation*.  
+El siguiente tablero Kanban representa el estado de avance del equipo durante el **Sprint 1** del proyecto _WorkStation_.  
 Refleja las tareas planificadas, en desarrollo, en validación y completadas, de acuerdo con la metodología ágil aplicada en el ciclo de desarrollo.
 
-| **To Do** |  **In Progress** |  **Testing / Review** |  **Done** |
-|--------------|--------------------|--------------------------|-------------|
-| API de Mensajería (US-40) | Integración Pasarela de Pago (WI07) | Validación de endpoints en Swagger | API Búsqueda por Ubicación (WI01) |
-| Implementar verificación con LinkedIn/DNI (WI16) | API Pagos Seguros (WI06) | Pruebas de integración con NUnit | API Disponibilidad de Espacios (WI04) |
-| Diseño UI de reservas | Servicio de Geolocalización (WI02) | Suite Testing Backend (WI18) | Modelo de Reservas (WI05) |
-| Documentación de microservicios adicionales | | | Configuración de Microservicios (WI17) |
-| | | | API Reseñas y Valoraciones (WI15) |
-| | | | Deployment con Docker Compose |
+| **To Do**                                        | **In Progress**                     | **Testing / Review**               | **Done**                               |
+| ------------------------------------------------ | ----------------------------------- | ---------------------------------- | -------------------------------------- |
+| API de Mensajería (US-40)                        | Integración Pasarela de Pago (WI07) | Validación de endpoints en Swagger | API Búsqueda por Ubicación (WI01)      |
+| Implementar verificación con LinkedIn/DNI (WI16) | API Pagos Seguros (WI06)            | Pruebas de integración con NUnit   | API Disponibilidad de Espacios (WI04)  |
+| Diseño UI de reservas                            | Servicio de Geolocalización (WI02)  | Suite Testing Backend (WI18)       | Modelo de Reservas (WI05)              |
+| Documentación de microservicios adicionales      |                                     |                                    | Configuración de Microservicios (WI17) |
+|                                                  |                                     |                                    | API Reseñas y Valoraciones (WI15)      |
+|                                                  |                                     |                                    | Deployment con Docker Compose          |
 
 ### 📊 Análisis del flujo
 
-- **To Do:** Tareas planificadas para el siguiente sprint (mensajería, verificación y mejoras UI).  
-- **In Progress:** Actividades en desarrollo, priorizando pasarela de pagos, servicios de geolocalización y seguridad.  
-- **Testing / Review:** Pruebas unitarias y de integración realizadas con **NUnit** y validadas con **Swagger**.  
+- **To Do:** Tareas planificadas para el siguiente sprint (mensajería, verificación y mejoras UI).
+- **In Progress:** Actividades en desarrollo, priorizando pasarela de pagos, servicios de geolocalización y seguridad.
+- **Testing / Review:** Pruebas unitarias y de integración realizadas con **NUnit** y validadas con **Swagger**.
 - **Done:** Módulos completados e integrados, incluyendo despliegue con Docker y servicios principales funcionales.
-
 
 ### 📊 Descripción general
 
-- **To Do:** Contiene las tareas planificadas para futuros sprints, priorizando funcionalidades críticas como mensajería y verificación de usuarios.  
-- **In Progress:** Actividades actualmente en desarrollo por los integrantes del equipo, centradas en integración de servicios y funcionalidades de pago.  
-- **Testing / Review:** Tareas en revisión o fase de pruebas unitarias e integraciones (NUnit y Swagger).  
+- **To Do:** Contiene las tareas planificadas para futuros sprints, priorizando funcionalidades críticas como mensajería y verificación de usuarios.
+- **In Progress:** Actividades actualmente en desarrollo por los integrantes del equipo, centradas en integración de servicios y funcionalidades de pago.
+- **Testing / Review:** Tareas en revisión o fase de pruebas unitarias e integraciones (NUnit y Swagger).
 - **Done:** Tareas completadas y validadas en los sprints anteriores, con despliegue operativo en Docker y endpoints funcionales.
 
 ### 5.2.1 Sprint 1
 
 #### 5.2.1.1 Sprint Backlog 1
+
 <table> <thead> <tr class="header"> <th>Sprint #</th> <th colspan="7">Sprint 1</th> </tr> <tr class="odd"> <th colspan="2">User Story</th> <th colspan="6">Work-Item / Task</th> </tr> <tr class="header"> <th>Id</th> <th>Title</th> <th>Id</th> <th>Title</th> <th>Description</th> <th>Estimation (Hours)</th> <th>Assigned To</th> <th>Status</th> </tr> </thead> <tbody> <tr class="odd"> <td colspan="2" rowspan="3">US-01</td> <td>WI01</td> <td>API Búsqueda Ubicación</td> <td>Endpoint para buscar inmuebles por ubicación con filtros de proximidad</td> <td>6</td> <td>[Rodrigo]</td> <td>Done</td> </tr> <tr class="header"> <td>WI02</td> <td>Servicio Geolocalización</td> <td>Servicio para geocodificación de direcciones y coordenadas</td> <td>4</td> <td>[Renzo]</td> <td>In process</td> </tr> <tr class="odd"> <td>WI03</td> <td>Tests Ubicación</td> <td>Pruebas unitarias para funcionalidades de ubicación</td> <td>3</td> <td>[Henry]</td> <td>Done</td> </tr><tr class="header"> <td colspan="2" rowspan="2">US-02</td> <td>WI04</td> <td>API Disponibilidad</td> <td>Endpoints para consultar disponibilidad de inmuebles</td> <td>5</td> <td>[Rodrigo]</td> <td>Done</td> </tr> <tr class="odd"> <td>WI05</td> <td>Modelo Reservas</td> <td>Modelo de datos para gestión de disponibilidad</td> <td>4</td> <td>[Diego]</td> <td>Done</td> </tr><tr class="header"> <td colspan="2" rowspan="2">US-07</td> <td>WI06</td> <td>API Pagos Seguros</td> <td>Endpoints para procesamiento de pagos</td> <td>8</td> <td>[Braulio]</td> <td>In process</td> </tr> <tr class="odd"> <td>WI07</td> <td>Integración Pasarela</td> <td>Conexión con pasarela de pago externa</td> <td>6</td> <td>[Braulio]</td> <td>In process</td> </tr><tr class="header"> <td colspan="2" rowspan="2">US-38</td> <td>WI08</td> <td>API Registro Propietarios</td> <td>Endpoints para registro y autenticación</td> <td>6</td> <td>[Rodrigo]</td> <td>Done</td> </tr> <tr class="odd"> <td>WI09</td> <td>Autenticación JWT</td> <td>Sistema de autenticación con tokens JWT</td> <td>4</td> <td>[Diego]</td> <td>In process</td> </tr><tr class="header"> <td colspan="2" rowspan="2">US-39</td> <td>WI10</td> <td>API Gestión Inmuebles</td> <td>CRUD completo para inmuebles</td> <td>7</td> <td>[Henry]</td> <td>Done</td> </tr> <tr class="odd"> <td>WI11</td> <td>Upload Imágenes</td> <td>Servicio para carga de imágenes de inmuebles</td> <td>5</td> <td>[Henry]</td> <td>Done</td> </tr><tr class="header"> <td colspan="2" rowspan="2">US-03</td> <td>WI12</td> <td>API Filtros Búsqueda</td> <td>Endpoints para búsqueda avanzada con filtros</td> <td>6</td> <td>[Renzo]</td> <td>Done</td> </tr> <tr class="odd"> <td>WI13</td> <td>Lógica Filtrados</td> <td>Filtros por aforo, servicios, tipo de espacio</td> <td>5</td> <td>[Diego]</td> <td>Done</td> </tr><tr class="header"> <td colspan="2">US-40</td> <td>WI14</td> <td>API Mensajería</td> <td>Endpoints para mensajes entre usuarios</td> <td>6</td> <td>[Renzo]</td> <td>Done</td> </tr><tr class="odd"> <td colspan="2">US-04</td> <td>WI15</td> <td>API Reseñas</td> <td>Endpoints para valoraciones y opiniones</td> <td>5</td> <td>[Braulio]</td> <td>Done</td> </tr><tr class="header"> <td colspan="2">US-30</td> <td>WI16</td> <td>API Verificación</td> <td>Verificación con LinkedIn/DNI</td> <td>7</td> <td>[Henry]</td> <td>In process</td> </tr><tr class="odd"> <td colspan="2" rowspan="2">Técnicas</td> <td>WI17</td> <td>Configuración Microservicios</td> <td>Arquitectura base de microservicios</td> <td>6</td> <td>[Rodrigo]</td> <td>Done</td> </tr> <tr class="header"> <td>WI18</td> <td>Suite Testing</td> <td>Suite completa de pruebas backend</td> <td>8</td> <td>[Diego]</td> <td>In process</td> </tr> </tbody> </table>
 
-
 #### 5.2.1.2 Development Evidence for Sprint Review
-| **Repository**                                                                                                  | **Branch**                   | **Commit Id** | **Commit messages**              | **Commit Messages Body** | **Commit On (Date)** |
-|-----------------------------------------------------------------------------------------------------------------|------------------------------|---------------|----------------------------------|--------------------------|----------------------|
-| **[<u>https://github.com/1ASI0732-Grupo-2/report</u>](https://github.com/1ASI0732-Grupo-2/report)** | develop|0fc3e38 | update Readme.md | feat: update Readme.md  | 08/10/2025  |
-| **[<u>https://github.com/1ASI0732-Grupo-2/Backend</u>](https://github.com/1ASI0732-Grupo-2/Backend)** | main| 12877eb       |  fix: added log  | fix: added log | 06/10/2025           |
 
+| **Repository**                                                                                        | **Branch** | **Commit Id** | **Commit messages** | **Commit Messages Body** | **Commit On (Date)** |
+| ----------------------------------------------------------------------------------------------------- | ---------- | ------------- | ------------------- | ------------------------ | -------------------- |
+| **[<u>https://github.com/1ASI0732-Grupo-2/report</u>](https://github.com/1ASI0732-Grupo-2/report)**   | develop    | 0fc3e38       | update Readme.md    | feat: update Readme.md   | 08/10/2025           |
+| **[<u>https://github.com/1ASI0732-Grupo-2/Backend</u>](https://github.com/1ASI0732-Grupo-2/Backend)** | main       | 12877eb       | fix: added log      | fix: added log           | 06/10/2025           |
 
 #### 5.2.1.3 Testing Suite Evidence for Sprint Review
+
 En el alcance del sprint 1 se ha desarrollado el backend, priorizando la funcionalidad de los servicios.
-![testing1](https://github.com/1ASI0732-Grupo-2/report/blob/develop/assets/img/Chapter-5/5.2.1.3-1.jpeg)
+![testing1](/assets/img/Chapter-5/5.2.1.3-1.jpeg)
 
-![testing2](https://github.com/1ASI0732-Grupo-2/report/blob/develop/assets/img/Chapter-5/5.2.1.3-2.jpeg)
+![testing2](/assets/img/Chapter-5/5.2.1.3-2.jpeg)
 
-![testing1](https://github.com/1ASI0732-Grupo-2/report/blob/develop/assets/img/Chapter-5/5.2.1.3-3.jpeg)
+![testing1](/assets/img/Chapter-5/5.2.1.3-3.jpeg)
+
 #### 5.2.1.4 Execution Evidence for Sprint Review
+
 Para esta entrega, se realizo el backend ,desplegandolo asi mismo en swagger.
-![Execution1](https://github.com/1ASI0732-Grupo-2/report/blob/develop/assets/img/Chapter-5/5.2.1.4-1.jpeg)
+![Execution1](/assets/img/Chapter-5/5.2.1.4-1.jpeg)
 
-![Execution2](https://github.com/1ASI0732-Grupo-2/report/blob/develop/assets/img/Chapter-5/5.2.1.4-2.jpeg)
+![Execution2](/assets/img/Chapter-5/5.2.1.4-2.jpeg)
 
-![Execution3](https://github.com/1ASI0732-Grupo-2/report/blob/develop/assets/img/Chapter-5/5.2.1.4-3.jpeg)
-Link del despliegue del backend : [https://workstation-arqui-fgbngphuh0g4a8at.canadacentral-01.azurewebsites.net/swagger/index.html](https://workstation-arqui-fgbngphuh0g4a8at.canadacentral-01.azurewebsites.net/swagger/index.html) 
+![Execution3](/assets/img/Chapter-5/5.2.1.4-3.jpeg)
+Link del despliegue del backend : [https://workstation-arqui-fgbngphuh0g4a8at.canadacentral-01.azurewebsites.net/swagger/index.html](https://workstation-arqui-fgbngphuh0g4a8at.canadacentral-01.azurewebsites.net/swagger/index.html)
 
 #### 5.2.1.7 Team Collaboration Insights during Sprint
 
-![Imagen1](https://github.com/1ASI0732-Grupo-2/report/blob/develop/assets/img/Chapter-5/Imagen1.jpg)
+![Imagen1](/assets/img/Chapter-5/Imagen1.jpg)
 
-![Imagen3](https://github.com/1ASI0732-Grupo-2/report/blob/develop/assets/img/Chapter-5/Imagen3.jpg)
+![Imagen3](/assets/img/Chapter-5/Imagen3.jpg)
 
-![Imagen4](https://github.com/1ASI0732-Grupo-2/report/blob/develop/assets/img/Chapter-5/Imagen4.jpg)
+![Imagen4](/assets/img/Chapter-5/Imagen4.jpg)
 
 ## Final
 
