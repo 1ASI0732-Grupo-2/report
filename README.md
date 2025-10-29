@@ -972,6 +972,17 @@ Tras identificar el motor de recomendaciones como el elemento crítico a refinar
   <img src="https://github.com/1ASI0732-Grupo-2/report/blob/develop/assets/img/Chapter-4/4.3.1.6.png" />
 </p>
 
+##### Diagrama de clases:
+<p align="center">
+  <img src="https://github.com/1ASI0732-Grupo-2/report/blob/develop/assets/img/Chapter-4/UmlClassDiagram1" />
+</p>
+<p align="center">
+  <img src="https://github.com/1ASI0732-Grupo-2/report/blob/develop/assets/img/Chapter-4/UmlClassDiagram2" />
+</p>
+<p align="center">
+  <img src="https://github.com/1ASI0732-Grupo-2/report/blob/develop/assets/img/Chapter-4/UmlClassDiagram3" />
+</p>
+
 **Elementos y Responsabilidades del Sistema Workstation**
 | Elemento | Tipo | Responsabilidad |
 |----------|------|----------------|
