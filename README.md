@@ -704,7 +704,7 @@ Estilos arquitectónicos propuestos:
 
 #### Diagrama de Base de Datos Relacional
 
-![basededatos](/assets/img/Chapter-4/DATABASE.png)
+![basededatos](/assets/img/Chapter-4/databaseDiagram.png)
 
 ### 4.1.6 Design Patterns
 
