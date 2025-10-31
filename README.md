@@ -969,7 +969,7 @@ Tras identificar el motor de recomendaciones como el elemento crítico a refinar
 #### 4.2.1.6 Sketch Views (C4 & UML) and Record Design Decisions
 
 <p align="center">
-  <img src="https://github.com/1ASI0732-Grupo-2/report/blob/develop/assets/img/Chapter-4/4.3.1.6.png" />
+  <img src="/assets/img/Chapter-4/4.3.1.6.png" />
 </p>
 
 ##### Diagrama de clases:
