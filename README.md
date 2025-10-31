@@ -1361,6 +1361,49 @@ Link del despliegue del backend : [https://workstation-arqui-fgbngphuh0g4a8at.ca
 ![Imagen3](/assets/img/Chapter-5/Imagen3.jpg)
 
 ![Imagen4](/assets/img/Chapter-5/Imagen4.jpg)
+ 
+### 5.2.2 Sprint 2
+
+#### 5.2.2.1 Sprint Backlog 2
+#### 5.2.2.2 Development Evidence for Sprint Review
+Para este Sprint, como se puede ver se desarrollo el nuevo contexto de Contracts.
+![Sprint2_development1](/assets/img/Chapter-5/sprint2_development1.png)
+
+![Sprint2_development2](/assets/img/Chapter-5/sprint2_development2.png)
+
+![Sprint2_development3](/assets/img/Chapter-5/sprint2_development3.png)
+
+![Sprint2_development4](/assets/img/Chapter-5/sprint2_development4.png)
+
+#### 5.2.2.3 Testing Suite Evidence for Sprint Review
+
+Para el testing de este context primero se vio los diferentes escenarios para la creacion de los contratos con todos sus atributos.
+
+![Sprint2_testing](/assets/img/Chapter-5/sprint2_testing_code1.png)
+
+![Sprint2_testing2](/assets/img/Chapter-5/sprint2_testing_code2.png)
+
+![Sprint2_testing3](/assets/img/Chapter-5/sprint2_testing_code3.png)
+
+![Sprint2_testing4](/assets/img/Chapter-5/sprint2_testing_code4.png)
+
+![Sprint2_testing5](/assets/img/Chapter-5/sprint2_testing_code5.png)
+
+Por ultimo, se corrieron todos los tests de estos casos y su resultado fue el esperado.
+
+![Sprint2_testexecution](/assets/img/Chapter-5/Sprint2_testing.png)
+
+#### 5.2.2.4 Execution Evidence for Sprint Review
+
+Para la ejecuccion del programa, se verifico primero dentro de un entorno controlado para ver que el nuevo contexto sea funcional. Para luego ser desplegado en Azure.
+
+![Sprint2_execution](/assets/img/Chapter-5/sprint2_execution.png)
+
+#### 5.2.2.5 Microservices Documentation Evidence for Sprint Review
+#### 5.2.2.6 Software Deployment Evidence for Sprint Review
+#### 5.2.2.7 Team Collaboration Insights during Sprint
+#### 5.2.2.8 Kanban Board
+
 
 ## Final
 
