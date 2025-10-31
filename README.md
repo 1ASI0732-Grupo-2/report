@@ -1279,9 +1279,9 @@ El uso de **Docker Compose** simplificó la orquestación de múltiples contened
 
 Esto permitió que los servicios se comunicaran a través de una red virtual compartida dentro del entorno Docker.
 
-![Execution1](https://github.com/1ASI0732-Grupo-2/report/blob/develop/assets/img/Chapter-5/5.2.1.4-1.jpeg)
+![Execution1](/assets/img/Chapter-5/5.2.1.4-1.jpeg)
 
-![Swagger UI](https://github.com/1ASI0732-Grupo-2/report/blob/develop/assets/img/Chapter-5/swaggerD2.png?raw=true)
+![Swagger UI](/assets/img/Chapter-5/swaggerD2.png?raw=true)
 
 Verificación y pruebas:
 Se validó la correcta ejecución mediante logs y pruebas de endpoints desde Postman y Swagger, asegurando que los microservicios respondan adecuadamente.
