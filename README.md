@@ -974,17 +974,15 @@ Tras identificar el motor de recomendaciones como el elemento crítico a refinar
 
 ##### Diagrama de clases:
 Auth Context:
-<p align="center">
-  <img src="https://github.com/1ASI0732-Grupo-2/report/blob/develop/assets/img/Chapter-4/UmlClassDiagram1.png" />
-</p>
+![Context](/assets/img/Chapter-4/UmlClassDiagram1.png)
 Shared Context:
 <p align="center">
-  <img src="https://github.com/1ASI0732-Grupo-2/report/blob/develop/assets/img/Chapter-4/UmlClassDiagram2.png" width="400">
+  <img src="/assets/img/Chapter-4/UmlClassDiagram2.png" alt="Diagrama de clases UML" width="400px">
 </p>
+
 Offices Context:
-<p align="center">
-  <img src="https://github.com/1ASI0732-Grupo-2/report/blob/develop/assets/img/Chapter-4/UmlClassDiagram3.png" />
-</p>
+
+![Context3](/assets/img/Chapter-4/UmlClassDiagram3.png)
 
 ##### Diagrama de clases completo: https://github.com/1ASI0732-Grupo-2/report/blob/develop/assets/img/Chapter-4/iu.svg
 
