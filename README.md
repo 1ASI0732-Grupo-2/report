@@ -1363,6 +1363,64 @@ Link del despliegue del backend : [https://workstation-arqui-fgbngphuh0g4a8at.ca
 ### 5.2.2 Sprint 2
 
 #### 5.2.2.1 Sprint Backlog 2
+<table>
+<thead><tr class="header"><th>Sprint #</th><th colspan="7">Sprint 2</th></tr><tr class="odd"><th colspan="2">User Story</th><th colspan="6">Work-Item / Task</th></tr>
+<tr class="header"><th>Id</th><th>Title</th><th>Id</th><th>Title</th><th>Description</th><th>Estimation (Hours)</th><th>Assigned To</th><th>Status</th></tr>
+</thead>
+<tbody>
+  
+<!-- CONTRACTS - US-07 -->
+<tr class="odd"><td colspan="2" rowspan="3">US-07</td><td>WI19</td><td>API Gestión Contratos</td>
+<td>CRUD completo para contratos entre freelancers y propietarios</td><td>7</td>
+<td>[Braulio]</td><td>Done</td></tr>
+<tr class="header"><td>WI20</td><td>Endpoints Contratos Usuario</td>
+<td>Endpoints para gestionar contratos por usuario y contratos activos</td>
+<td>5</td><td>[Rodrigo]</td><td>Done</td></tr>
+<tr class="odd"><td>WI21</td><td>Lógica Activación Contratos</td>
+<td>Endpoint para activación y finalización de contratos</td><td>4</td><td>[Diego]</td>
+<td>Done</td></tr>
+
+<!-- CONTRACTS - US-08 -->
+<tr class="header"><td colspan="2" rowspan="2">US-08</td>
+<td>WI22</td><td>API Compensaciones</td><td>Sistema de devoluciones y compensaciones por cancelaciones</td>
+<td>6</td><td>[Braulio]</td><td>Done</td></tr>
+<tr class="odd"><td>WI23</td><td>Lógica Receipts</td>
+<td>Generación y gestión de recibos de pago y devoluciones</td><td>5</td><td>[Renzo]</td>
+<td>In process</td></tr>
+
+<!-- CONTRACTS - US-15 -->
+<tr class="header"><td colspan="2">US-15</td><td>WI24</td>
+<td>Cláusulas Contractuales</td><td>Gestión de cláusulas específicas para impuntualidad</td>
+<td>4</td><td>[Henry]</td><td>Done</td></tr>
+
+<!-- CONTRACTS - US-19 -->
+<tr class="odd"><td colspan="2">US-19</td><td>WI25</td>
+<td>Sistema Firmas Digitales</td><td>Endpoint para gestión de firmas en contratos</td><td>5</td>
+<td>[Diego]</td><td>Done</td></tr>
+
+<!-- OFFICE - US-39 -->
+<tr class="header"><td colspan="2" rowspan="2">US-39</td>
+<td>WI26</td><td>API Oficinas Mejorada</td>
+<td>Extender funcionalidades de publicación de oficinas</td><td>6</td><td>[Henry]</td><td>Done</td></tr>
+<tr class="odd"><td>WI27</td>
+<td>Integración Contratos-Oficinas</td><td>Vincular sistema de oficinas con gestión de contratos</td>
+<td>5</td><td>[Rodrigo]</td><td>In process</td></tr>
+
+<!-- OFFICE - US-09 -->
+<tr class="header"><td colspan="2">US-09</td><td>WI28</td><td>Publicación Simplificada</td>
+<td>Mejoras en usabilidad para publicación de inmuebles</td><td>4</td><td>[Renzo]</td><td>Done</td>
+</tr>
+
+<!-- TÉCNICAS -->
+<tr class="odd"><td colspan="2" rowspan="2">Técnicas</td><td>WI29</td>
+<td>Documentación APIs</td><td>Documentación completa de endpoints nuevos</td><td>6</td>
+<td>[Diego]</td><td>In process</td>
+</tr><tr class="header">
+<td>WI30</td><td>Pruebas Integración</td><td>Pruebas de integración entre Contracts y Office</td>
+<td>7</td><td>[Braulio]</td><td>Done</td></tr>
+</tbody>
+</table>nt Backlog 2
+
 #### 5.2.2.2 Development Evidence for Sprint Review
 Para este Sprint, como se puede ver se desarrollo el nuevo contexto de Contracts.
 ![Sprint2_development1](/assets/img/Chapter-5/sprint2_development1.png)
