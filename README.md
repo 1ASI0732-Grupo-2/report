@@ -1419,7 +1419,7 @@ Link del despliegue del backend : [https://workstation-arqui-fgbngphuh0g4a8at.ca
 <td>WI30</td><td>Pruebas Integración</td><td>Pruebas de integración entre Contracts y Office</td>
 <td>7</td><td>[Braulio]</td><td>Done</td></tr>
 </tbody>
-</table>nt Backlog 2
+</table>
 
 #### 5.2.2.2 Development Evidence for Sprint Review
 Para este Sprint, como se puede ver se desarrollo el nuevo contexto de Contracts.
