@@ -1456,6 +1456,27 @@ Para la ejecuccion del programa, se verifico primero dentro de un entorno contro
 ![Sprint2_execution](/assets/img/Chapter-5/sprint2_execution.png)
 
 #### 5.2.2.5 Microservices Documentation Evidence for Sprint Review
+Con el fin de mantener la trazabilidad y comprensión técnica del sistema, se elaboró una **documentación de los microservicios** empleando herramientas propias del entorno de desarrollo .NET y colecciones de **Postman** para validar los endpoints.
+
+### Endpoints principales
+
+| **Servicio**      | **Endpoint**                                               | **Método HTTP** | **Descripción**                                                   |
+| ----------------- | ---------------------------------------------------------- | --------------- | ----------------------------------------------------------------- |
+| ContractService   | `/api/workstation/Contracts`                               | POST            | Crear nuevo contrato entre freelancer y propietario              |
+| ContractService   | `/api/workstation/Contracts/(id)`                          | GET             | Obtener detalles específicos de un contrato                       |
+| ContractService   | `/api/workstation/Contracts/user/(userid)`                 | GET             | Obtener todos los contratos de un usuario específico              |
+| ContractService   | `/api/workstation/Contracts/active`                        | GET             | Listar contratos activos en el sistema                           |
+| ContractService   | `/api/workstation/Contracts/(contractId)/clauses`          | POST            | Gestionar cláusulas específicas del contrato                      |
+| ContractService   | `/api/workstation/Contracts/(contractId)/signatures`       | POST            | Manejar firmas digitales de las partes involucradas              |
+| ContractService   | `/api/workstation/Contracts/(contractId)/activate`         | POST            | Activar un contrato previamente creado                           |
+| ContractService   | `/api/workstation/Contracts/(contractId)/compensations`    | POST            | Gestionar compensaciones y devoluciones por cancelaciones        |
+| ContractService   | `/api/workstation/Contracts/(contractId)/receipt`          | GET/PUT         | Generar y actualizar recibos de pago                             |
+| ContractService   | `/api/workstation/Contracts/(contractId)/finish`           | POST            | Finalizar un contrato activo                                     |
+
+Cada endpoint fue probado y validado con **Postman**, verificando tanto las respuestas esperadas.
+Además, se documentó el flujo de interacción entre servicios mediante diagramas UML y archivos **Swagger/OpenAPI** generados automáticamente desde el entorno de desarrollo.
+URL de los endpints en swagger: https://workstation-arqui-fgbngphuh0g4a8at.canadacentral-01.azurewebsites.net/swagger/index.html
+
 #### 5.2.2.6 Software Deployment Evidence for Sprint Review
 #### 5.2.2.7 Team Collaboration Insights during Sprint
 #### 5.2.2.8 Kanban Board
