@@ -1359,10 +1359,11 @@ Link del despliegue del backend : [https://workstation-arqui-fgbngphuh0g4a8at.ca
 
 ![Imagen1](/assets/img/Chapter-5/9Sept.png)
 
-![Imagen3](/assets/img/Chapter-5/11Sept)
+![Imagen3](/assets/img/Chapter-5/11Sept.png)
 
-![Imagen4](/assets/img/Chapter-5/12Sept)
-![Imagen5](/assets/img/Chapter-5/27Sept)
+![Imagen4](/assets/img/Chapter-5/12Sept.png)
+
+![Imagen5](/assets/img/Chapter-5/27Sept.png)
  
 ### 5.2.2 Sprint 2
 
