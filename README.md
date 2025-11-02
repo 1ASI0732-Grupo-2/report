@@ -1277,7 +1277,7 @@ El uso de **Docker Compose** simplificó la orquestación de múltiples contened
 
 Esto permitió que los servicios se comunicaran a través de una red virtual compartida dentro del entorno Docker.
 
-![Execution1](/assets/img/Chapter-5/5.2.1.4-1.jpeg)
+![Execution1](/assets/img/Chapter-5/5.2.1.4-2.png)
 
 ![Swagger UI](/assets/img/Chapter-5/swaggerD2.png?raw=true)
 
