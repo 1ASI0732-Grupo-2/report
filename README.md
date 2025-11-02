@@ -1348,7 +1348,7 @@ Para esta entrega, se realizo el backend ,desplegandolo asi mismo en swagger.
 ![Execution1](/assets/img/Chapter-5/5.2.1.4-1.png)
 
 
-![Execution2](/assets/img/Chapter-5/5.2.1.4-2.png)
+![Execution2](/assets/img/Chapter-5/5.2.1.4-2-5.png)
 
 ![Execution3](/assets/img/Chapter-5/5.2.1.4-3.png)
 Link del despliegue del backend : [https://workstation-arqui-fgbngphuh0g4a8at.canadacentral-01.azurewebsites.net/swagger/index.html](https://workstation-arqui-fgbngphuh0g4a8at.canadacentral-01.azurewebsites.net/swagger/index.html)
