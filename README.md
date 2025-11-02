@@ -1351,6 +1351,8 @@ Para esta entrega, se realizo el backend ,desplegandolo asi mismo en swagger.
 ![Execution2](/assets/img/Chapter-5/5.2.1.4-2-5.png)
 
 ![Execution3](/assets/img/Chapter-5/5.2.1.4-3.png)
+
+![Execution4](/assets/img/Chapter-5/5.2.1.4-3.1.png)
 Link del despliegue del backend : [https://workstation-arqui-fgbngphuh0g4a8at.canadacentral-01.azurewebsites.net/swagger/index.html](https://workstation-arqui-fgbngphuh0g4a8at.canadacentral-01.azurewebsites.net/swagger/index.html)
 
 #### 5.2.1.7 Team Collaboration Insights during Sprint
