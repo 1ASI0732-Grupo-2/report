@@ -1483,6 +1483,11 @@ Además, se documentó el flujo de interacción entre servicios mediante diagram
 URL de los endpints en swagger: https://workstation-arqui-fgbngphuh0g4a8at.canadacentral-01.azurewebsites.net/swagger/index.html
 
 #### 5.2.2.6 Software Deployment Evidence for Sprint Review
+Modelo C4 de Componentes 
+
+![C4Components](assets/img/Chapter-5/c42.JPG) 
+ 
+
 #### 5.2.2.7 Team Collaboration Insights during Sprint
 #### 5.2.2.8 Kanban Board
 
