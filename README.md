@@ -1357,11 +1357,12 @@ Link del despliegue del backend : [https://workstation-arqui-fgbngphuh0g4a8at.ca
 
 #### 5.2.1.7 Team Collaboration Insights during Sprint
 
-![Imagen1](/assets/img/Chapter-5/Imagen1.jpg)
+![Imagen1](/assets/img/Chapter-5/9Sept.png)
 
-![Imagen3](/assets/img/Chapter-5/Imagen3.jpg)
+![Imagen3](/assets/img/Chapter-5/11Sept)
 
-![Imagen4](/assets/img/Chapter-5/Imagen4.jpg)
+![Imagen4](/assets/img/Chapter-5/12Sept)
+![Imagen5](/assets/img/Chapter-5/27Sept)
  
 ### 5.2.2 Sprint 2
 
