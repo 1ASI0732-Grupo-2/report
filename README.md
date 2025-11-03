@@ -143,13 +143,13 @@ Considerando la flexibilidad y adaptabilidad como factores clave en el crecimien
 
 #### 1.1.2. Perfiles de integrantes del equipo
 
-| Foto                                                                                                                                                                                                                                                                                | Alumno                         | Descripción                                                                                                                                                                                                                                                                                                                                      |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| ![Rodrigo](https://github.com/WorkStation-MarronCoders/Report/raw/main/Imagenes/rodrigo.png)                                                                                                                                                                                        | Liberato Saldaña Rodrigo       | Estudiante de Ingeniería de Software que planea enfocarse en Ciencia de Datos y Ciberseguridad. Planea dar apoyo activo al grupo y asumir el rol de líder para encaminar al equipo hacia el cumplimiento de sus metas.                                                                                                                           |
-| ![Renzo](https://github.com/1ASI0732-Grupo-2/report/blob/develop/assets/img/Chapter-I/RenzoLlerena.png?raw=true)                                                                                                                                                                    | Renzo Miguel Llerena Delgado   | Me destaco por ser responsable, trabajador y tener un enfoque en la perfección y la calidad en todos mis proyectos. Disfruto trabajando en equipo, colaborando para alcanzar mis objetivos y siempre buscando superar expectativas. Me mantengo en constante aprendizaje, dispuesto a enfrentar desafíos con una actitud proactiva y resolutiva. |
-| ![Henry](https://github.com/1ASI0732-Grupo-2/report/blob/develop/assets/img/Chapter-I/Henry.png?raw=true)                                                                                                                                                                           | Henry Kevin Diaz Gutierrez     | Soy estudiante de Ingenieria de Software en la UPC.Me caracterizo por ser creativo , cumplir con lo que se me brinda y ayudar a resolver problemas si se presenta.Desde siempre me intereso el tema de los videojuegos y de el tipo de diseño que se empleaba, eso hizo que me guste el desarrollo de software.                                  |
+| Foto                                                                                                                                                                                                                                                                                 | Alumno                         | Descripción                                                                                                                                                                                                                                                                                                                                      |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| ![Rodrigo](https://github.com/WorkStation-MarronCoders/Report/raw/main/Imagenes/rodrigo.png)                                                                                                                                                                                         | Liberato Saldaña Rodrigo       | Estudiante de Ingeniería de Software que planea enfocarse en Ciencia de Datos y Ciberseguridad. Planea dar apoyo activo al grupo y asumir el rol de líder para encaminar al equipo hacia el cumplimiento de sus metas.                                                                                                                           |
+| ![Renzo](https://github.com/1ASI0732-Grupo-2/report/blob/develop/assets/img/Chapter-I/RenzoLlerena.png?raw=true)                                                                                                                                                                     | Renzo Miguel Llerena Delgado   | Me destaco por ser responsable, trabajador y tener un enfoque en la perfección y la calidad en todos mis proyectos. Disfruto trabajando en equipo, colaborando para alcanzar mis objetivos y siempre buscando superar expectativas. Me mantengo en constante aprendizaje, dispuesto a enfrentar desafíos con una actitud proactiva y resolutiva. |
+| ![Henry](https://github.com/1ASI0732-Grupo-2/report/blob/develop/assets/img/Chapter-I/Henry.png?raw=true)                                                                                                                                                                            | Henry Kevin Diaz Gutierrez     | Soy estudiante de Ingenieria de Software en la UPC.Me caracterizo por ser creativo , cumplir con lo que se me brinda y ayudar a resolver problemas si se presenta.Desde siempre me intereso el tema de los videojuegos y de el tipo de diseño que se empleaba, eso hizo que me guste el desarrollo de software.                                  |
 | ![Diego](https://media.discordapp.net/attachments/1082800870334419014/1415786757659693106/69ed58d9-a022-48a1-86b3-b7fa8ae451bb.png?ex=690907ab&is=6907b62b&hm=449de590e254599f8559206224771612dc4e90c45ce2110d31d9e01a1143f745&=&format=webp&quality=lossless&width=574&height=1020) | Diego Sebastián Zúñiga Murillo | Estudiante en el sexto ciclo de la carrera de Ingenieria de Software que busca expandir sus conocimientos en diversas tecnologías, soy una persona participativa y colaborativa y siempre me adapto rápido a las situaciones de cambio, estoy preparado para afrontar las adversidades que este trabajo signifca para mi y como grupo            |
-| ![Braulio](assets/img/Chapter-I/braulio.png)                                                   | Braulio Torrejon Navarro       | Estudiante de Ingenieria de software del 7mo ciclo, planeo dar lo mejor de mi en este grupo, tambien deseo aprender mucho del curso para mi futuro profesional                                                                                                                                                                                   |
+| ![Braulio](assets/img/Chapter-I/braulio.png)                                                                                                                                                                                                                                         | Braulio Torrejon Navarro       | Estudiante de Ingenieria de software del 7mo ciclo, planeo dar lo mejor de mi en este grupo, tambien deseo aprender mucho del curso para mi futuro profesional                                                                                                                                                                                   |
 
 ### 1.2. Solution Profile
 
@@ -973,9 +973,11 @@ Tras identificar el motor de recomendaciones como el elemento crítico a refinar
 </p>
 
 ##### Diagrama de clases:
+
 Auth Context:
 ![Context](/assets/img/Chapter-4/UmlClassDiagram1.png)
 Shared Context:
+
 <p align="center">
   <img src="/assets/img/Chapter-4/UmlClassDiagram2.png" alt="Diagrama de clases UML" width="400px">
 </p>
@@ -1347,7 +1349,6 @@ En el alcance del sprint 1 se ha desarrollado el backend, priorizando la funcion
 Para esta entrega, se realizo el backend ,desplegandolo asi mismo en swagger.
 ![Execution1](/assets/img/Chapter-5/5.2.1.4-1.png)
 
-
 ![Execution2](/assets/img/Chapter-5/5.2.1.4-2-5.png)
 
 ![Execution3](/assets/img/Chapter-5/5.2.1.4-3.png)
@@ -1364,10 +1365,11 @@ Link del despliegue del backend : [https://workstation-arqui-fgbngphuh0g4a8at.ca
 ![Imagen4](/assets/img/Chapter-5/12Sept.png)
 
 ![Imagen5](/assets/img/Chapter-5/27Sept.png)
- 
+
 ### 5.2.2 Sprint 2
 
 #### 5.2.2.1 Sprint Backlog 2
+
 <table>
 <thead><tr class="header"><th>Sprint #</th><th colspan="7">Sprint 2</th></tr><tr class="odd"><th colspan="2">User Story</th><th colspan="6">Work-Item / Task</th></tr>
 <tr class="header"><th>Id</th><th>Title</th><th>Id</th><th>Title</th><th>Description</th><th>Estimation (Hours)</th><th>Assigned To</th><th>Status</th></tr>
@@ -1427,6 +1429,7 @@ Link del despliegue del backend : [https://workstation-arqui-fgbngphuh0g4a8at.ca
 </table>
 
 #### 5.2.2.2 Development Evidence for Sprint Review
+
 Para este Sprint, como se puede ver se desarrollo el nuevo contexto de Contracts.
 ![Sprint2_development1](/assets/img/Chapter-5/sprint2_development1.png)
 
@@ -1461,22 +1464,23 @@ Para la ejecuccion del programa, se verifico primero dentro de un entorno contro
 ![Sprint2_execution](/assets/img/Chapter-5/sprint2_execution.png)
 
 #### 5.2.2.5 Microservices Documentation Evidence for Sprint Review
+
 Con el fin de mantener la trazabilidad y comprensión técnica del sistema, se elaboró una **documentación de los microservicios** empleando herramientas propias del entorno de desarrollo .NET y colecciones de **Postman** para validar los endpoints.
 
 ### Endpoints principales
 
-| **Servicio**      | **Endpoint**                                               | **Método HTTP** | **Descripción**                                                   |
-| ----------------- | ---------------------------------------------------------- | --------------- | ----------------------------------------------------------------- |
-| ContractService   | `/api/workstation/Contracts`                               | POST            | Crear nuevo contrato entre freelancer y propietario              |
-| ContractService   | `/api/workstation/Contracts/(id)`                          | GET             | Obtener detalles específicos de un contrato                       |
-| ContractService   | `/api/workstation/Contracts/user/(userid)`                 | GET             | Obtener todos los contratos de un usuario específico              |
-| ContractService   | `/api/workstation/Contracts/active`                        | GET             | Listar contratos activos en el sistema                           |
-| ContractService   | `/api/workstation/Contracts/(contractId)/clauses`          | POST            | Gestionar cláusulas específicas del contrato                      |
-| ContractService   | `/api/workstation/Contracts/(contractId)/signatures`       | POST            | Manejar firmas digitales de las partes involucradas              |
-| ContractService   | `/api/workstation/Contracts/(contractId)/activate`         | POST            | Activar un contrato previamente creado                           |
-| ContractService   | `/api/workstation/Contracts/(contractId)/compensations`    | POST            | Gestionar compensaciones y devoluciones por cancelaciones        |
-| ContractService   | `/api/workstation/Contracts/(contractId)/receipt`          | GET/PUT         | Generar y actualizar recibos de pago                             |
-| ContractService   | `/api/workstation/Contracts/(contractId)/finish`           | POST            | Finalizar un contrato activo                                     |
+| **Servicio**    | **Endpoint**                                            | **Método HTTP** | **Descripción**                                           |
+| --------------- | ------------------------------------------------------- | --------------- | --------------------------------------------------------- |
+| ContractService | `/api/workstation/Contracts`                            | POST            | Crear nuevo contrato entre freelancer y propietario       |
+| ContractService | `/api/workstation/Contracts/(id)`                       | GET             | Obtener detalles específicos de un contrato               |
+| ContractService | `/api/workstation/Contracts/user/(userid)`              | GET             | Obtener todos los contratos de un usuario específico      |
+| ContractService | `/api/workstation/Contracts/active`                     | GET             | Listar contratos activos en el sistema                    |
+| ContractService | `/api/workstation/Contracts/(contractId)/clauses`       | POST            | Gestionar cláusulas específicas del contrato              |
+| ContractService | `/api/workstation/Contracts/(contractId)/signatures`    | POST            | Manejar firmas digitales de las partes involucradas       |
+| ContractService | `/api/workstation/Contracts/(contractId)/activate`      | POST            | Activar un contrato previamente creado                    |
+| ContractService | `/api/workstation/Contracts/(contractId)/compensations` | POST            | Gestionar compensaciones y devoluciones por cancelaciones |
+| ContractService | `/api/workstation/Contracts/(contractId)/receipt`       | GET/PUT         | Generar y actualizar recibos de pago                      |
+| ContractService | `/api/workstation/Contracts/(contractId)/finish`        | POST            | Finalizar un contrato activo                              |
 
 Cada endpoint fue probado y validado con **Postman**, verificando tanto las respuestas esperadas.
 Además, se documentó el flujo de interacción entre servicios mediante diagramas UML y archivos **Swagger/OpenAPI** generados automáticamente desde el entorno de desarrollo.
@@ -1486,7 +1490,6 @@ URL de los endpints en swagger: https://workstation-arqui-fgbngphuh0g4a8at.canad
 
 En el Sprint 2 se amplió el despliegue del sistema WorkStation, incorporando el nuevo Contract Service y sus integraciones con los microservicios existentes. El despliegue continuó realizándose con Docker y Docker Compose, asegurando consistencia entre entornos y facilitando la orquestación de múltiples contenedores.
 
-
 ### Pasos de despliegue
 
 1. **Actualización de imágenes:**  
@@ -1495,14 +1498,12 @@ En el Sprint 2 se amplió el despliegue del sistema WorkStation, incorporando el
 2. **- Configuración extendida en docker-compose.yml:**  
    Se añadieron variables de entorno específicas para el Contract Service, incluyendo conexión a base de datos y dependencias con OfficeService y AuthService.
 
-
 3. **- Ejecución:**  
-  El entorno completo se levantó con:
+    El entorno completo se levantó con:
    ```bash
    docker-compose up --build
    ```
-Esto permitió que los servicios se comunicaran en la red interna de Docker, garantizando la integración entre contratos, oficinas y autenticación
-
+   Esto permitió que los servicios se comunicaran en la red interna de Docker, garantizando la integración entre contratos, oficinas y autenticación
 
 ![Execution1](assets/img/Chapter-5/contract1.JPG)
 
@@ -1519,39 +1520,45 @@ Este enfoque asegura una mayor disponibilidad, resiliencia y facilidad de manten
 La utilización de Docker garantiza que el sistema mantenga la misma configuración en todos los entornos, evitando inconsistencias entre desarrollo, prueba y producción.
 Además, la estructura basada en microservicios facilita la actualización independiente de cada módulo sin afectar el resto del sistema.
 
-
-
 ### Modelo C4 de Componentes
+
 Se actualizó el modelo C4 para reflejar la incorporación del Contract Service y sus componentes internos:
-• 	Contract Controller (exposición de endpoints).
-• 	Contract Command Service y Contract Query Service (separación de responsabilidades CQRS).
-• 	Contract Repository (persistencia).
-• 	Compensation Module y Signature Module (lógica de negocio especializada).
+• Contract Controller (exposición de endpoints).
+• Contract Command Service y Contract Query Service (separación de responsabilidades CQRS).
+• Contract Repository (persistencia).
+• Compensation Module y Signature Module (lógica de negocio especializada).
 
 Modelo C4 de Contenedores
 
-![C4Components](assets/img/Chapter-5/c41.JPG) 
- 
+![C4Components](assets/img/Chapter-5/c41.JPG)
 
-Modelo C4 de Componentes 
+Modelo C4 de Componentes
 
-![C4Components](assets/img/Chapter-5/c42.JPG) 
- 
+![C4Components](assets/img/Chapter-5/c42.JPG)
 
 #### 5.2.2.7 Team Collaboration Insights during Sprint
+
+##### Reporte
+
+![Inishgts1](/assets/img/Chapter-5/ColaborationInsights2.png)
+
+##### Backend
+
+![Inishgts2](/assets/img/Chapter-5/ColaborationInsights.png)
+
 #### 5.2.2.8 Kanban Board
 
 Kanban Board Actualizado
 
-| **Backlog** | **To Do** | **In Progress** | **Done** |
-|-------------|-----------|------------------|----------|
-| B1 – Autenticación con JWT y roles (freelancer/host/admin). | T1 – Diagramar arquitectura de despliegue (C4 Level 4 / Deployment). | P1 – Actualización del Diagrama de Componentes (C4 Level 3). | D1 – Lean UX Canvas, entrevistas y Customer Journey Map. |
-| B2 – Sistema de reservas + calendario + pagos. | T2 – Documentar pipeline CI/CD (GitHub Actions / Azure DevOps). | P2 – Definición de microservicios y dominios DDD (User, Booking, Listing, Payment). | D2 – User Personas, Empathy Map y As-Is Scenario. |
-| B3 – Servicio de notificaciones (email/push). | T3 – Registrar ADR (Architecture Decision Records) de tecnologías seleccionadas. | P3 – Diseño del modelo ER + normalización de base de datos. | D3 – User Stories + Product Backlog priorizado. |
-| B4 – API de mapas (Google Maps / Leaflet). | T4 – Documentar endpoints REST con Swagger/OpenAPI. | P4 – Selección de arquitectura backend (.NET / Spring Boot / NestJS). | D4 – Diagrama C4 Nivel 1 (Context Diagram). |
-| B5 – Despliegue en la nube (Docker + AWS/Render/Railway). | T5 – Diagrama de secuencia del flujo de reserva. | P5 – Arquitectura hexagonal + patrones (Repository, Factory, DI). | D5 – Diagrama C4 Nivel 2 (Container Diagram). |
-| B6 – Pruebas unitarias e integración. |  |  | D6 – Quality Attribute Scenarios definidos. |
-|  |  |  | D7 – Drivers arquitectónicos documentados (business, constraints, quality). |
+| **Backlog**                                                 | **To Do**                                                                        | **In Progress**                                                                     | **Done**                                                                    |
+| ----------------------------------------------------------- | -------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- | --------------------------------------------------------------------------- |
+| B1 – Autenticación con JWT y roles (freelancer/host/admin). | T1 – Diagramar arquitectura de despliegue (C4 Level 4 / Deployment).             | P1 – Actualización del Diagrama de Componentes (C4 Level 3).                        | D1 – Lean UX Canvas, entrevistas y Customer Journey Map.                    |
+| B2 – Sistema de reservas + calendario + pagos.              | T2 – Documentar pipeline CI/CD (GitHub Actions / Azure DevOps).                  | P2 – Definición de microservicios y dominios DDD (User, Booking, Listing, Payment). | D2 – User Personas, Empathy Map y As-Is Scenario.                           |
+| B3 – Servicio de notificaciones (email/push).               | T3 – Registrar ADR (Architecture Decision Records) de tecnologías seleccionadas. | P3 – Diseño del modelo ER + normalización de base de datos.                         | D3 – User Stories + Product Backlog priorizado.                             |
+| B4 – API de mapas (Google Maps / Leaflet).                  | T4 – Documentar endpoints REST con Swagger/OpenAPI.                              | P4 – Selección de arquitectura backend (.NET / Spring Boot / NestJS).               | D4 – Diagrama C4 Nivel 1 (Context Diagram).                                 |
+| B5 – Despliegue en la nube (Docker + AWS/Render/Railway).   | T5 – Diagrama de secuencia del flujo de reserva.                                 | P5 – Arquitectura hexagonal + patrones (Repository, Factory, DI).                   | D5 – Diagrama C4 Nivel 2 (Container Diagram).                               |
+| B6 – Pruebas unitarias e integración.                       |                                                                                  |                                                                                     | D6 – Quality Attribute Scenarios definidos.                                 |
+|                                                             |                                                                                  |                                                                                     | D7 – Drivers arquitectónicos documentados (business, constraints, quality). |
 
 El tablero Kanban unificado representa la planificación, el seguimiento y el estado actual del proyecto WorkStation del curso de Fundamentos de Arquitectura de Software. Se organizaron todas las tareas del equipo en cuatro columnas principales: Backlog, To Do, In Progress y Done, lo que permite visualizar de forma clara el flujo de trabajo y el progreso desde la conceptualización hasta el diseño arquitectónico del sistema.
 
