@@ -1484,6 +1484,50 @@ URL de los endpints en swagger: https://workstation-arqui-fgbngphuh0g4a8at.canad
 
 #### 5.2.2.6 Software Deployment Evidence for Sprint Review
 
+En el Sprint 2 se amplió el despliegue del sistema WorkStation, incorporando el nuevo Contract Service y sus integraciones con los microservicios existentes. El despliegue continuó realizándose con Docker y Docker Compose, asegurando consistencia entre entornos y facilitando la orquestación de múltiples contenedores.
+
+
+### Pasos de despliegue
+
+1. **Actualización de imágenes:**  
+   Se construyeron nuevas imágenes Docker para el Contract Service y se actualizaron las de OfficeService y AuthService
+
+2. **- Configuración extendida en docker-compose.yml:**  
+   Se añadieron variables de entorno específicas para el Contract Service, incluyendo conexión a base de datos y dependencias con OfficeService y AuthService.
+
+
+3. **- Ejecución:**  
+  El entorno completo se levantó con:
+   ```bash
+   docker-compose up --build
+   ```
+Esto permitió que los servicios se comunicaran en la red interna de Docker, garantizando la integración entre contratos, oficinas y autenticación
+
+
+![Execution1](assets/img/Chapter-5/contract1.JPG)
+
+![Swagger UI](assets/img/Chapter-5/contract2.JPG)
+
+Verificación y pruebas:
+Se validó la correcta ejecución mediante logs y pruebas de endpoints desde Postman y Swagger, asegurando que los microservicios respondan adecuadamente.
+
+#### Plataforma de despliegue
+
+El backend fue desplegado en una plataforma compatible con contenedores, lo que permite escalar los servicios de manera dinámica según la demanda.
+Este enfoque asegura una mayor disponibilidad, resiliencia y facilidad de mantenimiento, permitiendo futuras integraciones con el frontend web o móvil.
+
+La utilización de Docker garantiza que el sistema mantenga la misma configuración en todos los entornos, evitando inconsistencias entre desarrollo, prueba y producción.
+Además, la estructura basada en microservicios facilita la actualización independiente de cada módulo sin afectar el resto del sistema.
+
+
+
+### Modelo C4 de Componentes
+Se actualizó el modelo C4 para reflejar la incorporación del Contract Service y sus componentes internos:
+• 	Contract Controller (exposición de endpoints).
+• 	Contract Command Service y Contract Query Service (separación de responsabilidades CQRS).
+• 	Contract Repository (persistencia).
+• 	Compensation Module y Signature Module (lógica de negocio especializada).
+
 Modelo C4 de Contenedores
 
 ![C4Components](assets/img/Chapter-5/c41.JPG) 
