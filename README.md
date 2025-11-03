@@ -485,9 +485,9 @@ Esta información sugiere que el desarrollo de WorkStation debe considerar una d
 
 Para esta sección hemos tomado en cuenta dos User Persona que corresponden a los dos segmentos objetivos nombrados anteriormente: los propietarios de inmuebles y los trabajadores independientes.
 
-![User Persona 1](https://github.com/1ASI0732-Grupo-2/report/blob/develop/assets/img/Chapter-I/Propietario%20de%20inmueble.png)
+![User Persona 1](assets/img/Chapter-I/Propietario%20de%20inmueble.png)
 
-![User Persona 2](https://github.com/1ASI0732-Grupo-2/report/blob/develop/assets/img/Chapter-I/Trabajador%20independiente%20_%20freelancer.png)
+![User Persona 2](assets/img/Chapter-I/Trabajador%20independiente%20_%20freelancer.png)
 
 #### 2.3.2. User Task Matrix
 
@@ -523,22 +523,22 @@ Entre las tareas encontradas, la que ambos User Persona coinciden en que es impo
 #### 2.3.3. User Journey Mapping
 
 <p align="center">
-  <img src="https://github.com/1ASI0732-Grupo-2/report/blob/develop/assets/img/Chapter-I/Customer Journey Map Brainstorm.png" alt="Customer Journey Map Brainstorm.png" />
+  <img src="assets/img/Chapter-I/Customer Journey Map Brainstorm.png" alt="Customer Journey Map Brainstorm.png" />
 </p>
 
 #### 2.3.4. Empathy Mapping
 
 <p align="center">
-  <img src="https://github.com/1ASI0732-Grupo-2/report/blob/develop/assets/img/Chapter-I/Empathy Map Brainstorm.png" alt="Empathy Map Brainstorm.png" />
+  <img src="assets/img/Chapter-I/Empathy Map Brainstorm.png" alt="Empathy Map Brainstorm.png" />
 </p>
 
 #### 2.3.5. As-is Scenario Mapping
 
 **Freelancers**
-![As-Is-Freelancer](https://github.com/1ASI0732-Grupo-2/report/blob/develop/assets/img/Chapter-I/as-is-freelancer.jpg)
+![As-Is-Freelancer](assets/img/Chapter-I/as-is-freelancer.jpg)
 
 **Propietarios de Inmuebles**
-![As-Is-Propietario](https://github.com/1ASI0732-Grupo-2/report/blob/develop/assets/img/Chapter-I/as-is-propietario.jpg)
+![As-Is-Propietario](assets/img/Chapter-I/as-is-propietario.jpg)
 
 ### 2.4. Ubiquitous Language
 
@@ -632,7 +632,7 @@ Entre las tareas encontradas, la que ambos User Persona coinciden en que es impo
 
 ### 3.3. Impact Mapping
 
-![ImpactMap](https://github.com/1ASI0732-Grupo-2/report/blob/develop/assets/img/Chapter-I/Plantilla%20de%20mapa%20de%20impacto.jpg)
+![ImpactMap](assets/img/Chapter-I/Plantilla%20de%20mapa%20de%20impacto.jpg)
 
 ### 3.4. Product Backlog
 
@@ -678,7 +678,7 @@ Estilos arquitectónicos propuestos:
 #### Diagrama de Contexto
 
 <p align="center">
-  <img src="https://github.com/1ASI0732-Grupo-2/report/blob/develop/assets/img/Chapter-4/structurizr-workstation_context.png" />
+  <img src="assets/img/Chapter-4/structurizr-workstation_context.png" />
 </p>
 
 ### 4.1.4 Approach driven ViewPoints Diagrams
@@ -686,7 +686,7 @@ Estilos arquitectónicos propuestos:
 #### Diagrama de Contenedores
 
 <p align="center">
-  <img src="https://github.com/1ASI0732-Grupo-2/report/blob/develop/assets/img/Chapter-4/structurizr-container_view.png" />
+  <img src="assets/img/Chapter-4/structurizr-container_view.png" />
 </p>
 
 - Notas de diseño (viewpoint → decisiones):
@@ -969,22 +969,22 @@ Tras identificar el motor de recomendaciones como el elemento crítico a refinar
 #### 4.2.1.6 Sketch Views (C4 & UML) and Record Design Decisions
 
 <p align="center">
-  <img src="/assets/img/Chapter-4/4.3.1.6.png" />
+  <img src="assets/img/Chapter-4/4.3.1.6.png" />
 </p>
 
 ##### Diagrama de clases:
 
 Auth Context:
-![Context](/assets/img/Chapter-4/UmlClassDiagram1.png)
+![Context](assets/img/Chapter-4/UmlClassDiagram1.png)
 Shared Context:
 
 <p align="center">
-  <img src="/assets/img/Chapter-4/UmlClassDiagram2.png" alt="Diagrama de clases UML" width="400px">
+  <img src="assets/img/Chapter-4/UmlClassDiagram2.png" alt="Diagrama de clases UML" width="400px">
 </p>
 
 Offices Context:
 
-![Context3](/assets/img/Chapter-4/UmlClassDiagram3.png)
+![Context3](assets/img/Chapter-4/UmlClassDiagram3.png)
 
 ##### Diagrama de clases completo: https://github.com/1ASI0732-Grupo-2/report/blob/develop/assets/img/Chapter-4/iu.svg
 
@@ -1038,13 +1038,13 @@ Offices Context:
 
 Para las pruebas de nuestro [Backend](https://github.com/1ASI0732-Grupo-2/Backend.git) hecho en .NET 9, se utilizo la libreria de Nunit. De esta manera se lograron hacer las pruebas de Integracion.
 
-![integrationTest1](/assets/img/Chapter-4/integrationtest1.png)
+![integrationTest1](assets/img/Chapter-4/integrationtest1.png)
 
-![integrationTest2](/assets/img/Chapter-4/integrationtest2.png)
+![integrationTest2](assets/img/Chapter-4/integrationtest2.png)
 
 En total 3 pruebas de integracion que ven la persistencia de los datos en una base de datos de testeo. Todas estas corriendo satisfactoriamente.
 
-![integrationTest3](/assets/img/Chapter-4/integrationtest3.png)
+![integrationTest3](assets/img/Chapter-4/integrationtest3.png)
 
 ### 5.1.2 Pattern Based Backend Application(s)
 
@@ -1279,9 +1279,9 @@ El uso de **Docker Compose** simplificó la orquestación de múltiples contened
 
 Esto permitió que los servicios se comunicaran a través de una red virtual compartida dentro del entorno Docker.
 
-![Execution1](/assets/img/Chapter-5/5.2.1.4-2.png)
+![Execution1](assets/img/Chapter-5/5.2.1.4-2.png)
 
-![Swagger UI](/assets/img/Chapter-5/swaggerD2.png?raw=true)
+![Swagger UI](assets/img/Chapter-5/swaggerD2.png?raw=true)
 
 Verificación y pruebas:
 Se validó la correcta ejecución mediante logs y pruebas de endpoints desde Postman y Swagger, asegurando que los microservicios respondan adecuadamente.
@@ -1431,37 +1431,37 @@ Link del despliegue del backend : [https://workstation-arqui-fgbngphuh0g4a8at.ca
 #### 5.2.2.2 Development Evidence for Sprint Review
 
 Para este Sprint, como se puede ver se desarrollo el nuevo contexto de Contracts.
-![Sprint2_development1](/assets/img/Chapter-5/sprint2_development1.png)
+![Sprint2_development1](assets/img/Chapter-5/sprint2_development1.png)
 
-![Sprint2_development2](/assets/img/Chapter-5/sprint2_development2.png)
+![Sprint2_development2](assets/img/Chapter-5/sprint2_development2.png)
 
-![Sprint2_development3](/assets/img/Chapter-5/sprint2_development3.png)
+![Sprint2_development3](assets/img/Chapter-5/sprint2_development3.png)
 
-![Sprint2_development4](/assets/img/Chapter-5/sprint2_development4.png)
+![Sprint2_development4](assets/img/Chapter-5/sprint2_development4.png)
 
 #### 5.2.2.3 Testing Suite Evidence for Sprint Review
 
 Para el testing de este context primero se vio los diferentes escenarios para la creacion de los contratos con todos sus atributos.
 
-![Sprint2_testing](/assets/img/Chapter-5/sprint2_testing_code1.png)
+![Sprint2_testing](assets/img/Chapter-5/sprint2_testing_code1.png)
 
-![Sprint2_testing2](/assets/img/Chapter-5/sprint2_testing_code2.png)
+![Sprint2_testing2](assets/img/Chapter-5/sprint2_testing_code2.png)
 
-![Sprint2_testing3](/assets/img/Chapter-5/sprint2_testing_code3.png)
+![Sprint2_testing3](assets/img/Chapter-5/sprint2_testing_code3.png)
 
-![Sprint2_testing4](/assets/img/Chapter-5/sprint2_testing_code4.png)
+![Sprint2_testing4](assets/img/Chapter-5/sprint2_testing_code4.png)
 
-![Sprint2_testing5](/assets/img/Chapter-5/sprint2_testing_code5.png)
+![Sprint2_testing5](assets/img/Chapter-5/sprint2_testing_code5.png)
 
 Por ultimo, se corrieron todos los tests de estos casos y su resultado fue el esperado.
 
-![Sprint2_testexecution](/assets/img/Chapter-5/Sprint2_testing.png)
+![Sprint2_testexecution](assets/img/Chapter-5/Sprint2_testing.png)
 
 #### 5.2.2.4 Execution Evidence for Sprint Review
 
 Para la ejecuccion del programa, se verifico primero dentro de un entorno controlado para ver que el nuevo contexto sea funcional. Para luego ser desplegado en Azure.
 
-![Sprint2_execution](/assets/img/Chapter-5/sprint2_execution.png)
+![Sprint2_execution](assets/img/Chapter-5/sprint2_execution.png)
 
 #### 5.2.2.5 Microservices Documentation Evidence for Sprint Review
 
@@ -1540,11 +1540,11 @@ Modelo C4 de Componentes
 
 ##### Reporte
 
-![Inishgts1](/assets/img/Chapter-5/ColaborationInsights2.png)
+![Inishgts1](assets/img/Chapter-5/ColaborationInsights2.png)
 
 ##### Backend
 
-![Inishgts2](/assets/img/Chapter-5/ColaborationInsights.png)
+![Inishgts2](assets/img/Chapter-5/ColaborationInsights.png)
 
 #### 5.2.2.8 Kanban Board
 
