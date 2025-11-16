@@ -1589,7 +1589,67 @@ Además, se incorporan los avances más recientes del proyecto:
 En conjunto, este tablero evidencia un progreso significativo desde las etapas exploratorias hasta la concreción de elementos arquitectónicos y técnicos esenciales, demostrando un avance sólido hacia la construcción del sistema WorkStation.
 
 ## 5.2.3 Sprint 3  
-### 5.2.3.1 Sprint Backlog 3
+#### 5.2.3.1 Sprint Backlog 3
+
+<table>
+<thead>
+<tr class="header"><th>Sprint #</th><th colspan="7">Sprint 3</th></tr>
+<tr class="odd"><th colspan="2">User Story</th><th colspan="6">Work-Item / Task</th></tr>
+<tr class="header"><th>Id</th><th>Title</th><th>Id</th><th>Title</th><th>Description</th><th>Estimation (Hours)</th><th>Assigned To</th><th>Status</th></tr>
+</thead>
+<tbody>
+
+<!-- REVIEWS - US-29 -->
+<tr class="odd"><td colspan="2" rowspan="2">US-29</td>
+<td>WI39</td><td>API Reseñas</td>
+<td>CRUD de reseñas entre propietarios y freelancers</td><td>7</td>
+<td>[Braulio]</td><td>Planned</td></tr>
+<tr class="header"><td>WI43</td><td>Pruebas Reseñas</td>
+<td>Tests unitarios e integración para reseñas</td><td>5</td>
+<td>[Renzo]</td><td>Planned</td></tr>
+
+<!-- VERIFICATION - US-30 -->
+<tr class="odd"><td colspan="2">US-30</td>
+<td>WI40</td><td>API Verificación Usuarios</td>
+<td>Integración con LinkedIn/DNI para verificación</td><td>6</td>
+<td>[Diego]</td><td>Planned</td></tr>
+
+<!-- SEARCH - US-41 -->
+<tr class="header"><td colspan="2">US-41</td>
+<td>WI41</td><td>API Búsqueda Avanzada</td>
+<td>Endpoints con filtros de servicios, precio, capacidad y ubicación</td><td>7</td>
+<td>[Rodrigo]</td><td>Planned</td></tr>
+
+<!-- RATINGS - US-42 -->
+<tr class="odd"><td colspan="2">US-42</td>
+<td>WI42</td><td>API Calificaciones</td>
+<td>Endpoint para calificar oficinas y propietarios</td><td>6</td>
+<td>[Henry]</td><td>Planned</td></tr>
+
+<!-- TECHNICAL -->
+<tr class="header"><td colspan="2" rowspan="2">Técnicas</td>
+<td>WI44</td><td>Seguridad Básica</td>
+<td>Roles mínimos y validación de inputs en endpoints críticos</td><td>5</td>
+<td>[Renzo]</td><td>Planned</td></tr>
+<tr class="odd"><td>WI45</td><td>Documentación Sprint 3</td>
+<td>Documentación APIs, microservicios y despliegue</td><td>6</td>
+<td>[Diego]</td><td>Planned</td></tr>
+
+<!-- MIGRATION -->
+<tr class="header"><td colspan="2" rowspan="3">Migración</td>
+<td>WI46</td><td>Cierre WI23</td>
+<td>Finalizar lógica de recibos</td><td>4</td>
+<td>[Renzo]</td><td>In process</td></tr>
+<tr class="odd"><td>WI47</td><td>Cierre WI27</td>
+<td>Integración contratos-oficinas</td><td>5</td>
+<td>[Rodrigo]</td><td>In process</td></tr>
+<tr class="header"><td>WI48</td><td>Cierre WI29</td>
+<td>Documentación APIs contratos</td><td>6</td>
+<td>[Diego]</td><td>In process</td></tr>
+
+</tbody>
+</table>
+
 
 ### 5.2.3.2 Development Evidence for Sprint Review
 Para este Sprint, se actualizo el contexto contracts y ademas se actualizaron algunos aspectos mas del backend 
