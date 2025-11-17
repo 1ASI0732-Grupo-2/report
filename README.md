@@ -1680,7 +1680,52 @@ Visualizacion de la actualizacion en este sprint mediante swagger
 
 ### 5.2.3.5 Microservices Documentation Evidence for Sprint Review  
 
+En este sprint se actualizó la documentación de los microservicios para reflejar las nuevas funcionalidades trabajadas sobre el contexto de Contracts y las mejoras en búsqueda, reseñas y calificaciones. A partir del código del backend se regeneró el archivo Swagger/OpenAPI y se revisaron las colecciones de Postman para asegurar que todos los endpoints expuestos estuvieran alineados con los cambios de nuestro Sprint 3.
+
+Endpoints principales actualizados
+
+| Servicio          | Endpoint                                                     | Método | Descripción                                                                                 |
+|-------------------|---------------------------------------------------------------|--------|---------------------------------------------------------------------------------------------|
+| **WorkspaceService** | `/api/workspaces/search`                                     | GET    | Búsqueda avanzada con filtros por servicios, precio, capacidad y ubicación.                |
+| **ReviewService**    | `/api/reviews`                                               | POST   | Crear una nueva reseña asociada a un workspace y un usuario.                               |
+| **ReviewService**    | `/api/reviews/{reviewId}`                                    | PUT    | Actualizar el comentario o la puntuación de una reseña existente.                          |
+| **ReviewService**    | `/api/reviews/{reviewId}`                                    | DELETE | Eliminar una reseña registrada por el usuario.                                              |
+| **ReviewService**    | `/api/reviews/workspace/{workspaceId}`                       | GET    | Listar reseñas de un workspace específico.                                                  |
+| **RatingService**    | `/api/ratings/office/{officeId}`                             | GET    | Obtener el promedio de calificaciones de una oficina.                                       |
+| **RatingService**    | `/api/ratings`                                               | POST   | Registrar una nueva calificación de oficina o propietario.                                  |
+| **ContractService**  | `/api/workstation/contracts/{contractId}/receipt`            | GET    | Consultar el recibo generado para un contrato.                                              |
+| **ContractService**  | `/api/workstation/contracts/{contractId}/receipt`            | PUT    | Actualizar datos del recibo (método de pago, montos, etc.).                                 |
+| **AuthService**      | `/api/auth/register`                                         | POST   | Registro de usuarios con validaciones de seguridad.                                         |
+| **AuthService**      | `/api/auth/login`                                            | POST   | Inicio de sesión con emisión de token JWT.                                                  |
+
+Todos estos endpoints fueron verificados con colecciones de Postman, comprobando códigos de respuesta exitosos (200/201) y errores controlados (400/401/404) según los casos de prueba definidos. Además, se actualizó la documentación generada automáticamente en Swagger, donde se revisaron descripciones, parámetros y modelos de request/response para mantener la trazabilidad de cada microservicio.  
+URL de la documentación Swagger actualizada:  
+https://workstation-arqui-fgbngphuh0g4a8at.canadacentral-01.azurewebsites.net/swagger/index.html
+
+
 ### 5.2.3.6 Software Deployment Evidence for Sprint Review  
+
+Durante el Sprint 3 se realizó un nuevo ciclo de despliegue del backend de WorkStation para publicar los cambios en los microservicios y cerrar las tareas relacionadas con Contracts, recibos y la integración con oficinas. El proceso se mantuvo sobre la misma estrategia de contenedores utilizada en sprints anteriores, lo que permitió actualizar la versión sin romper el entorno actual.
+
+Los pasos principales del deployment fueron:
+
+1. Actualización del código y ejecución de pruebas  
+   - Se integraron los cambios del Sprint 3 en la rama principal del backend.  
+   - Se ejecutaron las pruebas unitarias e integración configuradas para Contracts, búsqueda avanzada y reseñas, verificando que los endpoints actualizados continuaran respondiendo correctamente.
+
+2. Build de imagen Docker  
+   - Localmente se levantó el stack con `docker-compose` para validar que todos los microservicios (Auth, Workspace, Booking, Contracts, Reviews/Ratings) se comunicaran correctamente en la red interna.
+
+3. Publicación en la nube  
+   - Se actualizó la configuración del servicio en Azure para apuntar a la nueva imagen, reutilizando variables de entorno, cadenas de conexión y credenciales ya definidas en sprints previos.  
+   - Se verificó el estado del contenedor desde el panel de Azure, comprobando logs de inicio sin errores críticos.
+
+4. Validación post–despliegue
+   
+![Sprint3_swagger](assets/img/Chapter-5/sprint3_evidence6.png)
+
+![Sprint3_swagger1](assets/img/Chapter-5/swaggerD2.png)
+   - Se realizaron pruebas manuales desde Postman contra el entorno desplegado (búsqueda avanzada, creación de reseñas, consulta de recibos) para asegurar que el comportamiento en producción coincidiera con lo observado en el entorno local.
 
 ## Final
 
