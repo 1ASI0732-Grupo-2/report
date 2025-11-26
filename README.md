@@ -1430,26 +1430,72 @@ Link del despliegue del backend : [https://workstation-arqui-fgbngphuh0g4a8at.ca
 
 #### 5.2.2.2 Development Evidence for Sprint Review
 
-Para este Sprint, como se puede ver se desarrollo el nuevo contexto de Contracts.
+Para este Sprint, como se puede ver se desarrollo el nuevo contexto de Contracts sigiendo la arquitectura DDD. Como se pueden ver, aqui hay algunos avances relacionados al codigo del programa, donde se crearon nuevas entidades para este nuevo contexto, asimismo con reglas de negocio incluidas con FluentValidation.
+
+Aqui su diagrama de clases.
+
+![ClassDiagramContracts](assets/img/Chapter-5/ContractsClassDiagram.png)
+
+En esta imagen se puede ver el desarrollo de la clase Contacts dentro de Visual Studio Code.
+
 ![Sprint2_development1](assets/img/Chapter-5/sprint2_development1.png)
+
+En la siguiente imagen se puede ver el servicio para los comandos de Contratos. Dentro de los mismos se encuentran la validacion y funcionalidad de distintos comandos.
 
 ![Sprint2_development2](assets/img/Chapter-5/sprint2_development2.png)
 
+**Lista de comandos creados:**
+
+| Comando                | Descripcion                                                                             | Variables                                                                                                                                                         |
+| ---------------------- | --------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ActiveContractCommand  | Activa los contratos cuando las firmas estan listas.                                    | `Guid ContractId`                                                                                                                                                 |
+| AddClauseCommand       | Añade clausulas a los contratos creados.                                                | `Guid ContractId, string Name, string Content, int Order, bool Mandatory`                                                                                         |
+| AddCompensationCommand | Si es que el periodo de pago es saltado, la compensacion se añade al pago del contrato. | `Guid ContractId, Guid IssuerId, Guid ReceiverId, decimal Amount, string Reason`                                                                                  |
+| CreateContractCommand  | Crea el contrato                                                                        | `Guid OfficeId, Guid OwnerId, Guid RenterId, string Description, DateTime StartDate, DateTime EndDate, decimal BaseAmount, decimal LateFee, decimal InterestRate` |
+| FinishCotntractCommand | Acaba el contrato en el periodo de tiempo establecido y con el pago realizado.          | `Guid ContractId, string Reason`                                                                                                                                  |
+| SignContractCommand    | Firma el contrato de un solo participante                                               | `Guid ContractId, Guid SignerId, string SignatureHash`                                                                                                            |
+| UpdateReceiptCommand   | Cuando se genera una compensacion, el recibo se actualiza                               | `Guid ContractId, decimal CompensationAdjustments, string Notes`                                                                                                  |
+
+En la siguiente imagen se puede ver el servicio de Queries que se utilizo para manejar los queries de este contexto.
+
 ![Sprint2_development3](assets/img/Chapter-5/sprint2_development3.png)
 
+**Lista de Queries**
+
+| Query                              | Descripcion                                            | Variables         |
+| ---------------------------------- | ------------------------------------------------------ | ----------------- |
+| GetActiveContractsQuery            | Regresa los Contratos activos                          |                   |
+| GetCompensationByContractIdQuery   | Regresa el valor de la compensacion por id de contrato | `Guid ContractId` |
+| GetContractByIdQuery               | Retorna el contrato por id.                            | `Guid ContractId` |
+| GetContractByUserIdQuery           | Retorna el contrato por el id del usuario relacionado  | `Guid UserId`     |
+| GetPaymentReceiptByContractIdQuery | Retorna el recibo de pago por el Id del contrato       | `Guid ContractId` |
+
+Por ultimo aqui se puede ver el controlador donde se hace la salida de datos hacia la API, donde se encuentran todos los comandos y queries que se establecieron anteriormente.
+
 ![Sprint2_development4](assets/img/Chapter-5/sprint2_development4.png)
+
 
 #### 5.2.2.3 Testing Suite Evidence for Sprint Review
 
 Para el testing de este context primero se vio los diferentes escenarios para la creacion de los contratos con todos sus atributos.
 
+En la primera imagen tenemos el Setup de los tests de contratos, donde se generan nuevos ids de prueba para las oficinas, el dueño y la persona que busca la oficina, todo esto para establecer un contrato con estos datos.
+
 ![Sprint2_testing](assets/img/Chapter-5/sprint2_testing_code1.png)
+
+Los unit test que son visibles en la siguiente imagen son casos de prueba basicos, donde se prueba la creacion de un contrato satisfactoriamente. Asimismo, en el segundo caso es cuando el contrato esta en su fase inicial de borrador se puedan agregar clausulas y no cuando este ya activo, ya que va tirar una excepcion.
 
 ![Sprint2_testing2](assets/img/Chapter-5/sprint2_testing_code2.png)
 
+En los siguientes tests, el primero indica que el contrato debe de cambiar su estado de draft a Active cuando las dos firmas son establecidas. Por otro lado, se debe de generar una excepcion cuando una de las dos firmas no estan.
+
 ![Sprint2_testing3](assets/img/Chapter-5/sprint2_testing_code3.png)
 
+En estos tests, el primero indica que el contrato debe terminar cuando no se encuentran compensaciones pendientes, sino debe lanzar una excepcion. Asimismo, el contrato se puede cancelr cuando no esta activo, pero cuando este activo no es posible de cancelar y una excepcion es lanzada.
+
 ![Sprint2_testing4](assets/img/Chapter-5/sprint2_testing_code4.png)
+
+Por ultimo, estos son algunso helpers que se utilizaron las pruebas unitarias.
 
 ![Sprint2_testing5](assets/img/Chapter-5/sprint2_testing_code5.png)
 
