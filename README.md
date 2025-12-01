@@ -722,7 +722,7 @@ Estilos arquitectónicos propuestos:
 4. Roles y permisos (owner vs renter vs admin).
 5. Performance / Scalability
 6. Escalar Recommendation Service horizontalmente.
-7. Cache de resultados frecuentes (Redis) y cache del Search Index.
+7. Cache de resultados frecuentes y cache del Search Index.
 8. Indexar geolocalización y filtros en Elasticsearch.
 9. Availability / Resilience
 10. Circuit Breaker en llamadas a pasarelas externas (payment/maps).
@@ -866,7 +866,6 @@ Para esta primera iteracion del diseño de Arquitectura de Workstation, el equip
 |                    | Implementar cálculo de promedio y normalización de puntuaciones              | Exponerlo en `/offices/{id}` y en recomendaciones.                       |
 | **Search**         | Diseñar servicio `RecommendationService` extensible                          | Permitir agregar criterios de búsqueda sin romper arquitectura.          |
 |                    | Implementar endpoint `GET /search/recommendations`                           | Recibir filtros y devolver resultados.                                   |
-|                    | Integrar Redis para caching de resultados frecuentes                         | Mejorar performance de búsquedas comunes.                                |
 | **Messaging**      | Modelar entidad `Message` (senderId, receiverId, officeId?, body, timestamp) | Permitir registrar comunicaciones.                                       |
 |                    | Implementar endpoint `POST /messages`                                        | Enviar mensajes entre usuario ↔ propietario.                             |
 |                    | Implementar endpoint `GET /messages/conversation/{userId}/{ownerId}`         | Recuperar historial de conversación.                                     |
@@ -928,7 +927,7 @@ Tras identificar el motor de recomendaciones como el elemento crítico a refinar
 
 - **Concepto de Diseño:** Interfaz responsiva con filtros dinámicos y caching.
 
-- **Descripción:** Implementar un UI adaptable a dispositivos móviles y de escritorio, con opciones de filtrado (capacidad, servicios, ubicación) y resultados rápidos gracias a caching con Redis.
+- **Descripción:** Implementar un UI adaptable a dispositivos móviles y de escritorio, con opciones de filtrado (capacidad, servicios, ubicación).
 
 - **Justificación:** Mejora la experiencia de búsqueda, ofreciendo resultados claros y ordenados que facilitan la comparación de oficinas.
 
@@ -944,7 +943,7 @@ Tras identificar el motor de recomendaciones como el elemento crítico a refinar
 
 - **Concepto de Diseño:** Uso de microservicios con APIs estandarizadas.
 
-- **Descripción:** Diseñar los contextos principales (Usuarios, Oficinas, Ratings, Mensajería) como microservicios con APIs REST bien definidas, preparados para futuras integraciones.
+- **Descripción:** Diseñar los contextos principales (Usuarios, Oficinas, Ratings, Contratos) como microservicios con APIs REST bien definidas en conjunto a un API Gateway, preparados para futuras integraciones.
 
 - **Justificación:** Permite conectar el motor de recomendaciones con servicios externos (pagos, geolocalización, notificaciones) y asegura escalabilidad en la evolución del producto.
 
@@ -959,7 +958,6 @@ Tras identificar el motor de recomendaciones como el elemento crítico a refinar
 | Utilizar **Spring Boot con Spring Security (OAuth 2.0 + JWT)**           | Se selecciona Spring Boot junto con Spring Security para manejar la autenticación y autorización. OAuth 2.0 por roles y generación de tokens JWT ofrecen un estándar moderno, seguro y ampliamente probado que protege el acceso a recursos sensibles como recomendaciones, mensajería y valoraciones. |
 | Implementar **arquitectura de microservicios desacoplados**              | Cada contexto (Usuarios, Propietarios, Oficinas, Ratings, Mensajería, Búsqueda) será un microservicio independiente comunicado mediante APIs REST. Esto permite escalabilidad horizontal, mantenibilidad modular y despliegues independientes.                                                         |
 | Utilizar **PostgreSQL con soporte geoespacial (PostGIS)**                | PostgreSQL se selecciona como base de datos principal por su robustez en transacciones, soporte para índices geoespaciales y extensiones como PostGIS, necesarias para consultas de ubicación de oficinas. Asegura consistencia e integridad de la información.                                        |
-| Implementar **Redis para caching**                                       | Redis se integrará para optimizar el rendimiento del motor de recomendaciones, almacenando resultados frecuentes de búsqueda. Esto reduce la latencia y mejora la experiencia del usuario en búsquedas repetitivas.                                                                                    |
 | Utilizar **Angular con Material Design**                                 | Angular proveerá una interfaz responsiva y modular, mientras que Material Design asegurará consistencia, accesibilidad y una experiencia visual clara. Los filtros dinámicos permitirán búsquedas más intuitivas.                                                                                      |
 | Usar **AuthGuard en Angular**                                            | Se protegerán las rutas del frontend mediante AuthGuard, asegurando que solo usuarios autenticados y con roles correctos puedan acceder a funciones sensibles como mensajería o valoraciones.                                                                                                          |
 | Implementar **API Gateway con Spring Cloud Gateway**                     | Un API Gateway permitirá centralizar la autenticación, seguridad, enrutamiento, logging y monitoreo de tráfico hacia los microservicios. Esto fortalece la gobernanza y control de la arquitectura distribuida.                                                                                        |
@@ -1015,7 +1013,7 @@ Offices Context:
 | CON-02 | La aplicación podrá usarse en navegadores modernos como Chrome, Firefox, Safari y Edge con UI responsive.                                |
 | CON-03 | Se emplearán tecnologías Open Source para reducir costos y garantizar flexibilidad.                                                      |
 | CON-05 | El sistema adoptará el patrón Domain Driven Design (DDD) para estructurar los microservicios de manera alineada al negocio de coworking. |
-| ARC-01 | Aplicar conocimientos previos en tecnologías como Java Spring Boot, React, PostgreSQL, Elasticsearch, Redis y herramientas de CI/CD.     |
+| ARC-01 | Aplicar conocimientos previos en tecnologías como Java Spring Boot, React, PostgreSQL, Elasticsearch y herramientas de CI/CD.     |
 | ARC-02 | Reconocer las habilidades del equipo para distribuir tareas según fortalezas individuales.                                               |
 | ARC-04 | Entender que todos estamos en constante aprendizaje y fomentar la colaboración para resolver desafíos técnicos.                          |
 
@@ -1700,17 +1698,17 @@ En conjunto, este tablero evidencia un progreso significativo desde las etapas e
 ### 5.2.3.2 Development Evidence for Sprint Review
 Para este Sprint, se actualizo el contexto contracts y ademas se actualizaron algunos aspectos mas del backend 
 
-![Sprint3_evidence](assets/img/Chapter-5/sprint3_evidence.png)
+Dentro de la siguiente imagen se puede ver la creacion de Tests para la creacion de Contratos.
 
 ![Sprint3_evidence2](assets/img/Chapter-5/sprint3_evidence2.png)
+
+Sin embargo, el sprint mayormente se baso en la documentacion de las clases para un entendimiento mas facil para todas las personas que vayan a utilizar el API. Como se puede ver en las siguientes imagenes, las clases como Contracts, Compensations, Clauses, Signatures o PaymentReceipt se les agrego documentacion en XML. Asimismo dentro de los servicios de la capa Application y en el controller dentro de la capa de Interface.
 
 ![Sprint3_evidence3](assets/img/Chapter-5/sprint3_evidence3.png)
 
 ![Sprint3_evidence4](assets/img/Chapter-5/sprint3_evidence4.png)
 
 ![Sprint3_evidence5](assets/img/Chapter-5/sprint3_evidence5.png)
-
-
 
 ### 5.2.3.3 Testing Suite Evidence for Sprint Review  
 Para este sprint se evidencia el testeo que se realizo al momento de realizar las actualizaciones respectivas 
@@ -1748,6 +1746,271 @@ Todos estos endpoints fueron verificados con colecciones de Postman, comprobando
 URL de la documentación Swagger actualizada:  
 https://workstation-arqui-fgbngphuh0g4a8at.canadacentral-01.azurewebsites.net/swagger/index.html
 
+A continuacion mostraremos el envio y la repuesta desde el backend, todo en json.
+#### Users
+Envio de registro:
+
+```json
+{
+  "firstName": "string",
+  "lastName": "string",
+  "dni": "string",
+  "phoneNumber": "string",
+  "email": "string",
+  "passwordHash": "string",
+  "role": 1
+}
+```
+El registro almacena los datos principales del usuario, como sus nombre completo, dni, celular, email, una contraseña y su rol dentro de la aplicacion.
+
+Al hacer un get se recibe lo siguiente:
+
+```json
+  {
+    "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+    "createdDate": "2025-12-01T13:34:37.510Z",
+    "modifiedDate": "2025-12-01T13:34:37.510Z",
+    "userId": 0,
+    "updatedUserId": 0,
+    "isActive": true,
+    "firstName": "string",
+    "lastName": "string",
+    "dni": "string",
+    "phoneNumber": "string",
+    "email": "string",
+    "role": 1,
+    "createdAt": "2025-12-01T13:34:37.510Z",
+    "passwordHash": "string"
+  }
+```
+
+Son datos basicos y algunos extra como la fecha en que se creo que perfil y su Id. La contraseña como su mismo nombre indica, esta hasheada, por lo que es seguro.
+
+Asi mismo, tenemos un endpoint para el login:
+
+```json
+{
+  "email": "string",
+  "passwordHash": "string"
+}
+```
+
+#### Offices
+Iniciando por el Post, el json que se envia es de la siguiente manera.
+```json
+{
+  "location": "string",
+  "description": "string",
+  "imageUrl": "string",
+  "capacity": 0,
+  "costPerDay": 0,
+  "available": true,
+  "services": [
+    {
+      "name": "string",
+      "description": "string",
+      "cost": 0
+    }
+  ]
+}
+```
+Donde la ubicacion juega un rol importante, ya que decidimos no tener la variable de "Nombre" dentro de estas oficinas, ya que consideramos que es mas importante una ubicacion, ademas que nos ayudara con la busqueda de las oficinas en el contexto de Search. Asimismo tiene una descripcion, un URL de la imagen que se quiere mostrar, la capacidad maxiam, costo por dia y si es que esta disponible, esta variable puede cambiar si es que un contrato es activado con el ID de la oficina. Por ultimo, tenemos los servicios, que es una entidad con sus propios valores, como el nombre, la descripcion y el costo.
+
+La informacion de las oficinas regresa de la siguiente manera:
+```json
+  {
+    "id": "33d2f2f2-5654-4493-ba7b-53f1d79bb0da",
+    "location": "Lima, Miraflores",
+    "description": "Oficina moderna cerca al malecón con excelente iluminación.",
+    "imageUrl": "https://i.pinimg.com/736x/a7/32/99/a732998348f2be65758af453c2d4b166.jpg",
+    "capacity": 12,
+    "costPerDay": 50,
+    "available": true,
+    "services": [
+      {
+        "name": "Aire acondicionado",
+        "description": "Climatización para días de calor",
+        "cost": 20
+      },
+      {
+        "name": "Café ilimitado",
+        "description": "Máquina de café disponible todo el día",
+        "cost": 20
+      }
+    ]
+  }
+```
+Tan solo agregando el Id de las oficinas.
+
+#### Rating
+Para crear un rating en la aplicacion, se realiza lo siguiente:
+```json
+{
+  "score": 0,
+  "comment": "string",
+  "officeId": "3fa85f64-5717-4562-b3fc-2c963f66afa6"
+}
+```
+
+Y de regreso, la respuesta es:
+
+```json
+{
+  "id": "string",
+  "score": 0,
+  "comment": "string",
+  "officeId": "3fa85f64-5717-4562-b3fc-2c963f66afa6"
+}
+
+```
+
+#### Contracts
+
+Para los Contratos se tienen mas endpoints que los anteriores conextos, para el envio de un Contrato es de la siguiente manera:
+
+```json
+{
+  "officeId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+  "ownerId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+  "renterId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+  "description": "string",
+  "startDate": "2025-12-01T13:47:53.582Z",
+  "endDate": "2025-12-01T13:47:53.582Z",
+  "baseAmount": 0,
+  "lateFee": 0,
+  "interestRate": 0
+}
+```
+
+La respuesta de este mismo contrato seria:
+
+```json
+{
+  "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+  "officeId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+  "ownerId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+  "renterId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+  "description": "string",
+  "startDate": "2025-12-01T13:47:53.588Z",
+  "endDate": "2025-12-01T13:47:53.588Z",
+  "baseAmount": 0,
+  "lateFee": 0,
+  "interestRate": 0,
+  "status": "string",
+  "createdAt": "2025-12-01T13:47:53.588Z",
+  "activatedAt": "2025-12-01T13:47:53.588Z",
+  "terminatedAt": "2025-12-01T13:47:53.588Z",
+  "clauses": [
+    {
+      "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "name": "string",
+      "content": "string",
+      "order": 0,
+      "mandatory": true
+    }
+  ],
+  "signatures": [
+    {
+      "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "signerId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "signedAt": "2025-12-01T13:47:53.588Z",
+      "signatureHash": "string"
+    }
+  ],
+  "compensations": [
+    {
+      "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "issuerId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "receiverId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "amount": 0,
+      "reason": "string",
+      "createdAt": "2025-12-01T13:47:53.588Z",
+      "status": "string"
+    }
+  ],
+  "receipt": {
+    "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+    "receiptNumber": "string",
+    "baseAmount": 0,
+    "compensationAdjustments": 0,
+    "finalAmount": 0,
+    "issuedAt": "2025-12-01T13:47:53.588Z",
+    "updatedAt": "2025-12-01T13:47:53.588Z",
+    "notes": "string",
+    "status": "string"
+  }
+}
+```
+
+Se tienen otros endpoints como el enpoint para agregar clausulas, que el envio es de la siguiente manera:
+
+```json
+{
+  "name": "string",
+  "content": "string",
+  "order": 0,
+  "mandatory": true
+}
+```
+
+Tambien se encuentra el endpoint para firmar el contrato:
+
+```json
+{
+  "signerId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+  "signatureHash": "string"
+}
+```
+
+Para activar el contrato es el siguiente:
+```json
+{
+  "id": "string"
+}
+```
+
+Por ultimo, para agregar las compensaciones si es que no se ha pagado durante el periodo esperado, el envio es de la siguiente manera:
+
+```json
+{
+  "issuerId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+  "receiverId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+  "amount": 0,
+  "reason": "string"
+}
+```
+
+Tambien hay una respuesta por parte de las compensaciones que es asi:
+
+```json
+[
+  {
+    "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+    "issuerId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+    "receiverId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+    "amount": 0,
+    "reason": "string",
+    "createdAt": "2025-12-01T13:53:20.230Z",
+    "status": "string"
+  }
+]
+```
+
+Por ulimo, un enpoint que retorna el recibo final de pago para los usuarios:
+
+```json
+{
+  "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+  "receiptNumber": "string",
+  "baseAmount": 0,
+  "compensationAdjustments": 0,
+  "finalAmount": 0,
+  "issuedAt": "2025-12-01T13:53:20.232Z",
+  "updatedAt": "2025-12-01T13:53:20.232Z",
+  "notes": "string",
+  "status": "string"
+}
+```
 
 ### 5.2.3.6 Software Deployment Evidence for Sprint Review  
 
@@ -1772,6 +2035,93 @@ Los pasos principales del deployment fueron:
 
 ![Sprint3_swagger1](assets/img/Chapter-5/swaggerD2.png)
    - Se realizaron pruebas manuales desde Postman contra el entorno desplegado (búsqueda avanzada, creación de reseñas, consulta de recibos) para asegurar que el comportamiento en producción coincidiera con lo observado en el entorno local.
+
+### 5.2.3.7 Team Collaboration Insights during Sprint
+
+![sprint3_insights](assets/img/Chapter-5/Sprint3_insights.png)
+
+### 5.2.3.8 Kanban Board
+
+### 5.2.4 Sprint 4
+### 5.2.4.1 Sprint Backlog 4
+### 5.2.4.2 Development Evidence for Sprint Review
+Durante este Sprint 4, se realizo la separacion de uno de nuestros servicios a un microservicio y la creacion de un API Gateway para manejarlo. Ademas, se ejecuto todo esto dentro de entorno controlado como lo vendria a ser Docker y sus contenedores.
+
+En la siguiente imagen se puede visualizar el nuevo enfoque y orden de nuestros directorios dentro de nuestro proyecto.
+
+![Development1](assets/img/Chapter-5/Sprint4_development1.png)
+
+Dentro de la carpeta de Gateway se encuentra la configuracion de nuestro API Gateway y de algunos contextos que por falta de tiempo no se logro migrar a microservicios, sin embargo aun siguen completamnete funcionales en conjunto al microservicio separado.
+
+![Development2](assets/img/Chapter-5/Sprint4_development2.png)
+
+En la siguiente imagen se puede ver el Dockerfile que se creo para poder correr el proyecto hecho en .NET Framework, lo que facilita su ejecucion.
+
+![Development3](assets/img/Chapter-5/Sprint4_development3.png)
+
+Asimismo, se separo la base de datos en dos, creando una base de datos en MSSQL para almacenar todos los datos de este servicio.
+![Development4](assets/img/Chapter-5/Sprint4_development4.png)
+
+Dentrode la siguiente imagen se puede ver el ultimo contexto realizado, completamente separado del API Gateway y con su propia configuracion. 
+
+![Development5](assets/img/Chapter-5/Sprint4_development5.png)
+
+Asimismo, este servicio posee su propio Dockerfile para correr por si mismo.
+
+![Development6](assets/img/Chapter-5/Sprint4_development6.png)
+
+Y se creo una nueva base de datos hecha en Postgres para el almacenamiento de datos.
+
+![Development7](assets/img/Chapter-5/Sprint4_development7.png)
+
+Para finalizar, dentro de nuestro nuevo proyecto, se creo un `docker-compose` para que todo sea levantado y ejecutado dentro de un entorno controlado, Docker. Aqui se corren las imagenes necesarias, como las bases de datos, el microservicio y NGINX, que nos ayudo en hacer balanceo de carga.
+
+![Development8](assets/img/Chapter-5/Sprint4_development8.png)
+![Development9](assets/img/Chapter-5/Sprint4_development9.png)
+![Development10](assets/img/Chapter-5/Sprint4_development10.png)
+
+En las siguientes imagenes se podra ver la configuracion que se hizo dentro del documento `nginx.conf` para levantar el servicio y se pueda hacer el balanceo de carga.
+
+![Development11](assets/img/Chapter-5/Sprint4_development11.png)
+![Development12](assets/img/Chapter-5/Sprint4_development12.png)
+
+Y para terminar, la ejecuccion creo un `docker-build.log` que nos ayuda a tener control de lo que sucede dentro de la aplicacion y poder verificar errores que puedan suceder con requests.
+
+![Development13](assets/img/Chapter-5/Sprint4_development13.png)
+
+### 5.2.4.3 Testing Suite Evidence for Sprint Review
+
+Para este Sprint, se realizaron mas Tests dentro del contexto de Oficinas.
+
+Estos primeros tests tratan acerca de la creacion de oficinas basicas y probar las validaciones inicales que se tiene dentro de sercivios de la capa Application. Asimismo verifica los tipos de excepciones que son lanzadas al tratar de insertar valores nulos dentro de la clase de Oficinas.
+
+![Testing1](assets/img/Chapter-5/Sprint4Tests1.png)
+![Testing2](assets/img/Chapter-5/Sprint4Tests2.png)
+
+Dentro de los siguientes test se verifica la creacion de ratings y servicios dentro de las oficinas, ademas de probar la creacion de oficinas con mas valores nulos dentro de las clases anteriormente mencionadas.
+![Testing3](assets/img/Chapter-5/Sprint4Tests3.png)
+![Testing4](assets/img/Chapter-5/Sprint4Tests4.png)
+![Testing5](assets/img/Chapter-5/Sprint4Tests5.png)
+
+Los siguientes tests son del siguiente nivel los test de integracion, donde se midio la persistencia de datos dentro de la base de datos creada en MSSQL. Aqui se verifican el uso de los comandos de creacion.
+![Testing6](assets/img/Chapter-5/Sprint4Tests6.png)
+![Testing7](assets/img/Chapter-5/Sprint4Tests7.png)
+
+En las siguientes imagenes, se verifican las excepciones al crear ofifinas con la misma ubicacion y una ubicacion erroena.
+![Testing8](assets/img/Chapter-5/Sprint4Tests8.png)
+
+Por ultimo, se verifica si es que se puede elminar o editar la oficina que ya fueron creadas dentro de la base de datos temporalmente creada.
+![Testing9](assets/img/Chapter-5/Sprint4Tests9.png)
+![Testing10](assets/img/Chapter-5/Sprint4Tests10.png)
+
+### 5.2.4.4 Execution Evidence for Sprint Review
+### 5.2.4.5 Microservices Documentation Evidence for Sprint Review
+### 5.2.4.6 Software Deployment Evidence for Sprint Review
+### 5.2.4.7 Team Collaboration Insights during Sprint
+### 5.2.4.8 Kanban Board
+### 5.3 Microservices Deployment
+### 5.3.1 Cloud Architecture Diagram
+### 5.3.2 Cloud Architecture Deployment
 
 ## Final
 
