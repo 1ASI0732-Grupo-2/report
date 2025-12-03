@@ -2264,7 +2264,7 @@ El despliegue utiliza imágenes ligeras basadas en Linux Alpine para optimizar r
 * **Persistencia Políglota:** Se despliegan dos motores de base de datos simultáneos mediante Docker: **MSSQL (Linux)** para el Core y **PostgreSQL (Alpine)** para Contratos.
 * **Gestión de Secretos:** Las credenciales de base de datos no se incluyen en el código (`appsettings.json`), sino que se inyectan dinámicamente al momento del despliegue mediante variables de entorno en el `docker-compose`.
 
-> *[Insertar aquí captura de pantalla de Docker Desktop/Terminal mostrando los contenedores corriendo]*
+![Evidencia de docker ejecutandose](assets/img/Chapter-5/DockerEvidence.png)
 > *Figura 3. Evidencia de contenedores ejecutándose en el entorno de despliegue.*
 
 ---
