@@ -2041,6 +2041,45 @@ Los pasos principales del deployment fueron:
 ![sprint3_insights](assets/img/Chapter-5/Sprint3_insights.png)
 
 ### 5.2.3.8 Kanban Board
+### Kanban Board Actualizado
+
+| **Backlog**                                                 | **To Do**                                                                        | **In Progress**                                                                     | **Done**                                                                 |
+| ----------------------------------------------------------- | -------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- | ------------------------------------------------------------------------ |
+| B1 – Autenticación con JWT y roles (freelancer/host/admin). | T1 – Diagramar arquitectura de despliegue (C4 Level 4 / Deployment).             | P1 – Actualización del Diagrama de Componentes (C4 Level 3).                        | D1 – Lean UX Canvas, entrevistas y Customer Journey Map.                 |
+| B2 – Sistema de reservas + calendario + pagos.              | T2 – Documentar pipeline CI/CD (GitHub Actions / Azure DevOps).                  |                                                                                     | D2 – User Personas, Empathy Map y As-Is Scenario.                        |
+| B3 – Servicio de notificaciones (email/push).               | T3 – Registrar ADR (Architecture Decision Records).                               |                                                                                     | D3 – User Stories + Product Backlog priorizado.                          |
+| B4 – API de mapas (Google Maps / Leaflet).                  | T4 – Diagrama de secuencia del flujo de reserva.                                 |                                                                                     | D4 – Documentación de endpoints con Swagger/OpenAPI (Finalizado).        |
+| B6 – Mejoras adicionales de testing (e2e, integración).     |                                                                                  |                                                                                     | D5 – Selección de arquitectura backend (.NET / Spring Boot / NestJS).    |
+|                                                             |                                                                                  |                                                                                     | D6 – Diseño del modelo ER + normalización de base de datos.             |
+|                                                             |                                                                                  |                                                                                     | D7 – Definición de microservicios y dominios DDD.                        |
+|                                                             |                                                                                  |                                                                                     | D8 – Despliegue en la nube (Docker + AWS/Render/Railway).               |
+|                                                             |                                                                                  |                                                                                     | D9 – Pruebas unitarias en backend completadas.                            |
+|                                                             |                                                                                  |                                                                                     | D10 – Quality Attribute Scenarios definidos.                               |
+|                                                             |                                                                                  |                                                                                     | D11 – Drivers arquitectónicos documentados.                                |
+
+
+### Narrativa del Kanban Board Actualizado
+
+El tablero Kanban actualizado refleja el estado actual del proyecto *WorkStation*, mostrando el flujo de trabajo mediante cuatro columnas principales: **Backlog**, **To Do**, **In Progress** y **Done**. Esta organización permite visualizar con claridad la planificación, las prioridades y el progreso del equipo a lo largo del desarrollo arquitectónico del sistema.
+
+La columna **Backlog** incluye las tareas planificadas para fases posteriores, entre ellas la autenticación con JWT, el sistema de reservas completo con calendario y pagos, así como mejoras futuras en pruebas automatizadas. Estas actividades forman parte del desarrollo del MVP en siguientes etapas.
+
+En la columna **To Do** se ubican tareas de prioridad inmediata relacionadas con decisiones arquitectónicas críticas: la elaboración del diagrama de despliegue (C4 Level 4), la documentación del pipeline CI/CD y el registro de decisiones arquitectónicas (ADR). Estas acciones conectan la visión conceptual del sistema con su implementación técnica.
+
+La columna **In Progress** actualmente contiene la actualización del diagrama de componentes (C4 Level 3), que constituye un paso clave para la transición hacia un diseño arquitectónico más detallado y coherente.
+
+Finalmente, la columna **Done** agrupa las tareas ya completadas por el equipo. Entre ellas destacan los artefactos de investigación y análisis inicial (Lean UX Canvas, entrevistas, Customer Journey Map, User Personas), la documentación de los primeros niveles del modelo C4 y los drivers arquitectónicos.  
+Además, se incorporan los avances más recientes del proyecto:
+
+- **Documentación de endpoints con Swagger/OpenAPI**, actualmente desplegada y funcional.  
+- **Pruebas unitarias en el backend**, completadas como parte del último entregable.  
+- **Selección de la arquitectura backend**, definiendo oficialmente la tecnología base.  
+- **Diseño del modelo ER y normalización**, consolidando la estructura de datos.  
+- **Definición de microservicios utilizando DDD**, estableciendo la delimitación de dominios clave.  
+- **Despliegue en la nube con Docker**, habilitando la disponibilidad del servicio en un entorno remoto.
+
+En conjunto, este tablero evidencia un progreso significativo desde las etapas exploratorias hasta la concreción de elementos arquitectónicos y técnicos esenciales, demostrando un avance sólido hacia la construcción del sistema WorkStation.
+
 
 ### 5.2.4 Sprint 4
 ### 5.2.4.1 Sprint Backlog 4
