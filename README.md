@@ -1591,46 +1591,66 @@ Modelo C4 de Componentes
 ![Inishgts2](assets/img/Chapter-5/ColaborationInsights.png)
 
 #### 5.2.2.8 Kanban Board
-## 5.2.2.8 Kanban Board Actualizado
 
-### Kanban Board Actualizado
+| **Backlog**                                                 | **To Do**                                                                        | **In Progress**                                                                     | **Done**                                                                    |
+| ----------------------------------------------------------- | -------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- | --------------------------------------------------------------------------- |
+| B1 – Autenticación con JWT y roles (freelancer/host/admin). | T1 – Diagramar arquitectura de despliegue (C4 Level 4 / Deployment).             | P1 – Actualización del Diagrama de Componentes (C4 Level 3).                        | D1 – Lean UX Canvas, entrevistas y Customer Journey Map.                    |
+| B2 – Sistema de reservas + calendario + pagos.              | T2 – Documentar pipeline CI/CD (GitHub Actions / Azure DevOps).                  | P2 – Definición de microservicios y dominios DDD (User, Booking, Listing, Payment). | D2 – User Personas, Empathy Map y As-Is Scenario.                           |
+| B3 – Servicio de notificaciones (email/push).               | T3 – Registrar ADR (Architecture Decision Records) de tecnologías seleccionadas. | P3 – Diseño del modelo ER + normalización de base de datos.                         | D3 – User Stories + Product Backlog priorizado.                             |
+| B4 – API de mapas (Google Maps / Leaflet).                  | T4 – Documentar endpoints REST con Swagger/OpenAPI.                              | P4 – Selección de arquitectura backend (.NET / Spring Boot / NestJS).               | D4 – Diagrama C4 Nivel 1 (Context Diagram).                                 |
+| B5 – Despliegue en la nube (Docker + AWS/Render/Railway).   | T5 – Diagrama de secuencia del flujo de reserva.                                 | P5 – Arquitectura hexagonal + patrones (Repository, Factory, DI).                   | D5 – Diagrama C4 Nivel 2 (Container Diagram).                               |
+| B6 – Pruebas unitarias e integración.                       |                                                                                  |                                                                                     | D6 – Quality Attribute Scenarios definidos.                                 |
+|                                                             |                                                                                  |                                                                                     | D7 – Drivers arquitectónicos documentados (business, constraints, quality). |
 
-| **Backlog**                                                 | **To Do**                                                                        | **In Progress**                                                                     | **Done**                                                                 |
-| ----------------------------------------------------------- | -------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- | ------------------------------------------------------------------------ |
-| B1 – Autenticación con JWT y roles (freelancer/host/admin). | T1 – Diagramar arquitectura de despliegue (C4 Level 4 / Deployment).             | P1 – Actualización del Diagrama de Componentes (C4 Level 3).                        | D1 – Lean UX Canvas, entrevistas y Customer Journey Map.                 |
-| B2 – Sistema de reservas + calendario + pagos.              | T2 – Documentar pipeline CI/CD (GitHub Actions / Azure DevOps).                  |                                                                                     | D2 – User Personas, Empathy Map y As-Is Scenario.                        |
-| B3 – Servicio de notificaciones (email/push).               | T3 – Registrar ADR (Architecture Decision Records).                               |                                                                                     | D3 – User Stories + Product Backlog priorizado.                          |
-| B4 – API de mapas (Google Maps / Leaflet).                  | T4 – Diagrama de secuencia del flujo de reserva.                                 |                                                                                     | D4 – Documentación de endpoints con Swagger/OpenAPI (Finalizado).        |
-| B6 – Mejoras adicionales de testing (e2e, integración).     |                                                                                  |                                                                                     | D5 – Selección de arquitectura backend (.NET / Spring Boot / NestJS).    |
-|                                                             |                                                                                  |                                                                                     | D6 – Diseño del modelo ER + normalización de base de datos.             |
-|                                                             |                                                                                  |                                                                                     | D7 – Definición de microservicios y dominios DDD.                        |
-|                                                             |                                                                                  |                                                                                     | D8 – Despliegue en la nube (Docker + AWS/Render/Railway).               |
-|                                                             |                                                                                  |                                                                                     | D9 – Pruebas unitarias en backend completadas.                            |
-|                                                             |                                                                                  |                                                                                     | D10 – Quality Attribute Scenarios definidos.                               |
-|                                                             |                                                                                  |                                                                                     | D11 – Drivers arquitectónicos documentados.                                |
+---
+
+## Narrativa del Kanban Board
+
+El tablero Kanban actualizado representa la planificación y el estado de avance del proyecto *WorkStation*, organizado en cuatro columnas principales: **Backlog**, **To Do**, **In Progress** y **Done**. Esta estructura permite visualizar de manera clara el flujo de trabajo y el progreso del equipo durante el desarrollo arquitectónico del sistema.
+
+### Backlog
+En esta columna se encuentran las tareas planificadas pero aún no iniciadas. Incluyen funcionalidades principales del MVP como:
+- Autenticación con JWT y roles.
+- Sistema de reservas, calendario y pagos.
+- Servicio de notificaciones.
+- API de mapas.
+- Despliegue en la nube.
+- Pruebas unitarias e integración.
+
+Estas tareas están destinadas a fases posteriores del desarrollo.
+
+### To Do
+Contiene actividades priorizadas para el avance actual. Están relacionadas con decisiones arquitectónicas clave:
+- Diagrama de despliegue (C4 Level 4).
+- Documentación del pipeline CI/CD.
+- Registro de ADR.
+- Diagrama de secuencia del flujo de reserva.
+
+Representan el puente entre el diseño conceptual y la futura implementación técnica.
+
+### In Progress
+Incluye los elementos en desarrollo activo:
+- Actualización del diagrama de componentes (C4 Level 3).
+- Definición de microservicios mediante DDD.
+- Diseño del modelo ER.
+- Selección de la arquitectura backend.
+- Arquitectura hexagonal y patrones de diseño.
+
+Esta columna refleja la transición del análisis hacia un diseño técnico más profundo.
+
+### Done
+Reúne los entregables completados del proyecto:
+- Lean UX Canvas, entrevistas y Customer Journey Map.
+- User Personas, Empathy Map y escenarios actuales.
+- User Stories y Product Backlog priorizado.
+- Diagramas C4 niveles 1 y 2.
+- Drivers arquitectónicos.
+- Quality Attribute Scenarios.
+
+Estos artefactos fueron fundamentales para comprender el problema, diseñar la solución y justificar decisiones de arquitectura.
 
 
-### Narrativa del Kanban Board Actualizado
 
-El tablero Kanban actualizado refleja el estado actual del proyecto *WorkStation*, mostrando el flujo de trabajo mediante cuatro columnas principales: **Backlog**, **To Do**, **In Progress** y **Done**. Esta organización permite visualizar con claridad la planificación, las prioridades y el progreso del equipo a lo largo del desarrollo arquitectónico del sistema.
-
-La columna **Backlog** incluye las tareas planificadas para fases posteriores, entre ellas la autenticación con JWT, el sistema de reservas completo con calendario y pagos, así como mejoras futuras en pruebas automatizadas. Estas actividades forman parte del desarrollo del MVP en siguientes etapas.
-
-En la columna **To Do** se ubican tareas de prioridad inmediata relacionadas con decisiones arquitectónicas críticas: la elaboración del diagrama de despliegue (C4 Level 4), la documentación del pipeline CI/CD y el registro de decisiones arquitectónicas (ADR). Estas acciones conectan la visión conceptual del sistema con su implementación técnica.
-
-La columna **In Progress** actualmente contiene la actualización del diagrama de componentes (C4 Level 3), que constituye un paso clave para la transición hacia un diseño arquitectónico más detallado y coherente.
-
-Finalmente, la columna **Done** agrupa las tareas ya completadas por el equipo. Entre ellas destacan los artefactos de investigación y análisis inicial (Lean UX Canvas, entrevistas, Customer Journey Map, User Personas), la documentación de los primeros niveles del modelo C4 y los drivers arquitectónicos.  
-Además, se incorporan los avances más recientes del proyecto:
-
-- **Documentación de endpoints con Swagger/OpenAPI**, actualmente desplegada y funcional.  
-- **Pruebas unitarias en el backend**, completadas como parte del último entregable.  
-- **Selección de la arquitectura backend**, definiendo oficialmente la tecnología base.  
-- **Diseño del modelo ER y normalización**, consolidando la estructura de datos.  
-- **Definición de microservicios utilizando DDD**, estableciendo la delimitación de dominios clave.  
-- **Despliegue en la nube con Docker**, habilitando la disponibilidad del servicio en un entorno remoto.
-
-En conjunto, este tablero evidencia un progreso significativo desde las etapas exploratorias hasta la concreción de elementos arquitectónicos y técnicos esenciales, demostrando un avance sólido hacia la construcción del sistema WorkStation.
 
 ## 5.2.3 Sprint 3  
 #### 5.2.3.1 Sprint Backlog 3
