@@ -2255,7 +2255,7 @@ Basado en la rama `features/microservices`, el proyecto se estructura segregando
 * **📄 docker-compose.yml:** Archivo maestro de orquestación. Define la red virtual (`workstation-network`), los volúmenes de datos persistentes y la inyección de variables de entorno.
 * **📄 nginx.conf:** Configuración del Proxy Inverso que reside en la raíz. Gestiona las reglas de enrutamiento y balanceo de carga hacia los contenedores internos.
 
-> *[Insertar aquí captura de pantalla de la estructura de carpetas del repositorio]*
+![Estructura de archivos](assets/img/Chapter-5/ProjectStructureGithub.png)
 > *Figura 2. Estructura de archivos del repositorio implementando separación de servicios.*
 
 **3. Estrategia de Contenedores (Docker Strategy):**
