@@ -2157,10 +2157,107 @@ Por ultimo, se verifica si es que se puede elminar o editar la oficina que ya fu
 ### 5.2.4.5 Microservices Documentation Evidence for Sprint Review
 ### 5.2.4.6 Software Deployment Evidence for Sprint Review
 ### 5.2.4.7 Team Collaboration Insights during Sprint
-### 5.2.4.8 Kanban Board
-### 5.3 Microservices Deployment
+### 5.2.4.8 Tablero Kanban (Kanban Board)
+
+Para la gestión del proyecto *WorkStation*, el equipo utiliza un tablero Kanban que permite visualizar el flujo de trabajo en tiempo real, priorizar tareas críticas y limitar el trabajo en progreso (WIP). Esta herramienta ha sido fundamental para la transición desde el diseño inicial hacia la implementación de la arquitectura de microservicios.
+
+### Estado Actual del Tablero
+
+| **Backlog** | **To Do** | **In Progress** | **Done** |
+| :--- | :--- | :--- | :--- |
+| **B1** – Autenticación con JWT y roles (freelancer/host/admin). | **T1** – Diagramar arquitectura de despliegue (C4 Level 4 / Deployment). | **P1** – Actualización del Diagrama de Componentes (C4 Level 3). | **D1** – Lean UX Canvas, entrevistas y Customer Journey Map. |
+| **B2** – Sistema de reservas + calendario + pagos. | **T2** – Documentar pipeline CI/CD (GitHub Actions / Azure DevOps). | | **D2** – User Personas, Empathy Map y As-Is Scenario. |
+| **B3** – Servicio de notificaciones (email/push). | **T3** – Registrar ADR (Architecture Decision Records). | | **D3** – User Stories + Product Backlog priorizado. |
+| **B4** – API de mapas (Google Maps / Leaflet). | **T4** – Diagrama de secuencia del flujo de reserva. | | **D4** – Documentación de endpoints con Swagger/OpenAPI (Finalizado). |
+| **B6** – Mejoras adicionales de testing (e2e, integración). | | | **D5** – Selección de arquitectura backend (.NET / Spring Boot / NestJS). |
+| | | | **D6** – Diseño del modelo ER + normalización de base de datos. |
+| | | | **D7** – Definición de microservicios y dominios DDD. |
+| | | | **D8** – Despliegue en la nube (Docker + AWS/Render/Railway). |
+| | | | **D9** – Pruebas unitarias en backend completadas. |
+| | | | **D10** – Quality Attribute Scenarios definidos. |
+| | | | **D11** – Drivers arquitectónicos documentados. |
+
+### Narrativa del Progreso
+El tablero refleja un avance significativo en la infraestructura base del sistema:
+1.  **Fase de Diseño (Done):** Se han completado los artefactos de diseño estratégico (**D7**, **D11**) y la selección tecnológica (**D5**), definiendo .NET y Docker como el stack principal.
+2.  **Fase de Implementación (Done/In Progress):** Se ha logrado el despliegue inicial en la nube utilizando contenedores (**D8**). Actualmente, el equipo trabaja en refinar los diagramas de componentes (**P1**) para que coincidan con la reciente reestructuración física del repositorio.
+3.  **Próximos Pasos (To Do):** La prioridad inmediata es formalizar la documentación de despliegue (**T1**) y el pipeline de integración continua (**T2**) para automatizar los pases a producción.
+
+---
+
+## 5.3 Despliegue de Microservicios (Microservices Deployment)
+
+La arquitectura de *WorkStation* se ha implementado siguiendo un patrón de microservicios contenerizados sobre **.NET Core**. Esta decisión permite desacoplar los dominios de negocio, facilitando el mantenimiento y permitiendo el uso de diferentes motores de base de datos según la necesidad de cada servicio (Persistencia Políglota).
+
+**Inventario de Servicios Desplegados:**
+
+| Servicio | Ubicación en Repositorio | Tecnología | Base de Datos | Puerto Interno |
+| :--- | :--- | :--- | :--- | :--- |
+| **Gateway Service** | `/Gateway` | .NET Core API | **MSSQL** (Linux Container) | 8080 |
+| **Contract Service** | `/Services/ContractService` | .NET Core API | **PostgreSQL** (Alpine) | 8081 |
+| **Load Balancer** | `/` (Root) | NGINX | N/A | 80 (Public) |
+
+---
+
 ### 5.3.1 Cloud Architecture Diagram
+
+El siguiente diagrama ilustra la topología de red dentro del entorno Docker. El sistema utiliza un **Proxy Inverso (NGINX)** como único punto de entrada, el cual distribuye el tráfico hacia los contenedores de backend basándose en la ruta de la URL, manteniendo un estricto aislamiento entre los contextos de datos.
+
+![Diagrama de Arquitectura Cloud - Placeholder](assets/img/Chapter-5/CloudArchDiagram.png)
+
+**Flujo de Comunicación:**
+1.  **Petición Externa:** El cliente realiza una solicitud HTTP/HTTPS que es interceptada por el **NGINX**.
+2.  **Enrutamiento Inverso (Reverse Proxy):**
+    * Si la ruta es `/api/users` o `/api/offices` → NGINX redirige al contenedor **Gateway Service**.
+    * Si la ruta es `/api/contracts` → NGINX redirige al contenedor **Contracts Service**.
+3.  **Aislamiento de Datos:**
+    * El **Gateway** se conecta a su contenedor dedicado de **MSSQL** a través de la red interna de Docker.
+    * El servicio de **Contracts** se conecta a su contenedor dedicado de **PostgreSQL**.
+    * *Nota:* No existe comunicación cruzada directa entre los servicios y las bases de datos ajenas a su contexto.
+
+---
+
 ### 5.3.2 Cloud Architecture Deployment
+
+Esta sección detalla la organización física de los componentes y la estrategia de infraestructura como código (IaC) utilizada para materializar la arquitectura en un entorno de producción.
+
+**Estructura del Repositorio y Componentes:**
+Basado en la rama `features/microservices`, el proyecto se estructura segregando responsabilidades en carpetas independientes, lo que permite ciclos de construcción aislados:
+
+* **📂 /Gateway:** Contiene el código fuente del API Gateway principal (Contexto: Usuarios y Oficinas). Su despliegue está optimizado para trabajar junto a SQL Server.
+* **📂 /Services/ContractService:** Contiene el microservicio de Contratos (Contexto: Negocio). Al residir en una ruta distinta, garantiza el desacoplamiento total de dependencias.
+* **📄 docker-compose.yml:** Archivo maestro de orquestación. Define la red virtual (`workstation-network`), los volúmenes de datos persistentes y la inyección de variables de entorno.
+* **📄 nginx.conf:** Configuración del Proxy Inverso que reside en la raíz. Gestiona las reglas de enrutamiento y balanceo de carga hacia los contenedores internos.
+
+**Estrategia de Contenedores (Docker Strategy):**
+El despliegue utiliza imágenes ligeras basadas en Linux Alpine para optimizar recursos:
+
+1.  **Construcción Multi-Etapa (Multi-stage Build):** Los servicios .NET (`Gateway` y `ContractService`) se compilan en una imagen SDK temporal y luego se copian solo los binarios a una imagen *Runtime* final, reduciendo el peso del contenedor.
+2.  **Persistencia Políglota:** Se despliegan dos motores de base de datos simultáneos mediante Docker:
+    * **MSSQL (Linux edition):** Para datos relacionales estructurados del Core.
+    * **PostgreSQL (Alpine):** Para la gestión eficiente de documentos y contratos.
+3.  **Gestión de Secretos:** Las credenciales de base de datos no se incluyen en el código (`appsettings.json`), sino que se inyectan dinámicamente al momento del despliegue mediante variables de entorno en el `docker-compose`.
+
+#### 5.3.2.1 Automatización y Pipeline CI/CD
+
+Para garantizar la estabilidad del despliegue distribuido, se han implementado mecanismos de automatización y verificación continua.
+
+**Pipeline de Integración Continua (GitHub Actions):**
+Ubicado en la carpeta `.github/workflows`, el pipeline se activa automáticamente ante cada *push* o *pull request* a la rama principal (`main`). El flujo de trabajo ejecuta los siguientes pasos:
+
+1.  **Setup Environment:** Configura un entorno virtual con .NET SDK.
+2.  **Dependency Resolution:** Ejecuta `dotnet restore` para descargar dependencias de NuGet.
+3.  **Build Validation:** Compila la solución completa para detectar errores de sintaxis o referencias rotas.
+4.  **Automated Testing:** Ejecuta las pruebas unitarias ubicadas en el proyecto `Tests`, asegurando que la lógica de negocio de los nuevos microservicios no rompa funcionalidades existentes.
+
+**Scripts de Gestión Operativa:**
+El equipo ha desarrollado scripts de utilidad (como `manage-services.ps1`) para facilitar la administración del entorno Docker local. Estos scripts automatizan tareas repetitivas como:
+* El reinicio ordenado de los servicios.
+* La limpieza de contenedores huérfanos.
+* La visualización centralizada de logs para depuración (`docker logs`).
+
+**Health Checks (Verificación de Estado):**
+El balanceador de carga NGINX y el orquestador Docker están configurados para monitorear la salud de los servicios. Si un contenedor (por ejemplo, `contract-service`) falla o se detiene, el orquestador intenta reiniciarlo automáticamente, mientras que NGINX deja de enviarle tráfico hasta que vuelva a estar operativo, garantizando la disponibilidad del sistema.
 
 ## Final
 
