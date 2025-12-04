@@ -2270,8 +2270,97 @@ En esta vista se muestra la documentación del microservicio de contratos. Se li
 
 
 ### 5.2.4.5 Microservices Documentation Evidence for Sprint Review
+
+La siguiente tabla resume los **10 endpoints principales del sistema WorkStation**, incluyendo microservicio, URL, método, descripción funcional, estructura de entrada y salida. Esta documentación permite el consumo real de los servicios por parte del frontend o sistemas externos.
+
+| # | Microservicio | Endpoint | Método | Descripción | JSON Request | JSON Response |
+|---|---------------|----------|--------|-------------|--------------|----------------|
+| 1 | User Service | `/api/users/register` | POST | Registra un nuevo usuario en la plataforma | ```json { "fullName":"Juan Perez", "email":"juan@gmail.com", "password":"123456", "role":"FREELANCER" } ``` | ```json { "userId":101, "message":"Usuario registrado correctamente" } ``` |
+| 2 | User Service | `/api/users/login` | POST | Autenticación de usuario en el sistema | ```json { "email":"juan@gmail.com", "password":"123456" } ``` | ```json { "token":"jwt-token-123", "userId":101 } ``` |
+| 3 | Workspace Service | `/api/workspaces` | POST | Publica un nuevo workspace | ```json { "title":"Oficina Premium", "location":"San Isidro", "pricePerHour":20, "capacity":6, "amenities":["WiFi","Café","Estacionamiento"], "ownerId":23 } ``` | ```json { "workspaceId":45, "message":"Workspace publicado correctamente" } ``` |
+| 4 | Workspace Service | `/api/workspaces/search` | GET | Filtra workspaces por criterios | Parámetros: `location`, `minPrice`, `maxPrice`, `capacity` | ```json [ { "workspaceId":45, "title":"Oficina Premium", "location":"San Isidro", "pricePerHour":20, "capacity":6 } ] ``` |
+| 5 | Booking Service | `/api/bookings` | POST | Registra una nueva reserva | ```json { "userId":101, "workspaceId":45, "date":"2025-10-15", "hours":4 } ``` | ```json { "bookingId":300, "status":"RESERVADO" } ``` |
+| 6 | Booking Service | `/api/bookings/{bookingId}` | DELETE | Cancela una reserva activa | — | ```json { "message":"Reserva cancelada correctamente" } ``` |
+| 7 | Payment Service | `/api/payments` | POST | Procesa el pago de una reserva | ```json { "bookingId":300, "amount":80, "paymentMethod":"TARJETA" } ``` | ```json { "paymentStatus":"APROBADO" } ``` |
+| 8 | Review Service | `/api/reviews` | POST | Registra una reseña del usuario | ```json { "userId":101, "workspaceId":45, "rating":5, "comment":"Excelente espacio" } ``` | ```json { "message":"Reseña registrada exitosamente" } ``` |
+| 9 | Review Service | `/api/reviews/workspace/{workspaceId}` | GET | Obtiene todas las reseñas de un workspace | — | ```json [ { "userId":101, "rating":5, "comment":"Excelente espacio" } ] ``` |
+| 10 | Booking Service | `/api/bookings/availability/{workspaceId}` | GET | Devuelve disponibilidad horaria del workspace | — | ```json { "workspaceId":45, "availableHours":["08:00 - 12:00","14:00 - 18:00"] } ``` |
+
+
 ### 5.2.4.6 Software Deployment Evidence for Sprint Review
+
+En esta sección se presenta la evidencia del **despliegue del software del sistema WorkStation**, realizada como parte del Sprint Review. El objetivo de este despliegue fue validar que la solución puede ejecutarse correctamente en un entorno funcional, permitiendo la comunicación entre frontend y backend bajo una arquitectura basada en microservicios.
+
+El despliegue se realizó considerando dos capas principales: **Backend (microservicios)** y **Frontend (aplicación web)**, ambos ejecutándose de manera independiente pero comunicados mediante servicios REST.
+
+### Despliegue del Backend (Microservicios)
+
+El backend del sistema fue desplegado bajo una arquitectura distribuida, donde cada microservicio cuenta con su propio entorno de ejecución. Para este despliegue se consideraron los siguientes aspectos técnicos:
+
+- Cada microservicio fue ejecutado como una aplicación independiente.
+- Los servicios se comunicaron mediante HTTP utilizando endpoints REST.
+- Cada servicio operó sobre su propio contexto de datos.
+- Se validó el correcto levantamiento de cada servicio mediante consola.
+- Se verificó la accesibilidad de cada endpoint usando herramientas de prueba de servicios.
+
+Los microservicios desplegados fueron:
+
+- User Service
+- Workspace Service
+- Booking Service
+- Payment Service
+- Review Service
+
+Se comprobó que cada uno de estos servicios respondía correctamente a las peticiones HTTP utilizando métodos POST, GET y DELETE según correspondía.
+
+### Pruebas de Consumo de Servicios (Backend)
+
+Durante el Sprint Review se presentaron evidencias del consumo real de los endpoints mediante herramientas de prueba de servicios web. Se validaron los siguientes flujos:
+
+- Registro de usuario.
+- Autenticación.
+- Publicación de workspaces.
+- Búsqueda de espacios.
+- Creación y cancelación de reservas.
+- Procesamiento de pagos.
+- Registro y consulta de reseñas.
+- Consulta de disponibilidad de espacios.
+
+Cada prueba confirmó:
+
+- Correcta recepción de datos JSON.
+- Validación de parámetros.
+- Generación de respuestas exitosas.
+- Control de errores en solicitudes inválidas.
+
+
+### Despliegue del Frontend
+
+El frontend del sistema WorkStation fue desplegado como una **aplicación web funcional**, accesible desde un navegador. Este frontend se conectó directamente a los microservicios del backend mediante sus respectivos endpoints.
+
+Se validaron los siguientes módulos en el entorno desplegado:
+
+- Registro de usuarios.
+- Inicio de sesión.
+- Visualización de workspaces.
+- Búsqueda por filtros.
+- Detalle de espacios.
+- Reserva de espacios.
+- Simulación de pagos.
+- Visualización de reseñas.
+
+El frontend consumió correctamente los datos desde los microservicios, demostrando una integración completa entre ambas capas del sistema.
+
+### Evidencias del Despliegue
+
+![Sprint2_execution](assets/img/Chapter-5/sprint2_execution.png)
+
+![Sprint3_execution](assets/img/Chapter-5/FrontDep.png)
+
 ### 5.2.4.7 Team Collaboration Insights during Sprint
+
+![sprint3_insights](assets/img/Chapter-5/Sprint3_insights.png)
+
 ## 5.2.4.8 Tablero Kanban (Kanban Board)
 
 Para la gestión del proyecto *WorkStation*, el equipo utiliza un tablero Kanban que permite visualizar el flujo de trabajo en tiempo real, priorizar tareas críticas y limitar el trabajo en progreso (WIP). Esta herramienta ha sido fundamental para la transición desde el diseño inicial hacia la implementación de la arquitectura de microservicios.
