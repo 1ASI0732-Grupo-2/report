@@ -37,6 +37,9 @@ Fundamentos de Arquitectura de Software <br>
 | ------- | ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
 | TB1     | 25-04-2025 | Liberato Rodrigo, Renzo Miguel Llerena Delgado, Henry Kevin Diaz Gutierrez , Diego Sebastián Zúñiga Murillo y Braulio Rodrigo Torrejon Navarro | Los 3 capitulos del primer avance fueron completados, junto a las conclusiones e informacion necesaria para el avance del trabajo. |
 | TP      | 08-10-2025 | Liberato Rodrigo, Renzo Miguel Llerena Delgado, Henry Kevin Diaz Gutierrez , Diego Sebastián Zúñiga Murillo y Braulio Rodrigo Torrejon Navarro | El nuevo capitulo 4 y 5 fue completado con exito y las conclusiones fueron avanzadas, asi mismo como la solucion fue avanzada.     |
+| TB2 | 20-11-2025 | Liberato Rodrigo, Renzo Miguel Llerena Delgado, Henry Kevin Diaz Gutierrez, Diego Sebastián Zúñiga Murillo y Braulio Rodrigo Torrejon Navarro | Se integraron las evidencias de arquitectura de microservicios, documentación técnica de endpoints, ADD Iterations completas y validación de drivers arquitectónicos. |
+| TF  | 05-12-2025 | Liberato Rodrigo, Renzo Miguel Llerena Delgado, Henry Kevin Diaz Gutierrez, Diego Sebastián Zúñiga Murillo y Braulio Rodrigo Torrejon Navarro | Se finalizó el informe completo del proyecto WorkStation, incluyendo evidencia de despliegue, Sprint Review, conclusiones finales, bibliografía y anexos para sustentación. |
+
 
 # Project Report Collaboration Insights
 
@@ -2474,10 +2477,76 @@ El equipo ha desarrollado scripts de utilidad (como `manage-services.ps1`) para 
 
 ### Avance de Conclusiones, Bibliografía y Anexos (links)
 
-### Conclusión TB1:
+### Conclusiones TB1:
 
 WorkStation llega a resolver un problema que todo freelancer o dueño de coworking conoce demasiado bien: la fragmentación caótica de la oferta y la demanda. Hoy, conseguir un espacio de trabajo es un vía crucis entre mensajes en WhatsApp, consultas en grupos de Facebook o páginas web que nunca actualizan la disponibilidad. Del otro lado, los propietarios lidian con reservas poco serias, pagos informales y un control limitado sobre lo que pasa en sus espacios. Esa desconexión hace perder tiempo, clientes y, sobre todo, dinero.
-
 La propuesta es simple pero potente: un marketplace centralizado que no necesita alquilar ni operar oficinas propias, sino conectar a ambas partes de manera transparente y eficiente. Para los usuarios, WorkStation ofrece comodidad y confianza: búsqueda con filtros claros (precio, ubicación, servicios), disponibilidad actualizada en vivo y pagos seguros desde un solo lugar. Para los dueños de coworking, la app representa un tablero de control que incluye calendario, reglas visibles para inquilinos, reseñas verificadas y menos carga administrativa. En resumen, cada clic suma productividad y menos dolores de cabeza.
-
 La magia está en convertir interacciones dispersas y poco confiables en un flujo digital directo y fluido: encontrar, comparar, reservar y pagar en minutos. Pasamos de la incertidumbre del clásico “¿hola, sigue disponible?” a una experiencia estandarizada de “reservado en 3 clics”, donde cada parte sabe exactamente qué esperar. Eso no solo eleva la satisfacción del usuario, también genera más ocupación y confianza para los hosts, logrando que el mercado del coworking en ciudades como Lima tenga por fin una solución a la altura del nuevo mundo laboral.
+
+### Conclusiones TP 
+
+Durante el desarrollo del Trabajo Parcial (TP) se logró consolidar de manera estructurada la propuesta de la solución WorkStation a nivel de diseño y arquitectura. Se definieron correctamente los requerimientos funcionales y no funcionales, así como el enfoque arquitectónico basado en microservicios, lo que permitió establecer una base sólida para el desarrollo del sistema.
+Asimismo, se desarrollaron los artefactos de diseño necesarios, incluyendo los diagramas de contexto, contenedores, componentes y base de datos, permitiendo visualizar de manera clara la interacción entre los distintos módulos del sistema. Estos entregables facilitaron la comprensión del flujo de información y la separación de responsabilidades dentro de la solución.
+Finalmente, el Trabajo Parcial permitió validar que la propuesta de negocio es viable desde el punto de vista técnico, sentando las bases para la implementación progresiva del sistema en los siguientes avances.
+
+### Conclusiones TB2 
+
+En el TB2 se logró avanzar significativamente en la validación técnica de la arquitectura del sistema WorkStation mediante la documentación completa de los microservicios y la ejecución de los primeros despliegues funcionales. Se evidenció el correcto funcionamiento de los servicios principales a través de sus endpoints REST, permitiendo validar los flujos centrales del negocio.
+Asimismo, el equipo logró integrar las ADD Iterations, los drivers arquitectónicos y la definición de los servicios desacoplados, fortaleciendo la escalabilidad, mantenibilidad y tolerancia a fallos del sistema. Cada microservicio fue documentado de manera formal, permitiendo su consumo real desde el frontend.
+Este avance permitió confirmar que la arquitectura propuesta no solo es teóricamente correcta, sino que también es funcional en un entorno real de ejecución, demostrando la coherencia entre diseño y despliegue.
+
+### Conclusiones TF 
+
+El Trabajo Final representa la consolidación completa del proyecto WorkStation, tanto a nivel de negocio como a nivel técnico. Se logró integrar todos los componentes del sistema, desde el levantamiento de requerimientos hasta el despliegue funcional del software, validando todos los flujos principales del negocio de extremo a extremo.
+El sistema demostró ser funcional, escalable y alineado con los principios de arquitectura de software estudiados durante el curso. La arquitectura basada en microservicios permitió una comunicación efectiva entre frontend y backend, asegurando independencia entre servicios y facilidad de mantenimiento.
+Finalmente, WorkStation se consolida como una propuesta tecnológica viable que responde a una necesidad real del mercado, aportando una solución moderna para la gestión y reserva de espacios de coworking. El proyecto permitió al equipo fortalecer sus competencias técnicas, de análisis, diseño y trabajo colaborativo.
+
+## ANEXOS
+
+### Enlaces De Alojamiento del trabajo
+
+- Repositorio General del Proyecto:  
+  https://github.com/1ASI0732-Grupo-2
+  
+- Repositorio del Frontend:  
+  https://github.com/WorkStation-MarronCoders/frontend
+
+- Repositorio del Backend (Microservicios):  
+  https://github.com/WorkStation-MarronCoders/backend
+
+### Evidencias de Entrevistas – Propietarios de Inmuebles
+
+- Entrevista a Alejandra Izaguirre  
+  https://upcedupe-my.sharepoint.com/:v:/g/personal/u202215623_upc_edu_pe/EZQz2DANI71MkOrpc1fJq3EBIRLd8PZ4sQAEEFybRm3YOg
+
+- Entrevista a Patricia Navarro  
+  https://drive.google.com/file/d/1xUJrZ8oBl1Qq0S6BJiDpcHgHXV1d9MYe/view?usp=sharing
+
+- Entrevista a Jeremy Uriel Reyes Correa  
+  https://drive.google.com/file/d/1xet-bnrphJlHN9q8--i8BTqD-KbiidQo/view?usp=sharing
+
+### Evidencias de Entrevistas – Freelancers y Startups
+
+- Entrevista a Renato Guillermo Calvo Yalan  
+  https://drive.google.com/file/d/18nyxMf-ZdvX-bkOw9eGHqbmN1OXbzshb/view?usp=sharing
+
+- Entrevista a Jonatan David Escobar Laura  
+  https://drive.google.com/file/d/18sBgLuViOeTaP_g60ueuV6Y669vgPfMK/view?usp=sharing
+
+- Entrevista a Jocelyn Damaly Almerco Rojas  
+  https://drive.google.com/file/d/1J5AS7eGplnLPDjFKJDMXJjuVzqm2OcxO/view?usp=sharing
+
+### Evidencias Gráficas del Informe (Imágenes alojadas en GitHub y Discord)
+
+- Foto de perfil de Rodrigo Liberato  
+  https://github.com/WorkStation-MarronCoders/Report/raw/main/Imagenes/rodrigo.png
+
+- Foto de perfil de Renzo Llerena  
+  https://github.com/1ASI0732-Grupo-2/report/blob/develop/assets/img/Chapter-I/RenzoLlerena.png?raw=true
+
+- Foto de perfil de Henry Díaz  
+  https://github.com/1ASI0732-Grupo-2/report/blob/develop/assets/img/Chapter-I/Henry.png?raw=true
+
+- Foto de perfil de Diego Zúñiga  
+  https://media.discordapp.net/attachments/1082800870334419014/1415786757659693106/69ed58d9-a022-48a1-86b3-b7fa8ae451bb.png
+
