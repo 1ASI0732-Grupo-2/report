@@ -2378,7 +2378,7 @@ Ubicado en la carpeta `.github/workflows`, el pipeline se activa automáticament
 **Scripts de Gestión Operativa:**
 El equipo ha desarrollado scripts de utilidad (como `manage-services.ps1`) para facilitar la administración del entorno Docker local. Estos scripts automatizan tareas repetitivas como el reinicio ordenado de servicios y la limpieza de contenedores huérfanos.
 
-> *[Insertar captura de la pestaña "Actions" de GitHub con un check verde]*
+![Evidencia despliegue en github](assets/img/Chapter-5/DeploymentGithub.png)
 > *Figura 4. Pipeline de ejecución exitosa en GitHub Actions.*
 
 ## Final
