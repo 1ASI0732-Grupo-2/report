@@ -2236,37 +2236,37 @@ Por ultimo, se verifica si es que se puede elminar o editar la oficina que ya fu
 ![Testing10](assets/img/Chapter-5/Sprint4Tests10.png)
 
 ### 5.2.4.4 Execution Evidence for Sprint Review
-Para este Sprint, se realizaron las siguientes ejecuciones como evidencia.
+Para este Sprint, se realizaron las siguientes ejecuciones como evidencia..<br><br>
 
 Terminal donde se ejecuta docker-compose up -d. El comando levanta exitosamente varios contenedores, incluyendo bases de datos y servicios de la aplicación, configurando el entorno completo.
-![Execution1](assets/img/Chapter-5/Sprint4_execution1.png)
+![Execution1](assets/img/Chapter-5/Sprint4_execution1.png).<br><br>
 
 Se muestra la vista general de los contenedores del backend en Docker Desktop, donde todos están ejecutándose.
-![Execution2](assets/img/Chapter-5/Sprint4_execution2.png)
+![Execution2](assets/img/Chapter-5/Sprint4_execution2.png).<br><br>
 
 En esta vista se observan con más detalle los logs de SQL Server dentro del contenedor workstation-mssql, donde el motor realiza procesos internos de recuperación. 
-![Execution3](assets/img/Chapter-5/Sprint4_execution3.png)
+![Execution3](assets/img/Chapter-5/Sprint4_execution3.png).<br><br>
 
 Aquí se muestran los logs del contenedor workstation-postgres, donde PostgreSQL detecta una base existente, completa correctamente el proceso de arranque y finaliza indicando que el sistema está listo para aceptar conexiones. 
-![Execution4](assets/img/Chapter-5/Sprint4_execution4.png)
+![Execution4](assets/img/Chapter-5/Sprint4_execution4.png).<br><br>
 
 Aqui se muestra los registros de un contenedor que ejecuta Nginx (un servidor web/proxy). Los logs detallan el proceso de inicio automático del servicio, donde ejecuta scripts de configuración para activar soporte IPv6 y definir procesos. El mensaje final confirma que la configuración está completa y el servicio está listo. El estado indica que lleva 38 segundos en ejecución. 
-![Execution5](assets/img/Chapter-5/Sprint4_execution5.png)
+![Execution5](assets/img/Chapter-5/Sprint4_execution5.png).<br><br>
 
 
 Aquí se observa que el servicio de contratos detecta que la base de datos en PostgreSQL ya existe y que las tablas esperadas también están disponibles. Ejecuta consultas de verificación, confirma la existencia de registros y finaliza mostrando que la configuración con PostgreSQL se completó con éxito. Luego inicia la aplicación en el puerto 80 y queda operativa. 
-![Execution6](assets/img/Chapter-5/Sprint4_execution6.png)
+![Execution6](assets/img/Chapter-5/Sprint4_execution6.png).<br><br>
 
 
 Aqui vemos que los logs muestran que el contenedor del gateway está ejecutando correctamente todas las migraciones de Entity Framework, creando tablas, índices y llaves foráneas sin errores. Después de completar el proceso, el servicio inicia en modo producción, abre el hosting en el puerto 80 y queda listo para recibir solicitudes. 
-![Execution7](assets/img/Chapter-5/Sprint4_execution7.png)
+![Execution7](assets/img/Chapter-5/Sprint4_execution7.png).<br><br>
 
 
 En esta vista se presenta la documentación de otra API para gestionar oficinas y calificaciones. Incluye operaciones CRUD para oficinas y un endpoint para crear calificaciones, dirigida a otros equipos consumidores. 
-![Execution9](assets/img/Chapter-5/Sprint4_execution9.png)
+![Execution9](assets/img/Chapter-5/Sprint4_execution9.png).<br><br>
 
 En esta vista se muestra la documentación del microservicio de contratos. Se listan sus endpoints para crear, consultar, firmar y gestionar cláusulas de contratos. Los iconos de verificación sugieren que están implementados. 
-![Execution10](assets/img/Chapter-5/Sprint4_execution10.png)
+![Execution10](assets/img/Chapter-5/Sprint4_execution10.png).<br><br>
 
 
 ### 5.2.4.5 Microservices Documentation Evidence for Sprint Review
