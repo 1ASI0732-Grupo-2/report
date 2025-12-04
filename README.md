@@ -2101,8 +2101,60 @@ Además, se incorporan los avances más recientes del proyecto:
 En conjunto, este tablero evidencia un progreso significativo desde las etapas exploratorias hasta la concreción de elementos arquitectónicos y técnicos esenciales, demostrando un avance sólido hacia la construcción del sistema WorkStation.
 
 
-### 5.2.4 Sprint 4
-### 5.2.4.1 Sprint Backlog 4
+## 5.2.4 Sprint 4
+#### 5.2.4.1 Sprint Backlog 4
+
+<table>
+<thead>
+<tr class="header"><th>Sprint #</th><th colspan="7">Sprint 4</th></tr>
+<tr class="odd"><th colspan="2">User Story</th><th colspan="6">Work-Item / Task</th></tr>
+<tr class="header"><th>Id</th><th>Title</th><th>Id</th><th>Title</th><th>Description</th><th>Estimation (Hours)</th><th>Assigned To</th><th>Status</th></tr>
+</thead>
+<tbody>
+
+
+<tr class="odd"><td colspan="2">US-29</td>
+<td>WI49</td><td>Optimización API Reseñas</td>
+<td>Mejorar endpoints de reseñas y añadir validaciones adicionales</td><td>5</td>
+<td>[Braulio]</td><td>Done</td></tr>
+
+<tr class="header"><td colspan="2">US-30</td>
+<td>WI50</td><td>Finalización Verificación Usuarios</td>
+<td>Completar integración con LinkedIn/DNI y pruebas de validación</td><td>6</td>
+<td>[Diego]</td><td>Done</td></tr>
+
+<tr class="odd"><td colspan="2">US-41</td>
+<td>WI51</td><td>Optimización Búsqueda Avanzada</td>
+<td>Mejorar filtros de búsqueda y rendimiento de consultas</td><td>7</td>
+<td>[Rodrigo]</td><td>Done</td></tr>
+
+
+<tr class="header"><td colspan="2">US-42</td>
+<td>WI52</td><td>Finalización API Calificaciones</td>
+<td>Completar lógica de calificación y visualización en interfaz</td><td>6</td>
+<td>[Henry]</td><td>Done</td></tr>
+
+
+<tr class="odd"><td colspan="2" rowspan="2">Técnicas</td>
+<td>WI53</td><td>Seguridad Avanzada</td>
+<td>Implementar roles adicionales y validación de tokens</td><td>5</td>
+<td>[Renzo]</td><td>Done</td></tr>
+<tr class="header"><td>WI54</td><td>Documentación Final</td>
+<td>Documentación completa de APIs, microservicios y despliegue</td><td>6</td>
+<td>[Diego]</td><td>Done</td></tr>
+
+
+<tr class="odd"><td colspan="2" rowspan="2">Migración</td>
+<td>WI55</td><td>Cierre WI23</td>
+<td>Finalizar lógica de recibos pendiente</td><td>4</td>
+<td>[Renzo]</td><td>Done</td></tr>
+<tr class="header"><td>WI56</td><td>Cierre WI27</td>
+<td>Integración contratos-oficinas completada</td><td>5</td>
+<td>[Rodrigo]</td><td>Done</td></tr>
+
+</tbody>
+</table>
+
 ### 5.2.4.2 Development Evidence for Sprint Review
 Durante este Sprint 4, se realizo la separacion de uno de nuestros servicios a un microservicio y la creacion de un API Gateway para manejarlo. Ademas, se ejecuto todo esto dentro de entorno controlado como lo vendria a ser Docker y sus contenedores.
 
